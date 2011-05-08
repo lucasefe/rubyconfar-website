@@ -29,34 +29,18 @@ module RubyConf
       redirect language
     end
 
+    get '/website.css' do
+      sass :website
+    end
+
     check_language!
     get "/:lang" do
       haml :home
     end
 
-    page "sponsors" do
-      haml :sponsors
-    end
-
-    page "speakers" do
-      haml :speakers
-    end
-
-    page "agenda" do
-      haml :agenda
-    end
-
-    page "where" do
-      haml :where
-    end
-
-    page "events" do
-      haml :events
-    end
-
-    get '/website.css' do
-      sass :website
-    end
+    # page "events" do
+    #   haml :events
+    # end
 
     def language
       @lang ||= params[:lang] || language_from_http || "en"
