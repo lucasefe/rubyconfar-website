@@ -1,6 +1,8 @@
+# encoding: utf-8
 require "bundler/setup"
 require "sinatra/base"
 require "haml"
+require 'sass'
 
 module RubyConf
   class Website < Sinatra::Application
@@ -50,6 +52,10 @@ module RubyConf
 
     page "events" do
       haml :events
+    end
+
+    get '/website.css' do
+      sass :website
     end
 
     def language

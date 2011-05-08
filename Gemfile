@@ -1,4 +1,6 @@
-source :gemcutter
+source 'http://rubygems.org'
 
-gem "sinatra", "1.0"
-gem "haml", ">= 3"
+gem "sinatra"
+gem "rack", "1.2.2"
+gem "haml", "3.1.1"
+gem "sass", "3.1.1"

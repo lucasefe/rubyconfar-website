@@ -1,9 +1,8 @@
 !!!
 %html
   %head(lang="en-US")
-    %title RubyConf Uruguay 2010
+    %title RubyConf Argentina 2011 
     %meta(charset="utf-8")
-    %link{ :rel => "stylesheet", :href => "http://fonts.googleapis.com/css?family=Molengo:regular" }
     %link{ :rel => "stylesheet", :href => "/website.css" }
     %link{ :rel => "home", :href => "/" }
     %link{ :rel => "icon", :href => "/favicon.ico" }
@@ -12,56 +11,4 @@
     /[if lt IE 9]
       %script{ :src => "http://html5shim.googlecode.com/svn/trunk/html5.js" }
   %body
-    %nav
-      %ul
-        %li.lang
-          %ul
-            - RubyConf::Website::LANGUAGES.each do |code,name|
-              %li{ :class => code }
-                - if language == code
-                  %span= name
-                - else
-                  = link_to name, "/#{code}"
-        %li= link_to "Events",       "/#{language}/events"
-        %li= link_to "Audience",     "/#{language}#audience"
-        %li= link_to "Where",        "/#{language}/where"
-        %li= link_to "Agenda",       "/#{language}/agenda"
-        %li= link_to "Speakers",     "/#{language}/speakers"
-        %li= link_to "Registration", "/#{language}#register"
-
-    %header
-      %h1= link_to "RubyConf Uruguay", "/", :rel => "home"
-      %div
-        %ul.highlight
-          %li
-            %h2
-              Regional conference about
-              %br
-              %strong Ruby, Rails, and agile methodologies
-          %li
-            %h3
-              = succeed %Q(<span class="sup">th</span>) do
-                %time.date(datetime="2010-10-29") 29
-              %span -
-              = succeed %Q(<span class="sup">th</span>) do
-                %time.date(datetime="2010-10-30") 30
-              October
-
-    %div#content.clearFix
-      %aside#sponsorships
-        %h2 Sponsors
-
-        = erb :sponsor_logos
-
-        %p
-          We're looking for sponsors! If you're interested or have a proposal,
-          please don't hesitate to #{email "send us an email"}. Please take a
-          look at our #{link_to "sponsors plans", "/#{language}/sponsors#welcome"}.
-
-      = yield
-    %footer
-      %p
-        ©2010 Volunteers from the #{link_to "Uruguayan Ruby User's Group", "http://ruguy.org"}
-        with the support of #{link_to "Cubox", "http://cuboxsa.com"} and #{link_to "WyeWorks", "http://wyeworks.com"}
-      %p #{email "Send us an email"} or #{twitter "follow us on twitter"}
-    = erb :analytics if ENV["RACK_ENV"] == "production"
+    = yield
