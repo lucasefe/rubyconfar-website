@@ -4,7 +4,7 @@ require "fileutils"
 ENV["RACK_ENV"] = "test"
 
 # Remove test database.
-FileUtils.rm(File.expand_path(File.join(File.dirname(__FILE__), "..", "db", "test.db")))
+FileUtils.rm_f(File.expand_path(File.join(File.dirname(__FILE__), "..", "db", "test.db")))
 
 # Require web app.
 require File.expand_path(File.join(File.dirname(__FILE__), "..", "website.rb"))
