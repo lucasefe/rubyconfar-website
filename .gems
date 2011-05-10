@@ -1,0 +1,7 @@
+data_mapper
+dm-sqlite-adapter
+haml
+rack
+rack-flash
+sass
+sinatra

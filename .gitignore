@@ -1,3 +1,2 @@
-.bundle
-.sass-cache
-.db/*.db
+/.sass-cache
+/db/*.db
