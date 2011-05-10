@@ -39,6 +39,10 @@ module RubyConf
     end
     
     helpers do
+      def partial(page, options={})
+        haml page, options.merge!(:layout => false)
+      end
+              
       def flashes
         [:warning, :notice, :error].each do |key|
           haml_tag(:div, flash[key], :class => "flash #{key}") if flash.has?(key)
@@ -107,7 +111,7 @@ module RubyConf
       layout = options.has_key?(:layout) ? options.delete(:layout) : :layout
       options[:layout] = :"#{layout}_#{language}" if layout
 
-      skip_translation = options.delete(:skip_transation)
+      skip_translation = options.delete(:skip_translation)
 
       if Symbol === template_or_code && !skip_translation
         super(:"#{template_or_code}_#{language}", options, &block)

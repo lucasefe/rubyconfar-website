@@ -1,13 +1,22 @@
 !!!
-%html(lang="es-UY")
-  %head
+%html
+  %head(lang="en-US")
     %title RubyConf Argentina 2011 
     %meta(charset="utf-8")
     %link{ :rel => "stylesheet", :href => "/website.css" }
     %link{ :rel => "home", :href => "/" }
+    %link{ :rel => "icon", :href => "/favicon.ico" }
     %script{ :src => "http://code.jquery.com/jquery-1.4.2.min.js" }
     %script{ :src => "/javascripts/application.js" }
     /[if lt IE 9]
       %script{ :src => "http://html5shim.googlecode.com/svn/trunk/html5.js" }
+    
   %body
-    = yield
+    #wrapper
+      #header
+      #content
+        - flashes
+        = yield
+        
+      #footer
+        RubyConf Argentina 2011

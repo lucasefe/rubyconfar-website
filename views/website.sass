@@ -1,2 +1,25 @@
-body 
+$default_rounded_amount: 5px
+@mixin round-corners($amount: $default_rounded_amount)
+  border-radius: $amount
+  -moz-border-radius: $amount
+  -webkit-border-radius: $amount
+
+html
+  body
+    font-family: Arial
+    background-color: #222
+    
+    #wrapper
+      @include round-corners
+      background-color: white
+      margin: 0 auto
+      padding: 5px 10px 0 10px 
+      width: 960px
+      
+      #header
+      #content
+      #footer
+        font-size: 0.8em
+        padding: 5px 0
+        text-align: center
   
