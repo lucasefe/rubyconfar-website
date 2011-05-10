@@ -1,1 +1,6 @@
 %h1 Welcome
+
+%form{:action => "/register", :method => "POST" }
+  %input{:type => "text",   :name => "registration[email]", :value => ""}
+  %input{:type => "submit", :name => "submit", :value => "Register me!"}
+  

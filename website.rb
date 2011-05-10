@@ -3,8 +3,12 @@ require "bundler/setup"
 require "sinatra/base"
 require "haml"
 require 'sass'
+require 'data_mapper'
+require 'rack-flash'
 
-module RubyConf
+require File.expand_path(File.join(File.dirname(__FILE__), "lib/models.rb"))
+
+module RubyConf    
   class Website < Sinatra::Application
     LANGUAGES = { "en" => "English", "es" => "Español" }
 
@@ -22,8 +26,26 @@ module RubyConf
       get "/:lang#{path}", &block
     end
 
+    use Rack::Flash
+    
     set :public, File.expand_path("../public", __FILE__)
     set :haml,   :format => :html5
+    set :logging, :true
+    enable :sessions
+
+    configure do
+      DataMapper::Logger.new($stdout, :debug)  
+      DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/db/development.db")
+      DataMapper.auto_upgrade!
+    end
+    
+    helpers do
+      def flashes
+        [:warning, :notice, :error].each do |key|
+          haml_tag(:div, flash[key], :class => "flash #{key}") if flash.has?(key)
+        end
+      end
+    end
 
     get "/" do
       redirect language
@@ -38,6 +60,16 @@ module RubyConf
       haml :home
     end
 
+    post "/register" do
+      @registration = Registration.new params[:registration]
+      
+      if @registration.save
+        flash[:notice] = "You have successfully pre-registered!"
+        redirect "/"
+      else
+        haml :home
+      end
+    end
     # page "events" do
     #   haml :events
     # end
