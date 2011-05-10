@@ -12,7 +12,7 @@ RACK_ENV = ENV["RACK_ENV"]
 
 require File.expand_path(File.join(File.dirname(__FILE__), "lib/models.rb"))
 
-module RubyConf    
+module RubyConf
   class Website < Sinatra::Application
     LANGUAGES = { "en" => "English", "es" => "Español" }
 
@@ -40,12 +40,12 @@ module RubyConf
       DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/db/#{RACK_ENV}.db")
       DataMapper.auto_upgrade!
     end
-    
+
     helpers do
       def partial(page, options={})
         haml page, options.merge!(:layout => false)
       end
-              
+
       def flashes
         [:warning, :notice, :error].each do |key|
           haml_tag(:div, session.delete(key), :class => "flash #{key}") if session.has_key?(key)
@@ -70,7 +70,7 @@ module RubyConf
 
     post "/register" do
       @registration = Registration.new params[:registration]
-      
+
       if @registration.save
         flash[:notice] = "You have successfully pre-registered!"
         redirect "/"
