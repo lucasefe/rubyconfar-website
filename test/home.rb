@@ -1,3 +1,12 @@
+require "fileutils"
+
+# Make sure we are running in the test environment.
+ENV["RACK_ENV"] = "test"
+
+# Remove test database.
+FileUtils.rm(File.expand_path(File.join(File.dirname(__FILE__), "..", "db", "test.db")))
+
+# Require web app.
 require File.expand_path(File.join(File.dirname(__FILE__), "..", "website.rb"))
 
 require "capybara/dsl"
