@@ -3,7 +3,6 @@ require "sinatra/base"
 require "haml"
 require 'sass'
 require 'data_mapper'
-require 'rack-flash'
 
 unless ENV["RACK_ENV"]
   ENV["RACK_ENV"] = "development"
@@ -31,8 +30,6 @@ module RubyConf
       get "/:lang#{path}", &block
     end
 
-    use Rack::Flash
-    
     set :public, File.expand_path("../public", __FILE__)
     set :haml,   :format => :html5
     set :logging, :true
@@ -51,9 +48,11 @@ module RubyConf
               
       def flashes
         [:warning, :notice, :error].each do |key|
-          haml_tag(:div, flash[key], :class => "flash #{key}") if flash.has?(key)
+          haml_tag(:div, session.delete(key), :class => "flash #{key}") if session.has_key?(key)
         end
       end
+
+      alias flash session
     end
 
     get "/" do
