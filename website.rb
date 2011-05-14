@@ -78,9 +78,10 @@ module RubyConf
         haml :home
       end
     end
-    # page "events" do
-    #   haml :events
-    # end
+
+    page "call-for-papers" do
+      haml :call_for_papers
+    end
 
     def language
       @lang ||= params[:lang] || language_from_http || "en"
