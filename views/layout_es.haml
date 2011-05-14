@@ -13,6 +13,12 @@
     
   %body
     #wrapper
+      %ol#navigation
+        %li= link_to("Inicio",                        "/")
+        %li= link_to("Convocatoria De Presentaciones", "/#{language}/call-for-papers")
+        %li= link_to("Sponsoring",                    "/#{language}/sponsoring")
+        %li= link_to("Registracion",                  "/#{language}/registration")
+        %li= link_to("Acerca",                        "/#{language}/about")
       #header
       #content
         - flashes
