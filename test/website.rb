@@ -49,7 +49,13 @@ scope do
 
   test "en/sponsoring" do
     visit "/en/sponsoring"
-    within("#content") { assert has_content?("Sponsoring") }
+    within("#content") do 
+      assert has_content?("Sponsoring") 
+      assert has_content?("Platinum")
+      assert has_content?("Gold")
+      assert has_content?("Silver")
+      assert has_content?("Bronze")
+    end
   end
 
   test "es#navigation" do
@@ -70,6 +76,12 @@ scope do
   end
   test "es/sponsoring" do
     visit "/es/sponsoring"
-    within("#content") { assert has_content?("Sponsoring") }
+    within("#content") do 
+      assert has_content?("Sponsoring") 
+      assert has_content?("Platinum")
+      assert has_content?("Gold")
+      assert has_content?("Silver")
+      assert has_content?("Bronze")
+    end
   end
 end

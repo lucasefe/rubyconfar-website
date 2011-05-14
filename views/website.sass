@@ -13,11 +13,26 @@ html
       @include round-corners
       background-color: white
       margin: 0 auto
-      padding: 5px 10px 0 10px 
+      padding: 0px 10px 0 10px 
       width: 960px
       
+      ol#navigation
+        margin-top: 0
+        padding-left: 0
+        li
+          display: inline
+          a 
+            color: black
+
       #header
       #content
+        #sponsoring
+          .table_container
+            border: gray 1px solid
+            @include round-corners
+            padding: 5px 10px
+            table
+              width: 98%
       #footer
         font-size: 0.8em
         padding: 5px 0
