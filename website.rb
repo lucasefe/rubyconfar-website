@@ -83,6 +83,10 @@ module RubyConf
       haml :call_for_papers
     end
 
+    page "sponsoring" do
+      haml :sponsoring
+    end
+
     def language
       @lang ||= params[:lang] || language_from_http || "en"
     end

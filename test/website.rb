@@ -47,6 +47,11 @@ scope do
     within("#content") { assert has_content?("Call For Papers") }
   end
 
+  test "en/sponsoring" do
+    visit "/en/sponsoring"
+    within("#content") { assert has_content?("Sponsoring") }
+  end
+
   test "es#navigation" do
     visit "/es"
 
@@ -62,5 +67,9 @@ scope do
   test "es/call-for-papers" do
     visit "/es/call-for-papers"
     within("#content") { assert has_content?("Convocatoria De Presentaciones") }
+  end
+  test "es/sponsoring" do
+    visit "/es/sponsoring"
+    within("#content") { assert has_content?("Sponsoring") }
   end
 end
