@@ -1,40 +1,118 @@
+@import 'reset.sass'
+
 $default_rounded_amount: 5px
-@mixin round-corners($amount: $default_rounded_amount)
+@mixin rounded($amount: $default_rounded_amount)
   border-radius: $amount
   -moz-border-radius: $amount
   -webkit-border-radius: $amount
+  
+  
+@mixin text-shadow($horizontal : 1px, $vertical : 1px, $blur : 0, $color : black)  
+  text-shadow: $horizontal $vertical $blur $color
+  -webkit-text-shadow: $horizontal $vertical $blur $color
+  filter: dropshadow(color=$color, offx=$horizontal, offy=$vertical)
+  
+  
+@mixin center($width : 960px)
+  margin: 
+    left: auto
+    right: auto
+  width: $width
+  
+  
+@mixin box-shadow($h-shadow : 1px, $v-shadow : 0, $blur : 0, $color: black, $inset : false) 
+  $full :  $color $h-shadow $v-shadow $blur
+  @if $inset
+    @if not ($inset == true or $inset == inset)
+      @warn "$inset expected to be true or the inset keyword. Got #{$inset} instead. The box shadow will be inset."
+    $full : $full inset  
+  -moz-box-shadow: $full
+  -webkit-box-shadow: $full
+  box-shadow: $full  
+  
+  
+$yellow: #f7a924
+$red100: #ab3124
+$red120: #6e2821
+$red150: #471915
 
+html, body
+  height: 100%
+  
 html
   body
-    font-family: Arial
-    background-color: #222
-    
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+    background: $red120 url('/images/bkg.jpg') repeat center top
     #wrapper
-      @include round-corners
-      background-color: white
-      margin: 0 auto
-      padding: 0px 10px 0 10px 
-      width: 960px
+      width: 100%
+      min-height: 100%
+      background: url('/images/wrapper_bkg.jpg') no-repeat center 213px
       
-      ol#navigation
-        margin-top: 0
-        padding-left: 0
-        li
-          display: inline
-          a 
-            color: black
-
       #header
-      #content
-        #sponsoring
-          .table_container
-            border: gray 1px solid
-            @include round-corners
-            padding: 5px 10px
-            table
-              width: 98%
-      #footer
-        font-size: 0.8em
-        padding: 5px 0
         text-align: center
+        width: 100%
+        height: 213px
+        background: $red100 url('/images/header.jpg') no-repeat center top
+        
+        #social
+          width: 76px
+          position: absolute 
+          left: 50%
+          margin: 165px 0 0 350px
+       
+      #navigation
+        @include center
+        ol          
+          margin-left: 200px
+          
+          li
+            display: inline
+            text-align: right
+            a
+              text-decoration: none
+              color: $red100
+        
+      #content
+        @include center
+        
+        #under_construction
+          @include center(350px)
+          @include rounded(6px)
+          @include box-shadow(4px, 4px, 0, $red150, inset)
+          border: 1px dashed $red100  
+          margin-top: 100px
+
+
+          h1
+            padding: 35px
+            font-size: 32px
+            text-transform: uppercase
+            letter-spacing: 1px
+            
+            strong
+              display: block
+              font-weight: bold
+        
+        #left_col
+          float: left
+          width: 550px
+          border: 1px solid red
   
+        #right_col
+          float: right
+          width: 380px
+          border: 1px solid black
+            
+              
+            
+      #footer
+        @include center
+        clear: both
+        margin-top: 35px
+        text-align: center
+        font:
+          size: 11px
+          weight: normal
+        padding: 15px
+        letter-spacing: 0.5px
+        

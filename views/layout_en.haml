@@ -13,17 +13,21 @@
     
   %body
     #wrapper
-      %ol#navigation
-        %li= link_to("Home",            "/")
-        %li= link_to("Call for papers", "/#{language}/call-for-papers")
-        %li= link_to("Sponsoring",      "/#{language}/sponsoring")
-        %li= link_to("Registration",    "/#{language}/registration")
-        %li= link_to("About",           "/#{language}/about")
-
       #header
-      #content
+        #social
+          %img{:alt => "2011", :src => "/images/dc.png"}
+      
+      -# #navigation
+      -#   %ol
+      -#     %li= link_to("Home",            "/")
+      -#     %li= link_to("Call for papers", "/#{language}/call-for-papers")
+      -#     %li= link_to("Sponsoring",      "/#{language}/sponsoring")
+      -#     %li= link_to("Registration",    "/#{language}/registration")
+      -#     %li= link_to("About",           "/#{language}/about")
+
+      #content  
         - flashes
         = yield
-        
+      
       #footer
         RubyConf Argentina 2011
