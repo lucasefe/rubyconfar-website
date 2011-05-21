@@ -102,7 +102,7 @@ module RubyConf
       "Twitter: " + link_to("@#{user}", "http://twitter.com/#{user}")
     end
 
-    def twitter(text="sígannos en twitter", user="rubyconfuruguay")
+    def twitter(text="sígannos en twitter", user="RubyConfAR")
       link_to text, "http://twitter.com/#{user}", :class => "twitter"
     end
 

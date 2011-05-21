@@ -79,35 +79,49 @@ html
         
       #content
         @include center
-        
-        #under_construction
-          @include center(350px)
-          @include rounded(6px)
-          @include box-shadow(4px, 4px, 0, $red150, inset)
-          border: 1px dashed $red100  
-          margin-top: 100px
+        padding-top: 40px
 
+        #home
+          #left_col
+            float: left
+            width: 550px
+            border: 1px solid red
+    
+          #right_col
+            float: right
+            width: 380px
+            border: 1px solid black
 
+        #sponsoring
           h1
-            padding: 35px
-            font-size: 32px
-            text-transform: uppercase
-            letter-spacing: 1px
-            
-            strong
-              display: block
-              font-weight: bold
-        
-        #left_col
-          float: left
-          width: 550px
-          border: 1px solid red
-  
-        #right_col
-          float: right
-          width: 380px
-          border: 1px solid black
-            
+            font:
+              size: 24px
+              weight: bold
+              letter-spacing: 1px
+
+          .table_container
+            @include rounded(5px)
+            border: solid 0.5px black
+            padding: 5px
+            margin-top: 10px
+
+            table  
+              width: 98%
+              caption
+                font:
+                  size: 16px
+                  weight: normal
+                thead
+                  tr
+                  th
+                tbody
+                  tr
+                    td
+                tfoot
+                  tr
+                    td
+                      text-align: center
+                    
               
             
       #footer
