@@ -1,0 +1,13 @@
+h1. TODO list:
+
+h2. Small things
+
+* show form errors when submitting an invalid proposal
+* make registration ajax... it sucks this way. 
+* registration counter should be visisble after 100 signups. 
+
+h2. Features (that requires Nico's intervention)
+
+* home page
+* sponsoring
+* ...
