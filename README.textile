@@ -1,0 +1,30 @@
+h1. Rubyconf Argentina Website 2011
+
+h2. Run website locally:
+
+Install gems manually: 
+
+<pre>
+data_mapper
+dm-sqlite-adapter
+dm-mysql-adapter
+haml
+rack
+rack-flash
+sass
+sinatra
+</pre>
+
+Or with rvm like this:
+
+<pre>
+rvm gemset import .gems
+</pre>
+
+h2. Running tests:
+
+<pre>
+cp config/settings.sample.yml config/settings.yml
+gem install cutest capybara
+rake
+</pre>
