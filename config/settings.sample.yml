@@ -1,10 +1,19 @@
-development:
+development: &defaults
+  languages:
+    en: "English"
+    es: "Español"
   database:
     adapter: mysql
     host: localhost
     username: root
     password:
     database: rubyconfar_development
-  languages:
-    en: English
-    es: Español
+
+test:
+  <<: *defaults
+  database:
+    adapter: sqlite3
+    database: db/test.db
+
+production:
+  development
