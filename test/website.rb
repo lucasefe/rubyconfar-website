@@ -67,6 +67,11 @@ scope do
     end
   end
 
+  test "en/about" do
+    visit "/en/about"
+    within("#about") { assert has_content?("About who we are") }
+  end
+
   test "es#navigation" do
     visit "/es"
 
@@ -83,6 +88,12 @@ scope do
     visit "/es/proposals"
     within("#content") { assert has_content?("Convocatoria De Presentaciones") }
   end
+  
+  test "es/about" do
+    visit "/es/about"
+    within("#about") { assert has_content?("Quienes somos") }
+  end
+
   test "es/sponsoring" do
     visit "/es/sponsoring"
     within("#content") do 
