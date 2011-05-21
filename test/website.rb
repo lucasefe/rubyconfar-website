@@ -42,14 +42,23 @@ scope do
     end
   end
 
-  test "en/call-for-papers" do
-    visit "/en/call-for-papers"
-    within("#content") { assert has_content?("Call For Papers") }
+  test "(en) successful submit of proposal" do
+    visit "/en/proposals"
+    within("#proposals") { assert has_content?("Call For Papers") }
+    fill_in "proposal[title]", :with => "fun on conferences"
+    fill_in "proposal[description]", :with => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    fill_in "proposal[speaker_name]", :with => "Aaron Patterson"
+    fill_in "proposal[speaker_email]", :with => "tender@love.com"
+    fill_in "proposal[speaker_bio]", :with => "rails core, ruby core... etc. "
+    click_button "Submit Proposal"
+    assert has_content?("You have successfully sent your proposal!")
+
+    assert_equal Proposal.last.title, "fun on conferences"
   end
 
   test "en/sponsoring" do
     visit "/en/sponsoring"
-    within("#content") do 
+    within("#sponsoring") do 
       assert has_content?("Sponsoring") 
       assert has_content?("Platinum")
       assert has_content?("Gold")
@@ -70,8 +79,8 @@ scope do
     end
   end
 
-  test "es/call-for-papers" do
-    visit "/es/call-for-papers"
+  test "es/proposals" do
+    visit "/es/proposals"
     within("#content") { assert has_content?("Convocatoria De Presentaciones") }
   end
   test "es/sponsoring" do

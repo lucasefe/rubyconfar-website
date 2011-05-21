@@ -1,0 +1,11 @@
+#proposals
+  %h1 Call For Papers
+
+  %form{:action => "/proposals", :method => "POST" }
+    %input{:type => "text",   :name => "proposal[title]", :value => "" }
+    %input{:type => "text",   :name => "proposal[description]", :value => "" }
+    %input{:type => "text",   :name => "proposal[speaker_name]", :value => "" }
+    %input{:type => "text",   :name => "proposal[speaker_email]", :value => "" }
+    %textarea{:name => "proposal[speaker_bio]",   :value => ""}
+
+    %input{:type => "submit", :name => "submit", :value => "Submit Proposal"}

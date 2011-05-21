@@ -79,8 +79,19 @@ module RubyConf
       end
     end
 
-    page "call-for-papers" do
-      haml :call_for_papers
+    page "proposals" do
+      haml :proposals
+    end
+
+    post '/proposals' do
+      @proposal = Proposal.new params[:proposal]
+
+      if @proposal.save
+        flash[:notice] = "You have successfully sent your proposal!"
+        redirect "/"
+      else
+        haml :proposals
+      end
     end
 
     page "sponsoring" do
