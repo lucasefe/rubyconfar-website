@@ -5,3 +5,6 @@ development:
     username: root
     password:
     database: rubyconfar_development
+  languages:
+    en: English
+    es: Español
