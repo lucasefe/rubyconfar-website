@@ -2,7 +2,7 @@ h1. Rubyconf Argentina Website 2011
 
 h2. Run website locally:
 
-Install gems manually: 
+Install gems manually:
 
 <pre>
 data_mapper
