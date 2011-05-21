@@ -1,5 +1,6 @@
 data_mapper
 dm-sqlite-adapter
+dm-mysql-adapter
 haml
 rack
 rack-flash

@@ -3,18 +3,18 @@ require "sinatra/base"
 require "haml"
 require 'sass'
 require 'data_mapper'
+require "ostruct"
 
-unless ENV["RACK_ENV"]
-  ENV["RACK_ENV"] = "development"
-end
-
+ENV["RACK_ENV"] = "development" unless ENV["RACK_ENV"]
 RACK_ENV = ENV["RACK_ENV"]
 
 require File.expand_path(File.join(File.dirname(__FILE__), "lib/models.rb"))
 
 module RubyConf
   class Website < Sinatra::Application
+    
     LANGUAGES = { "en" => "English", "es" => "Español" }
+    CONFIG = OpenStruct.new(YAML.load(ERB.new(File.read("#{Dir.pwd}/config/settings.yml")).result)[RACK_ENV])
 
     def self.check_language!
       condition { LANGUAGES.keys.include?(params[:lang]) }
@@ -37,7 +37,7 @@ module RubyConf
 
     configure do
       DataMapper::Logger.new($stdout, :debug) if RACK_ENV == "development"
-      DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/db/#{RACK_ENV}.db")
+      DataMapper.setup(:default, CONFIG.database)
       DataMapper.auto_upgrade!
     end
 

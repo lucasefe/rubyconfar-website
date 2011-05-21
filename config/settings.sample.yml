@@ -1,0 +1,7 @@
+development:
+  database:
+    adapter: mysql
+    host: localhost
+    username: root
+    password:
+    database: rubyconfar_development
