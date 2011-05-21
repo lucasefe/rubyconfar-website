@@ -24,7 +24,7 @@ scope do
 
     assert has_content?("Welcome")
 
-    fill_in "registration[email]", with: "albert@test.com"
+    fill_in "registration[email]", :with => "albert@test.com"
     click_button "Register me!"
 
     assert has_content?("You have successfully pre-registered!")
