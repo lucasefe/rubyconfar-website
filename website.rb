@@ -13,9 +13,9 @@ require File.expand_path(File.join(File.dirname(__FILE__), "lib/models.rb"))
 module RubyConf
   class Website < Sinatra::Application
     
-    LANGUAGES = { "en" => "English", "es" => "Español" }
     CONFIG = OpenStruct.new(YAML.load(ERB.new(File.read("#{Dir.pwd}/config/settings.yml")).result)[RACK_ENV])
-
+    LANGUAGES = CONFIG.languages
+    
     def self.check_language!
       condition { LANGUAGES.keys.include?(params[:lang]) }
     end
@@ -47,7 +47,7 @@ module RubyConf
       end
 
       def flashes
-        [:warning, :notice, :error].each do |key|
+        [:notice, :warning, :error].each do |key|
           haml_tag(:div, session.delete(key), :class => "flash #{key}") if session.has_key?(key)
         end
       end
