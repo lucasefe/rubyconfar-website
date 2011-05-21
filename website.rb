@@ -98,6 +98,10 @@ module RubyConf
       haml :sponsoring
     end
 
+    page "about" do
+      haml :about
+    end
+
     def language
       @lang ||= params[:lang] || language_from_http || "en"
     end
