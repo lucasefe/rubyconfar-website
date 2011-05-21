@@ -2,10 +2,29 @@
   %h1 Call For Papers
 
   %form{:action => "/proposals", :method => "POST" }
-    %input{:type => "text",   :name => "proposal[title]", :value => "" }
-    %input{:type => "text",   :name => "proposal[description]", :value => "" }
-    %input{:type => "text",   :name => "proposal[speaker_name]", :value => "" }
-    %input{:type => "text",   :name => "proposal[speaker_email]", :value => "" }
-    %textarea{:name => "proposal[speaker_bio]",   :value => ""}
+    .input 
+      %label{:for => "proposal[title]"} Title
+      %input{:type => "text",   :name => "proposal[title]", :value => "" }
+      %span.hint Make it snappy!
+    
+    .input 
+      %label{:for => "proposal[description]"} Description
+      %textarea{:name => "proposal[description]"}
+      %span.hint Used publicly on the schedule if the talk is accepted.
+    
+    .input 
+      %label{:for => "proposal[speaker_name]"} Name
+      %input{:type => "text",   :name => "proposal[speaker_name]", :value => "" }
+      %span.hint Please separate full names with commas.
+
+    .input 
+      %label{:for => "proposal[speaker_email]"} Email
+      %input{:type => "text",   :name => "proposal[speaker_email]", :value => "" }
+      %span.hint Please provide one email address.
+
+    .input 
+      %label{:for => "proposal[speaker_bio]"} Bio
+      %textarea{:name => "proposal[speaker_bio]"}
+      %span.hint Tell us something about you.
 
     %input{:type => "submit", :name => "submit", :value => "Submit Proposal"}

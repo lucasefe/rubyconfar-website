@@ -94,10 +94,44 @@ html
 
         #proposals
           h1
+            @include text-shadow
+            color: $red100
             font:
-              size: 24px
+              size: 28px
               weight: bold
               letter-spacing: 0.5px
+
+          form
+            @include center(700px)
+            .input
+              margin-top: 5px
+              display: block
+
+              label
+                @include text-shadow
+                display: block
+                margin-top: 5px
+                color: $yellow
+                font-size: 22px
+
+              .hint 
+                @include text-shadow
+                color: $red100
+                font-size: 12px
+                clear: both
+
+              textarea, input[type='text']
+                font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+              input
+                width: 100%
+              
+              textarea
+                width: 100%
+                height: 100px
+                padding: 0px
+
+            input[type='submit']
+              margin-top: 10px
 
         #sponsoring
           h1
