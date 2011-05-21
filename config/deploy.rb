@@ -33,3 +33,10 @@ namespace :deploy do
     run "touch #{current_release}/tmp/restart.txt"
   end
 end
+
+namespace :app do
+  task :update_config_file, :roles => :app do
+    run "cp -r #{shared_path}/config/settings.yml #{release_path}/config/settings.yml"
+  end  
+end
+after  "deploy:update_code",  "app:update_config_file"
