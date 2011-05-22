@@ -4,7 +4,7 @@ h2. Small things
 
 * show form errors when submitting an invalid proposal
 * make registration ajax... it sucks this way. 
-* registration counter should be visisble after 100 signups. 
+* registration counter should be visible after 100 signups. 
 * add urban station to sponsors box at the home page. 
 
 h2. Features (that requires Nico's intervention)
