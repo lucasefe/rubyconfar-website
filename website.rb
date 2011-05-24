@@ -99,6 +99,11 @@ module RubyConf
       flash[:notice] = "Please, fill the 'Keep me posted' form. "
       redirect "/"
     end
+    
+    page "speakers" do
+      haml :speakers
+    end
+
     page "sponsoring" do
       haml :sponsoring
     end
