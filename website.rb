@@ -117,8 +117,8 @@ module RubyConf
       "Twitter: " + link_to("@#{user}", "http://twitter.com/#{user}")
     end
 
-    def twitter(text="sígannos en twitter", user="RubyConfAR")
-      link_to text, "http://twitter.com/#{user}", :class => "twitter"
+    def twitter(text="Seguinos en twitter", user="RubyConfAr")
+      link_to text, "http://twitter.com/#{user}", :class => "twitter", :target => 'blank'
     end
 
     def email(text="envíennos un email", address="info@rubyconfuruguay.org")

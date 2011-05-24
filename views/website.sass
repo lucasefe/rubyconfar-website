@@ -69,6 +69,14 @@ html
   body
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif
     background: $red120 url('/images/bkg.jpg') repeat center top
+
+    a
+      color: black
+      text-decoration: none
+      font-weight: bold
+      &:hover
+        text-decoration: underline
+
     #wrapper
       width: 100%
       min-height: 100%
@@ -119,6 +127,9 @@ html
             float: left
             width: 550px
             text-align: center
+            p
+              margin-top: 5px
+              font-size: 20px
             h1
               color: $yellow
               @include text-shadow
@@ -218,6 +229,15 @@ html
                   width: 230px
 
 
+        #about
+          h1
+            @include text-header
+          p
+            margin-top: 10px
+            text-align: center
+            color: black
+          a 
+            color: black
         #proposals
           h1
             @include text-header
