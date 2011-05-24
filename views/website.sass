@@ -6,7 +6,7 @@ $red100: #ab3124
 $red120: #6e2821
 $red115: #82251d
 $red150: #471915
-$gray: #afd8e4
+$light-blue: #afd8e4
 
 $default_rounded_amount: 5px
 @mixin rounded($amount: $default_rounded_amount)
@@ -256,19 +256,33 @@ html
                   background: $yellow url('/images/ok_hover.png') no-repeat center center
 
             #sponsors
-              border: $red100 solid
+              @include box-shadow(2px, 2px, 0, $red115, inset)
+              background: $red100 url('/images/red_texture.png')
+              border: 1px solid $red150
               margin-top: 30px
+              text-align: center
               width: 270px
-              h1
-                background-color: $red100
-                text-align: center
-                padding: 3px 0px
-              #list
-                background-color: $gray
-                text-align: center
-                padding: 10px
-                #urban-station
-                  width: 250px
+              
+              h1                
+                padding: 4px 0 3px
+                font:
+                  size: 11px
+                  family: 'BebasRegular', Arial, sans-serif
+                text-transform: uppercase
+                letter-spacing: 3px
+                
+              ul#list
+                margin: 4px
+                background: $light_blue url('/images/light_blue_texture.jpg') repeat center top
+                padding: 12px 0
+                border: 1px solid $red115
+                
+                li#urban-station
+            
+            #sponsors_shadow
+              background: url('/images/shadow.png') no-repeat center top
+              height: 14px
+              width: 270px
 
 
         #speakers
