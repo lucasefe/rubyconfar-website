@@ -127,6 +127,18 @@ html
       #content
         @include center
         padding-top: 40px
+        
+        .flash
+          @include rounded
+          @include text-header
+          background-color: $red100
+          border: black solid 1px
+          color: $yellow
+          font-size: 20px
+          margin-bottom: 20px
+          padding: 10px
+          text-align: center
+
 
         #home
           #left_col
@@ -256,6 +268,23 @@ html
         #proposals
           h1
             @include text-header
+          
+          #errors
+            margin: 10px auto
+            @include rounded(10px)
+            border: black solid 1px
+            background-color: $red100
+            padding: 10px
+            width: 50%
+            h2
+              @include text-header
+              font-size: 23px
+              color: $yellow
+            ul
+              margin: 10px auto
+              text-align: center
+
+              li.error
 
           form
             @include center(700px)
@@ -268,23 +297,29 @@ html
                 display: block
                 margin-top: 5px
                 color: $yellow
-                font-size: 22px
+                font:
+                  family: 'BebasRegular', Arial, sans-serif
+                  size: 22px
+                letter-spacing: 3px
 
               .hint 
                 @include text-shadow
-                color: $red100
+                color: $brown
                 font-size: 12px
                 clear: both
 
               textarea, input[type='text']
-                font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+                font:
+                  family: Helvetica Neue, Helvetica, Arial, sans-serif
+                  size: 16px
+                padding: 5px
+
               input
                 width: 100%
-              
+
               textarea
                 width: 100%
                 height: 100px
-                padding: 0px
 
             input[type='submit']
               margin-top: 10px
@@ -304,7 +339,11 @@ html
             border: solid 0.5px black
             padding: 5px
             margin-top: 10px
-
+            background-color: $red100
+            border: black solid 1px
+            font-size: 18px
+            margin-bottom: 20px
+            padding: 10px
             table  
               width: 98%
               thead

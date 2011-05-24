@@ -80,6 +80,7 @@ module RubyConf
     end
 
     page "proposals" do
+      @proposal = Proposal.new
       haml :proposals
     end
 
