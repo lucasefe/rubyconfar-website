@@ -13,31 +13,31 @@ $default_rounded_amount: 5px
   border-radius: $amount
   -moz-border-radius: $amount
   -webkit-border-radius: $amount
-  
-  
-@mixin text-shadow($horizontal : 1px, $vertical : 1px, $blur : 0, $color : black)  
+
+
+@mixin text-shadow($horizontal : 1px, $vertical : 1px, $blur : 0, $color : black)
   text-shadow: $horizontal $vertical $blur $color
   -webkit-text-shadow: $horizontal $vertical $blur $color
   filter: dropshadow(color=$color, offx=$horizontal, offy=$vertical)
-  
-  
+
+
 @mixin center($width : 960px)
-  margin: 
+  margin:
     left: auto
     right: auto
   width: $width
-  
-  
-@mixin box-shadow($h-shadow : 1px, $v-shadow : 0, $blur : 0, $color: black, $inset : false) 
+
+
+@mixin box-shadow($h-shadow : 1px, $v-shadow : 0, $blur : 0, $color: black, $inset : false)
   $full :  $color $h-shadow $v-shadow $blur
   @if $inset
     @if not ($inset == true or $inset == inset)
       @warn "$inset expected to be true or the inset keyword. Got #{$inset} instead. The box shadow will be inset."
-    $full : $full inset  
+    $full : $full inset
   -moz-box-shadow: $full
   -webkit-box-shadow: $full
-  box-shadow: $full  
-  
+  box-shadow: $full
+
 @mixin text-header
   @include text-shadow
   text-align: center
@@ -65,14 +65,14 @@ $default_rounded_amount: 5px
 
 html, body
   height: 100%
-  
+
 
 .clear
   clear: both
 
 html
   body
-    
+
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif
     background: $red120 url('/images/bkg.jpg') repeat center top
 
@@ -87,27 +87,27 @@ html
       width: 100%
       min-height: 100%
       background: url('/images/wrapper_bkg.jpg') no-repeat center 213px
-      
+
       #header
         text-align: center
         width: 100%
         height: 213px
-        
+
         &.rubyistas
           background: $red100 url('/images/header_rubyistas.jpg') no-repeat center top
-          
+
         &.rubyconf
           background: $red100 url('/images/header_rubyconf.jpg') no-repeat center top
-        
+
         #social
           width: 76px
-          position: absolute 
+          position: absolute
           left: 50%
           margin: 165px 0 0 350px
-       
+
       #navigation
         @include center
-        ol          
+        ol
           margin-left: 200px
           li
             display: inline
@@ -123,7 +123,7 @@ html
               color: $red100
               &:hover
                 color: $yellow
-        
+
       #content
         @include center
         padding-top: 40px
@@ -170,7 +170,7 @@ html
                 size: 34px
                 family: 'BebasRegular', Arial, sans-serif
               letter-spacing: 0.8px
-            h2  
+            h2
               font:
                 size: 30px
                 family: 'BebasRegular', Arial, sans-serif
@@ -188,7 +188,7 @@ html
                 font:
                   family: 'BebasRegular', Arial, sans-serif
                   size: 22px
-              h2 
+              h2
                 color: white
                 font:
                   size: 30px
@@ -196,7 +196,7 @@ html
                 letter-spacing: 1px
                 @include text-shadow
                 //Nov 7
-                span.dot 
+                span.dot
                   color: $red100
                 //8
               h3
@@ -240,7 +240,7 @@ html
                 float: left
                 &:focus
                   color: $yellow
-                  
+
               input[type='submit']
                 @include box-shadow(-2px, -2px, 0, $brown, inset)
                 background: $yellow url('/images/ok.png') no-repeat center center
@@ -254,7 +254,7 @@ html
                 color: $brown
                 &:hover
                   background: $yellow url('/images/ok_hover.png') no-repeat center center
-            
+
             #sponsors
               border: $red100 solid
               margin-top: 30px
@@ -278,7 +278,7 @@ html
             margin-top: 10px
             text-align: center
             color: black
-          a 
+          a
             color: black
         #proposals
           h1
@@ -300,7 +300,7 @@ html
                   size: 22px
                 letter-spacing: 3px
 
-              .hint 
+              .hint
                 @include text-shadow
                 color: $brown
                 font-size: 12px
@@ -343,10 +343,10 @@ html
             margin-bottom: 20px
             padding: 10px
             table  
+
               width: 98%
               thead
                 tr
-                  border-bottom: black solid 1px
                   font:
                     size: 26px
                     family: 'BebasRegular', Arial, sans-serif
@@ -354,13 +354,17 @@ html
                 th
                   padding:
                     top: 5px
-                    bottom: 10px 
+                    bottom: 10px
                 th:first-child
                   padding-left: 5px
                 th:nth-child(n+2)
                   text-align: center
                   @include text-shadow
                   color: $yellow
+                .price
+                  font-size: 18px
+                  width: 10%
+                  text-align: center
 
               tbody
                 tr
@@ -370,6 +374,11 @@ html
                     padding-left: 5px
                   td:nth-child(n+2)
                     text-align: center
+                tr.separator
+                  th
+                    border-top: 1px solid black
+                    text-align: center
+                    padding: 5px
 
               tfoot
                 tr
@@ -393,5 +402,5 @@ html
         a:hover
           color: black
           text-decoration: underline
-        
-        
+
+
