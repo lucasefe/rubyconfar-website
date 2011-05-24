@@ -37,8 +37,12 @@ $default_rounded_amount: 5px
   font-weight: normal
   font-style: normal
 
-
-
+@font-face
+  font-family: 'MolotRegular'
+  src: url('/fonts/Molot-webfont.eot')
+  src: url('/fonts/Molot-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/Molot-webfont.woff') format('woff'), url('/fonts/Molot-webfont.ttf') format('truetype'), url('/fonts/Molot-webfont.svg#MolotRegular') format('svg')
+  font-weight: normal
+  font-style: normal
   
 $yellow: #f7a924
 $red100: #ab3124
@@ -119,6 +123,39 @@ html
             float: right
             width: 380px
 
+            #where
+              h1
+                @include text-shadow
+                color: $yellow
+                letter-spacing: 1px
+                font:
+                  family: 'BebasRegular', Arial, sans-serif
+                  size: 22px
+              h2 
+                color: white
+                font:
+                  size: 30px
+                  weight: bold
+                letter-spacing: 1px
+                @include text-shadow
+                //Nov 7
+                span.dot 
+                  color: $red100
+                //8
+              h3
+                letter-spacing: 1px
+                color:  $red100
+                font:
+                  family: 'BebasRegular', Arial, sans-serif
+                  size: 22px
+                // Centro Cultural Konex
+              h4
+                letter-spacing: 1px
+                font:
+                  family: 'BebasRegular', Arial, sans-serif
+                  size: 22px
+                color:  $red100
+                // Buenos Aires, Argentina
             #in-the-loop
               .keep
                 font:
@@ -126,7 +163,7 @@ html
                   family: 'BebasRegular', Arial, sans-serif
               .posted
                 font:
-                  family: 'BebasRegular', Arial, sans-serif
+                  family: 'MolotRegular', Arial, sans-serif
                   size: 36px
                   weight: bold
                 letter-spacing: 0.1px
@@ -234,4 +271,12 @@ html
           weight: normal
         padding: 15px
         letter-spacing: 0.5px
+
+        a
+          color: black
+          text-decoration: none
+        a:hover
+          color: black
+          text-decoration: underline
+        
         
