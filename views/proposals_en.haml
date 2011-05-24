@@ -1,12 +1,18 @@
 #proposals
   %h1 Call For Papers
 
+  - unless @proposal.errors.empty?
+    #errors
+      %h2 Ooops, there were some errors!
+      %ul
+        - @proposal.errors.each do |error|
+          %li.error= error
+
   %form{:action => "/proposals", :method => "POST" }
     .input 
-      %label{:for => "proposal[title]"} Title
+      %label{:for => "proposal[title]"} Title of your talk
       %input{:type => "text",   :name => "proposal[title]", :value => "" }
-      %span.hint Make it snappy!
-      
+      %span.hint Make it snappy!      
     
     .input 
       %label{:for => "proposal[description]"} Description
