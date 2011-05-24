@@ -95,6 +95,10 @@ module RubyConf
       end
     end
 
+    page "registration" do
+      flash[:notice] = "Please, fill the 'Keep me posted' form. "
+      redirect "/"
+    end
     page "sponsoring" do
       haml :sponsoring
     end

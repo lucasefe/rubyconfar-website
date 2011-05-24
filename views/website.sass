@@ -128,6 +128,21 @@ html
         @include center
         padding-top: 40px
         
+        #errors
+          margin: 10px auto
+          @include rounded(10px)
+          border: black solid 1px
+          background-color: $red100
+          padding: 10px
+          width: 50%
+          h2
+            @include text-header
+            font-size: 23px
+            color: $yellow
+          ul
+            margin: 10px auto
+            text-align: center
+
         .flash
           @include rounded
           @include text-header
@@ -163,7 +178,7 @@ html
 
           #right_col
             float: right
-            width: 380px
+            width: 290px
 
             #where
               h1
@@ -268,23 +283,6 @@ html
         #proposals
           h1
             @include text-header
-          
-          #errors
-            margin: 10px auto
-            @include rounded(10px)
-            border: black solid 1px
-            background-color: $red100
-            padding: 10px
-            width: 50%
-            h2
-              @include text-header
-              font-size: 23px
-              color: $yellow
-            ul
-              margin: 10px auto
-              text-align: center
-
-              li.error
 
           form
             @include center(700px)
