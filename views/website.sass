@@ -44,7 +44,7 @@ $default_rounded_amount: 5px
   color: $red100
 
   font:
-    size: 28px
+    size: 34px
     weight: bold
     letter-spacing: 0.5px
     family: 'BebasRegular', Arial, sans-serif
@@ -325,25 +325,26 @@ html
         #sponsoring
           h1
             @include text-header
+
           h2
             text-align: center
             font:
-              size: 32px
+              size: 30px
               weight: normal
               family: 'BebasRegular', Arial, sans-serif
 
-          .table_container
+          .container
             @include rounded(5px)
-            border: solid 0.5px black
-            padding: 5px
-            margin-top: 10px
             background-color: $red100
             border: black solid 1px
+            border: solid 0.5px black
             font-size: 18px
             margin-bottom: 20px
-            padding: 10px
+            margin-top: 10px
+            padding: 20px
+            padding: 5px
+            
             table  
-
               width: 98%
               thead
                 tr
@@ -372,19 +373,31 @@ html
                     padding: 5px
                   td:first-child
                     padding-left: 5px
+                    font-weight: bold
+                    font-size: 16px
                   td:nth-child(n+2)
                     text-align: center
                 tr.separator
                   th
+                    @include text-shadow
+                    font:
+                      family: 'BebasRegular', Arial, sans-serif
+                      size: 18px
                     border-top: 1px solid black
-                    text-align: center
+                    color: $yellow
+                    letter-spacing: 3px
+                    margin-top: 5px
                     padding: 5px
+                    text-align: center
+
 
               tfoot
                 tr
                   td
                     text-align: center
-
+          #custom_sponsorships
+            padding: 20px
+            text-align: center
       #footer
         @include center
         clear: both
