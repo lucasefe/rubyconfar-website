@@ -30,6 +30,15 @@ $default_rounded_amount: 5px
   -webkit-box-shadow: $full
   box-shadow: $full  
   
+@font-face
+  font-family: 'BebasRegular'
+  src: url('fonts/BEBAS___-webfont.eot')
+  src: url('fonts/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/BEBAS___-webfont.woff') format('woff'), url('fonts/BEBAS___-webfont.ttf') format('truetype'), url('fonts/BEBAS___-webfont.svg#BebasRegular') format('svg')
+  font-weight: normal
+  font-style: normal
+
+
+
   
 $yellow: #f7a924
 $red100: #ab3124
@@ -69,7 +78,6 @@ html
         @include center
         ol          
           margin-left: 200px
-          
           li
             display: inline
             text-align: right
@@ -85,12 +93,55 @@ html
           #left_col
             float: left
             width: 550px
-            border: 1px solid red
-    
+            text-align: center
+            h1
+              color: $yellow
+              @include text-shadow
+              font:
+                size: 34px
+                family: 'BebasRegular', Arial, sans-serif
+              letter-spacing: 0.8px
+            h2  
+              font:
+                size: 30px
+                family: 'BebasRegular', Arial, sans-serif
+              letter-spacing: 2px
+
           #right_col
             float: right
             width: 380px
-            border: 1px solid black
+
+            #in-the-loop
+              .keep
+                font:
+                  size: 34px
+                  family: 'BebasRegular', Arial, sans-serif
+              .posted
+                font:
+                  family: 'BebasRegular', Arial, sans-serif
+                  size: 36px
+                  weight: bold
+                letter-spacing: 0.1px
+            form#new_registration
+              input[type='text']
+                background-color: $red100
+                border: black solid 1px
+                color: black
+                font-size: 16px
+                height: 27px
+                padding: 2px 4px
+                margin-right: 0
+                width: 190px
+              input[type='submit']
+                margin-left: 0
+                background-color: $yellow
+                border: black solid 1px
+                font:
+                  size: 22px
+                  weight: bold
+                margin-top: 2px
+                height: 32px
+                width: 42px
 
         #proposals
           h1

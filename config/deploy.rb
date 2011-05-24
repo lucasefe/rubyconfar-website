@@ -5,7 +5,7 @@ set :application, "www.rubyconf.com.ar"
 set :scm, :git
 set :git_enable_submodules, 1
 set :repository, "git://github.com/lucasefe/rubyconfar-website.git"
-set :branch, "master"
+set :branch, "production"
 set :ssh_options, { :forward_agent => true }
 set :stage, :production
 set :user, "lucas"

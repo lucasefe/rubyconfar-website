@@ -6,6 +6,7 @@ h2. Small things
 * make registration ajax... it sucks this way. 
 * registration counter should be visible after 100 signups. 
 * add urban station to sponsors box at the home page. 
+* add metatags for SEO. Inkel? Someone?
 
 h2. Features (that requires Nico's intervention)
 
