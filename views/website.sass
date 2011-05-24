@@ -48,6 +48,7 @@ $yellow: #f7a924
 $red100: #ab3124
 $red120: #6e2821
 $red150: #471915
+$gray: #afd8e4
 
 html, body
   height: 100%
@@ -157,6 +158,7 @@ html
                 color:  $red100
                 // Buenos Aires, Argentina
             #in-the-loop
+              margin-top: 40px
               .keep
                 font:
                   size: 34px
@@ -187,11 +189,29 @@ html
                 margin-top: 2px
                 height: 32px
                 width: 42px
+            #sponsors
+
+              border: $red100 solid
+              margin-top: 40px
+              width: 250px
+              h1
+                background-color: $red100
+                text-align: center
+                padding: 3px 0px
+              #list
+                background-color: $gray
+                text-align: center
+                padding: 10px
+                #urban-station
+                  width: 230px
+
 
         #proposals
           h1
             @include text-shadow
+            text-align: center
             color: $red100
+
             font:
               size: 28px
               weight: bold
@@ -258,9 +278,7 @@ html
                   tr
                     td
                       text-align: center
-                    
-              
-            
+
       #footer
         @include center
         clear: both
