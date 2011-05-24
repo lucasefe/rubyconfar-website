@@ -25,11 +25,11 @@
         Buenos Aires, Argentina
 
     #in-the-loop
-      %span.keep KEEP ME
-      %span.posted POSTED!
-
+      %img{:alt => "Keep me posted", :src => "/images/keep_me_posted.png"}
+    
     = partial :registration_form, :skip_translation => true
 
+    .clear
     #sponsors
       %h1 Sponsors
       
@@ -37,4 +37,6 @@
         #urban-station
           = link_to 'http://argentina.enjoyurbanstation.com/es/', nil, {:target => 'blank'} do
             %img{:src => '/images/sponsors/urban-station.png'}
-        
+      
+    
+

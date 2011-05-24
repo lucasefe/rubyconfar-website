@@ -1,8 +1,10 @@
 @import 'reset.sass'
 
 $yellow: #f7a924
+$brown: #744f10
 $red100: #ab3124
 $red120: #6e2821
+$red115: #82251d
 $red150: #471915
 $gray: #afd8e4
 
@@ -61,12 +63,16 @@ $default_rounded_amount: 5px
   font-weight: normal
   font-style: normal
 
-
 html, body
   height: 100%
   
+
+.clear
+  clear: both
+
 html
   body
+    
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif
     background: $red120 url('/images/bkg.jpg') repeat center top
 
@@ -116,7 +122,7 @@ html
               text-decoration: none
               color: $red100
               &:hover
-                color: $red150
+                color: $yellow
         
       #content
         @include center
@@ -181,7 +187,9 @@ html
                 color:  $red100
                 // Buenos Aires, Argentina
             #in-the-loop
-              margin-top: 40px
+              margin: 26px 0 8px 0
+              img
+                margin-left: 1px
               .keep
                 font:
                   size: 34px
@@ -194,29 +202,36 @@ html
                 letter-spacing: 0.1px
             form#new_registration
               input[type='text']
-                background-color: $red100
+                @include box-shadow(2px, 2px, 0, $red115, inset)
+                background: $red100 url('/images/red_texture.png')
                 border: black solid 1px
                 color: black
                 font-size: 16px
-                height: 27px
-                padding: 2px 4px
-                margin-right: 0
-                width: 190px
+                height: 24px
+                padding: 3px 10px 1px
+                width: 206px
+                float: left
+                &:focus
+                  color: $yellow
+                  
               input[type='submit']
-                margin-left: 0
-                background-color: $yellow
-                border: black solid 1px
-                font:
-                  size: 22px
-                  weight: bold
-                margin-top: 2px
-                height: 32px
-                width: 42px
+                @include box-shadow(-2px, -2px, 0, $brown, inset)
+                background: $yellow url('/images/ok.png') no-repeat center center
+                border:
+                  color: black
+                  style: solid
+                  width: 1px 1px 1px 0
+                height: 30px
+                width: 50px
+                float: left
+                color: $brown
+                &:hover
+                  background: $yellow url('/images/ok_hover.png') no-repeat center center
+            
             #sponsors
-
               border: $red100 solid
-              margin-top: 40px
-              width: 250px
+              margin-top: 30px
+              width: 270px
               h1
                 background-color: $red100
                 text-align: center
@@ -226,7 +241,7 @@ html
                 text-align: center
                 padding: 10px
                 #urban-station
-                  width: 230px
+                  width: 250px
 
 
         #about
