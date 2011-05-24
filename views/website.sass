@@ -81,9 +81,17 @@ html
           li
             display: inline
             text-align: right
+            margin-right: 5px
             a
+              @include text-shadow
+              font:
+                size: 20px
+                family: 'BebasRegular', Arial, sans-serif
+              letter-spacing: 0.5px
               text-decoration: none
               color: $red100
+              &:hover
+                color: $red150
         
       #content
         @include center
