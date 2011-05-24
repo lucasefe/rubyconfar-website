@@ -1,5 +1,11 @@
 @import 'reset.sass'
 
+$yellow: #f7a924
+$red100: #ab3124
+$red120: #6e2821
+$red150: #471915
+$gray: #afd8e4
+
 $default_rounded_amount: 5px
 @mixin rounded($amount: $default_rounded_amount)
   border-radius: $amount
@@ -30,6 +36,17 @@ $default_rounded_amount: 5px
   -webkit-box-shadow: $full
   box-shadow: $full  
   
+@mixin text-header
+  @include text-shadow
+  text-align: center
+  color: $red100
+
+  font:
+    size: 28px
+    weight: bold
+    letter-spacing: 0.5px
+    family: 'BebasRegular', Arial, sans-serif
+
 @font-face
   font-family: 'BebasRegular'
   src: url('fonts/BEBAS___-webfont.eot')
@@ -43,12 +60,7 @@ $default_rounded_amount: 5px
   src: url('/fonts/Molot-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/Molot-webfont.woff') format('woff'), url('/fonts/Molot-webfont.ttf') format('truetype'), url('/fonts/Molot-webfont.svg#MolotRegular') format('svg')
   font-weight: normal
   font-style: normal
-  
-$yellow: #f7a924
-$red100: #ab3124
-$red120: #6e2821
-$red150: #471915
-$gray: #afd8e4
+
 
 html, body
   height: 100%
@@ -208,14 +220,7 @@ html
 
         #proposals
           h1
-            @include text-shadow
-            text-align: center
-            color: $red100
-
-            font:
-              size: 28px
-              weight: bold
-              letter-spacing: 0.5px
+            @include text-header
 
           form
             @include center(700px)
@@ -251,10 +256,13 @@ html
 
         #sponsoring
           h1
+            @include text-header
+          h2
+            text-align: center
             font:
-              size: 24px
-              weight: bold
-              letter-spacing: 0.5px
+              size: 32px
+              weight: normal
+              family: 'BebasRegular', Arial, sans-serif
 
           .table_container
             @include rounded(5px)
@@ -264,20 +272,37 @@ html
 
             table  
               width: 98%
-              caption
-                font:
-                  size: 16px
-                  weight: normal
-                thead
-                  tr
-                  th
-                tbody
-                  tr
-                    td
-                tfoot
-                  tr
-                    td
-                      text-align: center
+              thead
+                tr
+                  border-bottom: black solid 1px
+                  font:
+                    size: 26px
+                    family: 'BebasRegular', Arial, sans-serif
+                    letter-spacing: 1.5px
+                th
+                  padding:
+                    top: 5px
+                    bottom: 10px 
+                th:first-child
+                  padding-left: 5px
+                th:nth-child(n+2)
+                  text-align: center
+                  @include text-shadow
+                  color: $yellow
+
+              tbody
+                tr
+                  td
+                    padding: 5px
+                  td:first-child
+                    padding-left: 5px
+                  td:nth-child(n+2)
+                    text-align: center
+
+              tfoot
+                tr
+                  td
+                    text-align: center
 
       #footer
         @include center
