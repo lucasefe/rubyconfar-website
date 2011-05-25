@@ -30,13 +30,7 @@
     = partial :registration_form, :skip_translation => true
 
     .clear
-    #sponsors
-      %h1 Sponsors
-      
-      #list  
-        #urban-station
-          = link_to 'http://argentina.enjoyurbanstation.com/es/', nil, {:target => 'blank'} do
-            %img{:src => '/images/sponsors/urban-station.png'}
+    = partial :sponsors_box, :skip_translation => true
       
     
 
