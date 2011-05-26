@@ -7,6 +7,7 @@ $red120: #6e2821
 $red115: #82251d
 $red150: #471915
 $light-blue: #afd8e4
+$gray: #c0b8b9
 
 $default_rounded_amount: 5px
 @mixin rounded($amount: $default_rounded_amount)
@@ -182,37 +183,21 @@ html
 
             #where
               h1
-                @include text-shadow
-                color: $yellow
-                letter-spacing: 1px
-                font:
-                  family: 'BebasRegular', Arial, sans-serif
-                  size: 22px
+                img
+                  margin-bottom: -2px
               h2
-                color: white
+                color: $gray
                 font:
-                  size: 30px
+                  size: 19px
                   weight: bold
                 letter-spacing: 1px
-                @include text-shadow
-                //Nov 7
+                
                 span.dot
                   color: $red100
-                //8
+                  font-size: 17px
               h3
-                letter-spacing: 1px
-                color:  $red100
-                font:
-                  family: 'BebasRegular', Arial, sans-serif
-                  size: 22px
-                // Centro Cultural Konex
-              h4
-                letter-spacing: 1px
-                font:
-                  family: 'BebasRegular', Arial, sans-serif
-                  size: 22px
-                color:  $red100
-                // Buenos Aires, Argentina
+                img
+                  margin-top: 5px
             #in-the-loop
               margin: 26px 0 8px 0
               img
