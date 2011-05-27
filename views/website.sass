@@ -79,7 +79,6 @@ html, body
 
 html
   body
-
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif
     background: $red120 url('/images/bkg.jpg') repeat center top
 
@@ -93,6 +92,7 @@ html
     #wrapper
       width: 100%
       min-height: 100%
+      margin-bottom: -316px
       background: url('/images/wrapper_bkg.jpg') no-repeat center 213px
 
       #screen
@@ -552,23 +552,27 @@ html
           #custom_sponsorships
             padding: 20px
             text-align: center
+            
+        
       #footer
-        @include center
+        background: url('/images/footer2.jpg') no-repeat center bottom
+        height: 316px
         clear: both
-        margin-top: 35px
         text-align: center
         font:
           size: 11px
           weight: normal
-        padding: 15px
         letter-spacing: 0.5px
+        padding: 100px 0 0 0
 
-        a
-          color: black
-          text-decoration: none
-        a:hover
-          color: black
-          text-decoration: underline
+        #footer_content       
+          margin-top: 270px
+          a
+            color: $yellow
+            @include text-shadow(-1px, -1px, 0, $red115)
+            text-decoration: none
+            &:hover
+              text-decoration: underline
 
 
 .github_icon

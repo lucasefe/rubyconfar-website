@@ -28,8 +28,9 @@
       #content  
         - flashes
         = yield
-      
+
       #footer
-        = partial :footer, :skip_translation => true
+        #footer_content
+          = partial :footer, :skip_translation => true
 
       = erb :analytics
