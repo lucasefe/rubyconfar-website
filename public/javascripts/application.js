@@ -1,20 +1,36 @@
-$(document).ready(function() {
-  set_up_google_map_links();
+// Typewriter
+$(function(){
+  $.fn.typewriter = function(options) {
+    var addChar = function(element, text, latency) {
+      setTimeout()
+    }
+
+    var self = this;
+    var defaults = {
+      latency: 20
+    }
+
+    options = jQuery.extend(defaults , options);
+    return this.each(function(){
+      var container = $(this);
+      var text = container.html().split("");
+      container.html("");
+
+      var run = function() {
+        var c = text.shift();
+        if (c != null) { 
+          container.html(container.html() + c);
+          setTimeout(run, options.latency) 
+        };
+      }
+      run();
+    });
+  };
 });
 
-function set_up_google_map_links() {
-  $('a.link-to-google-map').click( function(element) {
-    show_map_on_the_iframe(this);
-    return false;
-  });
-}
 
-function show_map_on_the_iframe(link) {
-  $('div.map iframe').attr('src', $(link).attr('href') + '&output=embed');
-  if(window.location.hash != '') {
-    window.location = window.location.href.replace(window.location.hash, '#map');
-  } else {
-    window.location = window.location.href + '#map';
-  }
-}
+$(function(){
+  $('#screen #display').typewriter()
+});
 
+// App
