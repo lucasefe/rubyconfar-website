@@ -14,7 +14,7 @@ $(function(){
     return this.each(function(){
       var container = $(this);
       var text = container.html().split("");
-      container.html("");
+      container.empty();
 
       var run = function() {
         var c = text.shift();
@@ -31,6 +31,9 @@ $(function(){
 
 $(function(){
   $('#screen #display').typewriter()
+  $('#fist').animate({
+    backgroundPosition: "(0px 0px)"
+  }, 1000)
 });
 
 // App
