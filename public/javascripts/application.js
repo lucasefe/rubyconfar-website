@@ -31,7 +31,7 @@ $(function(){
 });
 
 // Default easing
-jQuery.easing.def = "easeOutElastic";
+jQuery.easing.def = "easeOutExpo";
 
 $(document).ready(function() {
   $('#screen #display').typewriter({ after: moveFist });
