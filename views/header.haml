@@ -1,0 +1,14 @@
+#header.rubyconf
+  %a{:href => "/#{language}", :title => "RubyConf Argentina 2011 Homepage"}
+    #logo_linking_home
+  #languages
+    - LANGUAGES.each do |lang, title|
+      %a{:href => "/#{lang}", :title => title}
+        %div{:id => lang, :class => (language == lang ? "current" : "")}
+    
+  #social
+    %a{:href => "https://github.com/lucasefe/rubyconfar-website", :target => "_blank", :title => "Source Code"}
+      .github_icon
+    %a{:href => "http://www.twitter.com/RubyConfAr", :target => "_blank", :title => "Follow us on Twitter"}
+      .twitter_icon
+    %img{:alt => "2011", :src => "/images/dc.png"}
