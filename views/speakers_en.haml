@@ -1,2 +1,76 @@
 #speakers
-  %h1 Speakers
+  %h1.title Speakers
+  %h2.headline
+    Many more will be annouced in the next weeks. 
+  %p.desc
+    Follow us on twitter to keep yourself up to date!
+
+  %ul
+    %li
+      .summary
+        .picture
+          %img{:src => "/images/speakers/tenderlove.png"}
+
+        %ul.links
+          %li=link_to 'website', "http://tenderlovemaking.com/"
+          %li=twitter("@tenderlove", "tenderlove")
+          %li=link_to 'rails core', "http://rubyonrails.org/core"
+          %li=link_to 'ruby committer', "http://www.ruby-lang.org/"
+
+      .description
+        %h1
+          Aaron Patterson
+          %span.from from AT&T
+        %p
+          When he isn’t ruining people’s lives by writing software like phuby, enterprise, and neversaydie, Aaron can be found writing slightly more useful software like nokogiri. To keep up his Gameboy Lifestyle, Aaron spends his weekdays writing high quality software for ATTi. Be sure to catch him on Karaoke night, where you can watch him sing his favorite smooth rock hits of the 70’s and early 80’s.
+
+    %hr        
+
+    %li
+      .summary
+        .picture
+          %img{:src => "/images/speakers/chacon.jpg"}
+        %ul.links
+          %li= twitter("@chacon", "chacon")
+          %li=link_to 'website', "http://scottchacon.com/"
+          %li=link_to 'git evangelist', "http://git-scm.com/"
+      .description
+        %h1 
+          Scott Chacon
+          %span.from from GitHub
+
+        %p
+          "Web Application Developer that often does everything from design, layout, coding, usability testing, automated testing through server administration. Been a big MySQL geek for some time now, and though much of my experience has been PHP, right now I just love Ruby on Rails"
+          %span.quoted 
+            from his 
+            = link_to "LinkedIn profile", "http://www.linkedin.com/in/schacon"
+    %hr
+
+    %li
+      .summary
+        .picture
+          %img{:src => "/images/speakers/luislavena.png"}
+        %ul.links
+          %li=twitter("@luislavena", "luislavena")
+          %li=link_to 'website', "http://blog.mmediasys.com//"
+          %li= link_to 'ruby installer', 'http://rubyinstaller.org/'
+
+      .description
+        %h1 
+          Luis Lavena
+          %span.from from Area17
+
+        %p During the day, Luis Lavena is technical director at AREA 17, working on projects across the globe.
+
+        %p At night, he is the lead developer of RubyInstaller for Windows, a successor of once known One-Click Installer project that aims to reduce differences for Ruby users running Windows.
+
+        %p He also created other projects that helped Ruby developers in other platforms (not just Windows) and oversees other libraries so they are cross-platform friendly, looking for compliance beyond “works on my machine”
+
+        %p As his twitter account states, he can be defined as *nix developers worst nightmare…
+
+        %p He is also a RubyGems contributor and recently become Ruby-Core committer as one of the Ruby’s MinGW maintainers.
+
+
+  
+
+
