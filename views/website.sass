@@ -9,6 +9,7 @@ $red150: #471915
 $light-blue: #afd8e4
 $gray: #c0b8b9
 
+
 $default_rounded_amount: 5px
 
 @mixin gradient($from : black, $to : white)
@@ -323,44 +324,51 @@ html
             color: $red100
             text-align: center
 
-          ul
-            margin-bottom: 20px
+          ul#list_of_speakers
+            margin: 0 auto 20px
+            width: 800px
+            
             hr
               clear: both
               border: 0 none
               height: 0
 
             li
-              margin-top: 20px
+              margin-top: 50px
+              
               .summary
                 float: left
                 width: 140px
+                text-align: center
+                
                 .picture
-                  @include rounded(3px)
-                  @include gradient($red100, $red120)
-                  background-color: $red120
-                  border: solid 1px $red120
-                  padding: 5px 5px 2px 5px
+                  background: url('/images/shadow_picture.png') no-repeat center bottom
+                  padding-bottom: 10px
+                  
+                  img
+                    @include rounded(3px)
+                    @include gradient($red100, $red120)
+                    border: solid 1px $red120
+                    padding: 3px
 
-                .links
+                ul.links
                   text-align: right
                   margin:
-                    top: 5px
-                    left: 5px
+                    top: -2px
+                    right: 6px
 
                   li
                     margin: 0
-                    font:
-                      size: 12px
-                      family:  Arial, sans-serif
+                    font-size: 10px
+              
                     a
                       @include text-shadow
-                      color: $light_blue
+                      color: $gray
                       font-weight: normal
 
               .description
                 margin-left: 180px
-                width: 600px
+                //width: 600px
                 h1
                   @include text-shadow
                   color: $yellow
@@ -370,7 +378,7 @@ html
 
                   .from
                     display: block
-                    color: $light-blue
+                    color: $gray
                     font:
                       size: 15px
                       family: Arial
@@ -380,6 +388,7 @@ html
                     family: Arial
                 p
                   margin-top: 10px
+                  color: black
                   span.quoted
                     color: $light-blue
                     font:
