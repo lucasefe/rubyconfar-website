@@ -110,6 +110,12 @@ html
             border: 1px solid $red150
             background: url('/images/flags_sprite.png') no-repeat right -10px
             margin-bottom: 5px
+            &:hover
+              border-color: $yellow
+            &:active  
+              @include box-shadow(0, 0, 2px, black)
+              border-color: black
+              
             &.current
               background-position: left -10px
           
@@ -130,8 +136,11 @@ html
           width: 76px
           position: absolute
           left: 50%
-          margin: 127px 0 0 350px
+          margin: 82px 0 0 350px
           
+          .github_icon
+            margin: 0 auto 14px
+            
           .twitter_icon
             margin: 0 auto 8px
             
@@ -525,6 +534,13 @@ html
           text-decoration: underline
 
 
+.github_icon
+  width: 34px
+  height: 28px
+  background: url('/images/github_icon.png') no-repeat center bottom
+  &:hover
+    background-position: center top
+    
 .twitter_icon
   width: 27px
   height: 20px
