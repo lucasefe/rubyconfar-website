@@ -14,12 +14,16 @@
   %body
     #wrapper
       #header.rubyconf
+        %a{:href => "/es", :title => "RubyConf Argentina 2011 Homepage"}
+          #logo_linking_home
         #languages
           #esp.current
           %a{:href => "/en", :title => "English"}
             #eng
 
         #social
+          %a{:href => "https://github.com/lucasefe/rubyconfar-website", :target => "_blank", :title => "Source Code"}
+            .github_icon
           %a{:href => "http://www.twitter.com/RubyConfAr", :target => "_blank", :title => "Seguinos en Twitter"}
             .twitter_icon
           %img{:alt => "2011", :src => "/images/dc.png"}
@@ -39,8 +43,11 @@
       #footer
         = link_to 'Ruby Argentina', "http://ruby.com.ar", :target => 'blank'
         \- 
+        = twitter
+        \-
         = link_to 'Source Code', "https://github.com/lucasefe/rubyconfar-website", :target => 'blank'
         \- 
-        = twitter
+        = link_to 'Design by Sz Studios', "http://www.SzStudios.com.ar", :target => 'blank'
+
       = erb :analytics
       
