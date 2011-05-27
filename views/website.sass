@@ -93,6 +93,27 @@ html
         text-align: center
         width: 100%
         height: 213px
+        
+        #languages
+          position: absolute
+          right: 50%
+          margin: 150px 395px 0 0
+          
+          #esp
+            width: 60px
+            height: 10px
+            border: 1px solid $red150
+            background: url('/images/flags_sprite.png') no-repeat right -10px
+            margin-bottom: 5px
+            &.current
+              background-position: left -10px
+          
+          #eng
+            @extend #esp
+            background-position: right top
+            &.current
+              background-position: left top
+            
 
         &.rubyistas
           background: $red100 url('/images/header_rubyistas.jpg') no-repeat center top
@@ -104,7 +125,11 @@ html
           width: 76px
           position: absolute
           left: 50%
-          margin: 165px 0 0 350px
+          margin: 127px 0 0 350px
+          
+          .twitter_icon
+            margin: 0 auto 8px
+            
 
       #navigation
         @include center
@@ -419,3 +444,10 @@ html
           text-decoration: underline
 
 
+.twitter_icon
+  width: 27px
+  height: 20px
+  background: url('/images/twitter_icon.png') no-repeat center top
+  &:hover
+    background-position: center -27px
+  
