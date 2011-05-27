@@ -20,10 +20,9 @@ Capybara.app = RubyConf::Website
 
 scope do
   test do
-    visit "/"
+    visit "/en"
 
-    assert has_content?("Welcome")
-
+    assert has_content?("The largest event in the Ruby Community in the Spanish speaking world.")
     fill_in "registration[email]", :with => "albert@test.com"
     click_button "OK"
 
@@ -37,7 +36,7 @@ scope do
       assert has_content?("Home")
       assert has_content?("Call for papers")
       assert has_content?("Sponsoring")
-      assert has_content?("Registration")
+      assert has_content?("Speakers")
       assert has_content?("About")
     end
   end
@@ -77,16 +76,16 @@ scope do
 
     within "#navigation" do
       assert has_content?("Inicio")
-      assert has_content?("Convocatoria De Presentaciones")
-      assert has_content?("Sponsoring")
-      assert has_content?("Registracion")
+      assert has_content?("Convocatoria")
+      assert has_content?("Sponsoreo")
+      assert has_content?("Oradores")
       assert has_content?("Acerca")
     end
   end
 
   test "es/proposals" do
     visit "/es/proposals"
-    within("#content") { assert has_content?("Convocatoria De Presentaciones") }
+    within("#content") { assert has_content?("Convocatoria") }
   end
   
   test "es/about" do
@@ -97,7 +96,7 @@ scope do
   test "es/sponsoring" do
     visit "/es/sponsoring"
     within("#content") do 
-      assert has_content?("Sponsoring") 
+      assert has_content?("Sponsoreo") 
       assert has_content?("Platinum")
       assert has_content?("Gold")
       assert has_content?("Silver")

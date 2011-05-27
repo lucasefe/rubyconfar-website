@@ -10,6 +10,13 @@ $light-blue: #afd8e4
 $gray: #c0b8b9
 
 $default_rounded_amount: 5px
+
+@mixin gradient($from : black, $to : white)
+  background-color: $from
+  background-image: -moz-linear-gradient(top, $from, $to)
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, $from),color-stop(1, $to))
+  background-image: linear-gradient(top, $from, $to)
+  
 @mixin rounded($amount: $default_rounded_amount)
   border-radius: $amount
   -moz-border-radius: $amount
@@ -21,13 +28,11 @@ $default_rounded_amount: 5px
   -webkit-text-shadow: $horizontal $vertical $blur $color
   filter: dropshadow(color=$color, offx=$horizontal, offy=$vertical)
 
-
 @mixin center($width : 960px)
   margin:
     left: auto
     right: auto
   width: $width
-
 
 @mixin box-shadow($h-shadow : 1px, $v-shadow : 0, $blur : 0, $color: black, $inset : false)
   $full :  $color $h-shadow $v-shadow $blur
@@ -296,8 +301,84 @@ html
 
 
         #speakers
-          h1
+          h1.title
             @include text-header
+            color: $yellow
+          h2.headline
+            @include text-header
+            font-size: 28px
+            color: $red100
+          p.desc
+            @include text-shadow
+            color: $red100
+            text-align: center
+
+          ul
+            margin-bottom: 20px
+            hr
+              clear: both
+              border: 0 none
+              height: 0
+
+            li
+              margin-top: 20px
+              .summary
+                float: left
+                width: 140px
+                .picture
+                  @include rounded(3px)
+                  @include gradient($red100, $red120)
+                  background-color: $red120
+                  border: solid 1px $red120
+                  padding: 5px 5px 2px 5px
+
+                .links
+                  text-align: right
+                  margin:
+                    top: 5px
+                    left: 5px
+
+                  li
+                    margin: 0
+                    font:
+                      size: 12px
+                      family:  Arial, sans-serif
+                    a
+                      @include text-shadow
+                      color: $light_blue
+                      font-weight: normal
+
+              .description
+                margin-left: 180px
+                width: 600px
+                h1
+                  @include text-shadow
+                  color: $yellow
+                  font:
+                    family: 'BebasRegular', Arial, sans-serif
+                    size: 24px
+
+                  .from
+                    display: block
+                    color: $light-blue
+                    font:
+                      size: 15px
+                      family: Arial
+                h2
+                  font:
+                    size: 12px
+                    family: Arial
+                p
+                  margin-top: 10px
+                  span.quoted
+                    color: $light-blue
+                    font:
+                      size: 13px
+                      family: Arial
+
+                a
+                  color: $light-blue
+
         #about
           h1
             @include text-header
