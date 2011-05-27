@@ -13,20 +13,7 @@
     
   %body
     #wrapper
-      #header.rubyconf
-        %a{:href => "/en", :title => "RubyConf Argentina 2011 Homepage"}
-          #logo_linking_home
-        #languages
-          %a{:href => "/es", :title => "Espa&ntilde;ol"}
-            #esp
-          #eng.current
-          
-        #social
-          %a{:href => "https://github.com/lucasefe/rubyconfar-website", :target => "_blank", :title => "Source Code"}
-            .github_icon
-          %a{:href => "http://www.twitter.com/RubyConfAr", :target => "_blank", :title => "Follow us on Twitter"}
-            .twitter_icon
-          %img{:alt => "2011", :src => "/images/dc.png"}
+      = partial :header, :skip_translation => true
       
       #navigation
         %ol
@@ -41,13 +28,6 @@
         = yield
       
       #footer
-        = link_to 'Ruby Argentina', "http://ruby.com.ar", :target => 'blank'
-        \- 
-        = twitter
-        \-
-        = link_to 'Source Code', "https://github.com/lucasefe/rubyconfar-website", :target => 'blank'
-        \- 
-        = link_to 'Design by Sz Studios', "http://www.SzStudios.com.ar", :target => 'blank'
-        
+        = partial :footer, :skip_translation => true
 
       = erb :analytics
