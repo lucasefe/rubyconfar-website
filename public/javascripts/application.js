@@ -29,11 +29,21 @@ $(function(){
 });
 
 
-$(function(){
-  $('#screen #display').typewriter()
+jQuery.easing.def = "easeOutElastic";
+function FistMove() {
   $('#fist').animate({
     backgroundPosition: "(right 0)"
   }, 2000)
+};
+
+function DoWrite(){
+  $('#screen #display').typewriter()
+};
+
+
+$(document).ready(function() {
+  setTimeout(FistMove, 1000); 
+  setTimeout(DoWrite, 1500); 
 });
 
 // App
