@@ -14,7 +14,14 @@
   %body
     #wrapper
       #header.rubyconf
+        #languages
+          #esp.current
+          %a{:href => "/en", :title => "English"}
+            #eng
+
         #social
+          %a{:href => "http://www.twitter.com/RubyConfAr", :target => "_blank", :title => "Seguinos en Twitter"}
+            .twitter_icon
           %img{:alt => "2011", :src => "/images/dc.png"}
       
       #navigation
@@ -30,6 +37,10 @@
         = yield
       
       #footer
-        RubyConf Argentina 2011
+        = link_to 'Ruby Argentina', "http://ruby.com.ar", :target => 'blank'
+        \- 
+        = link_to 'Source Code', "https://github.com/lucasefe/rubyconfar-website", :target => 'blank'
+        \- 
+        = twitter
       = erb :analytics
       
