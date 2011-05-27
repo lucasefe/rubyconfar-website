@@ -32,8 +32,8 @@ $(function(){
 $(function(){
   $('#screen #display').typewriter()
   $('#fist').animate({
-    backgroundPosition: "(0px 0px)"
-  }, 1000)
+    backgroundPosition: "(right 0)"
+  }, 2000)
 });
 
 // App
