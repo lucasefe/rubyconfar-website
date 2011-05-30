@@ -4,6 +4,7 @@ require "haml"
 require 'sass'
 require 'data_mapper'
 require "ostruct"
+require "haml-coderay"
 
 ENV["RACK_ENV"] = "development" unless ENV["RACK_ENV"]
 RACK_ENV = ENV["RACK_ENV"]

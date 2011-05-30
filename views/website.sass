@@ -73,6 +73,17 @@ $default_rounded_amount: 5px
 html, body
   height: 100%
 
+.CodeRay
+  @include center(620px)
+  @include rounded(5px)
+  background-color: #f8f8f8
+  border: 1px solid silver
+  font-family: 'Courier New', 'Terminal', monospace
+  color: #000
+  padding: 10px
+  pre
+    margin: 0px
+
 
 .clear
   clear: both
@@ -96,14 +107,9 @@ html
       background: url('/images/wrapper_bkg.jpg') no-repeat center 213px
 
       #screen
+        margin-top: 50px
         #display
-          @include rounded(5px)
-          font:
-            family: "Courier New"
-            size: 18px
-          color: white
-          background-color: black
-          padding: 5px 10px 5px 10px
+
       #header
         text-align: center
         width: 100%

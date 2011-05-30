@@ -1,11 +1,4 @@
 // Typewriter
-
-function moveFist() {
-  $('#fist').animate({
-    backgroundPosition: "(right 0)"
-  }, 2000)
-};
-
 $(function(){
   $.fn.typewriter = function(options) {
     var defaults = { latency: 20 }
@@ -13,7 +6,7 @@ $(function(){
     options = jQuery.extend(defaults , options);
     return this.each(function(){
       var container = $(this);
-      var text = container.html().split("");
+      var text = container.html().split("\n");
       container.empty();
 
       var typeNextChar = function() {
@@ -34,7 +27,10 @@ $(function(){
 jQuery.easing.def = "easeOutExpo";
 
 $(document).ready(function() {
-  $('#screen #display').typewriter({ after: moveFist });
+  //$('#screen #display').typewriter();
+  $('#fist').animate({
+    backgroundPosition: "(right 0)"
+  }, 3000)
 });
 
 // App

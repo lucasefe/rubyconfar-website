@@ -1,0 +1,9 @@
+#screen
+  #display 
+    :coderay
+      #!ruby
+      RubyConf.on(:argentina) do |event|
+        event.launch_at Time.parse("2011-11-8")
+        event.ends_at Time.parse("2011-11-9")
+        event.venue "Konex"
+      end.schedule!
