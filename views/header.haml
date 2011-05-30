@@ -5,8 +5,9 @@
     #fist
   #languages
     - LANGUAGES.each do |lang, title|
-      %a{:href => "/#{lang}", :title => title}
+      = link_to(current_path(:lang => lang), nil, {:title => title}) do
         %div{:id => lang, :class => (language == lang ? "current" : "")}
+        
     
   #social
     %a{:href => "https://github.com/lucasefe/rubyconfar-website", :target => "_blank", :title => "Source Code"}

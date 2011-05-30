@@ -117,6 +117,10 @@ module RubyConf
       @lang ||= params[:lang] || language_from_http || "en"
     end
 
+    def current_path(options = {})
+      request.url.gsub(/(#{language})/, options.fetch(:lang, language))
+    end
+
     def language_from_http
       env["HTTP_ACCEPT_LANGUAGE"].to_s.split(",").each do |lang|
         %w(en es).each {|code| return code if lang =~ /^#{code}/ }
