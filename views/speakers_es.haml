@@ -5,8 +5,8 @@
   %p.desc
     Seguinos en Twitter para mantenerte al d&iacute;a!
 
-  %ul
-    %li
+  %ul#list_of_speakers
+    %li.speaker
       .summary
         .picture
           %img{:src => "/images/speakers/tenderlove.png"}
@@ -18,15 +18,16 @@
           %li=link_to 'ruby committer', "http://www.ruby-lang.org/"
 
       .description
-        %h1
-          Aaron Patterson
-          %span.from de ATTI
+        %h1 Aaron Patterson
+        %h2
+          from
+          %span ATTi
         %p
           When he isn’t ruining people’s lives by writing software like phuby, enterprise, and neversaydie, Aaron can be found writing slightly more useful software like nokogiri. To keep up his Gameboy Lifestyle, Aaron spends his weekdays writing high quality software for ATTi. Be sure to catch him on Karaoke night, where you can watch him sing his favorite smooth rock hits of the 70’s and early 80’s.
 
-    %hr        
+        %hr        
 
-    %li
+    %li.speaker
       .summary
         .picture
           %img{:src => "/images/speakers/chacon.jpg"}
@@ -37,14 +38,16 @@
       .description
         %h1 
           Scott Chacon
-          %span.from de GitHub
+        %h2
+          from 
+          %span GitHub
 
         %p
           "Web Application Developer that often does everything from design, layout, coding, usability testing, automated testing through server administration. Been a big MySQL geek for some time now, and though much of my experience has been PHP, right now I just love Ruby on Rails"
-        
-    %hr
+        %hr
 
-    %li
+
+    %li.speaker
       .summary
         .picture
           %img{:src => "/images/speakers/luislavena.png"}
@@ -56,7 +59,9 @@
       .description
         %h1 
           Luis Lavena
-          %span.from de Area17
+        %h2
+          from 
+          %span Area17
 
         %p During the day, Luis Lavena is technical director at AREA 17, working on projects across the globe.
 
@@ -67,6 +72,7 @@
         %p As his twitter account states, he can be defined as *nix developers worst nightmare…
 
         %p He is also a RubyGems contributor and recently become Ruby-Core committer as one of the Ruby’s MinGW maintainers.
+        %hr
 
 
   

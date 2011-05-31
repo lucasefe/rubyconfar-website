@@ -122,7 +122,7 @@ module RubyConf
     end
 
     def current_path(options = {})
-      request.url.gsub(/(#{language})./, options.fetch(:lang, language))
+      request.url.gsub(/(#{language})/, options.fetch(:lang, language))
     end
 
     def language_from_http
