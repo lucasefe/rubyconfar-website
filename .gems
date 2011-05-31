@@ -7,3 +7,4 @@ rack
 rack-flash
 sass
 sinatra
+sinatra-cache

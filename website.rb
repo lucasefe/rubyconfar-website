@@ -1,5 +1,6 @@
 # encoding: utf-8
 require "sinatra/base"
+require 'sinatra/cache'
 require "haml"
 require 'sass'
 require 'data_mapper'
@@ -31,11 +32,14 @@ module RubyConf
       get "/:lang#{path}", &block
     end
 
+    set :root, Dir.pwd
     set :public, File.expand_path("../public", __FILE__)
     set :haml,   :format => :html5
     set :logging, :true
     enable :sessions
-
+    register(Sinatra::Cache)
+    set :cache_enabled, true
+    
     configure do
       DataMapper::Logger.new($stdout, :debug) if RACK_ENV == "development"
       DataMapper.setup(:default, CONFIG.database)
@@ -118,7 +122,7 @@ module RubyConf
     end
 
     def current_path(options = {})
-      request.url.gsub(/(#{language})/, options.fetch(:lang, language))
+      request.url.gsub(/(#{language})./, options.fetch(:lang, language))
     end
 
     def language_from_http

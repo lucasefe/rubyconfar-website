@@ -1,4 +1,7 @@
 /.sass-cache
 *.db
+/public/es
+/public/en
+/public/*.html
 capybara*.html
 config/settings.yml
