@@ -23,10 +23,9 @@
       %h3
         %img{:alt => "Centro Cultural Konex | Buenos Aires, Argentina", :src => "/images/cckonex_bsas_argentina.png"}
 
-    #in-the-loop
-      %img{:alt => "Keep me posted", :src => "/images/keep_me_posted.png"}
-
-    = partial :registration_form, :skip_translation => true
+    %a{:href => "#", :title => "Register Now" }
+      .register_btn#en
+    
 
     .clear
     = partial :sponsors_box, :skip_translation => true
