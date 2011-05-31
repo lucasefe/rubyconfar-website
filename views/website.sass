@@ -1,6 +1,7 @@
 @import 'reset.sass'
 
 $yellow: #f7a924
+$yellow_mustard: #A97417
 $brown: #744f10
 $red100: #ab3124
 $red120: #6e2821
@@ -367,13 +368,16 @@ html
               border: 0 none
               height: 0
 
-            li
+            li.speaker
+              background: url('/images/speakers_bkg.jpg') no-repeat left top
+              border: 1px solid $red150
               margin-top: 50px
+              padding: 25px
               
               .summary
                 float: left
-                width: 140px
                 text-align: center
+                width: 140px
                 
                 .picture
                   background: url('/images/shadow_picture.png') no-repeat center bottom
@@ -392,36 +396,50 @@ html
                     right: 6px
 
                   li
-                    margin: 0
                     font-size: 10px
+                    letter-spacing: 0.5px
+                    padding: 2px 0 4px
+                    border-bottom: dashed 1px $red115
               
                     a
                       @include text-shadow
-                      color: $gray
+                      color: $yellow
                       font-weight: normal
 
               .description
-                margin-left: 180px
+                margin-left: 160px
                 h1
                   @include text-shadow
                   color: $yellow
                   font:
                     family: 'BebasRegular', Arial, sans-serif
-                    size: 24px
+                    size: 22px
+                  letter-spacing: 1px
+                  
 
-                  .from
-                    display: block
-                    color: $gray
-                    font:
-                      size: 15px
-                      family: Arial
                 h2
-                  font:
-                    size: 12px
-                    family: Arial
+                  margin-top: 5px
+                  color: $yellow_mustard
+                  font-weight: normal
+                  font-size: 13px
+                  span
+                    color: black
+                    font:
+                      size: 12px
+                      weight: bold
+                    @include gradient($yellow, $yellow_mustard)
+                    @include rounded(3px)
+                    @include text-shadow(1px, 1px, 0, $yellow)
+                    border: solid 1px $red120
+                    padding: 0 4px
+
                 p
                   margin-top: 10px
-                  color: black
+                  color: $gray
+                  font:
+                    size: 13px
+                  line-height: 20px
+                  
                   span.quoted
                     color: $light-blue
                     font:
