@@ -1,5 +1,6 @@
 /.sass-cache
 *.db
+/public/website.css
 /public/es
 /public/en
 /public/*.html
