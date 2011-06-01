@@ -95,9 +95,8 @@ html
     background: $red120 url('/images/bkg.jpg') repeat center top
 
     a
-      color: black
+      color: $yellow
       text-decoration: none
-      font-weight: bold
       &:hover
         text-decoration: underline
 
@@ -233,24 +232,38 @@ html
 
         #home
           #left_col
+            background: url('/images/speakers_bkg.jpg') no-repeat -8px top
+            border: 1px solid $red150
             float: left
-            width: 550px
-            text-align: center
-            p
-              margin-top: 5px
-              font-size: 20px
+            width: 560px
+            padding: 25px
+
             h1
-              color: $yellow
+              color: $gray
               @include text-shadow
               font:
-                size: 34px
-                family: 'BebasRegular', Arial, sans-serif
-              letter-spacing: 0.8px
+                size: 15px
+              
             h2
+              color: $yellow
               font:
                 size: 30px
                 family: 'BebasRegular', Arial, sans-serif
               letter-spacing: 2px
+              
+            p
+              color: $yellow_mustard
+              margin-top: 10px
+              font-size: 20px
+              
+              small
+                margin-top: 95px
+                display: block
+                font-size: 13px
+                
+                span.twitter_icon
+                  display: inline-table
+
 
           #right_col
             float: right
