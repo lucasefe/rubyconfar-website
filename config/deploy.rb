@@ -40,3 +40,4 @@ namespace :app do
   end  
 end
 after  "deploy:update_code",  "app:update_config_file"
+after  "deploy:symlink",      "deploy:cleanup"
