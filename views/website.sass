@@ -56,6 +56,20 @@ $default_rounded_amount: 5px
     weight: bold   
     family: 'BebasRegular', Arial, sans-serif
 
+
+@mixin common-input
+  @include box-shadow(2px, 2px, 0, $red115, inset)
+  background: $red100 url('/images/red_texture.png')
+  border: black solid 1px
+  color: black
+  font-size: 16px
+  height: 24px
+  padding: 3px 10px 1px
+  &:focus
+    color: $yellow
+    border-color: $yellow
+
+
 @font-face
   font-family: 'BebasRegular'
   src: url('fonts/BEBAS___-webfont.eot')
@@ -69,6 +83,7 @@ $default_rounded_amount: 5px
   src: url('/fonts/Molot-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/Molot-webfont.woff') format('woff'), url('/fonts/Molot-webfont.ttf') format('truetype'), url('/fonts/Molot-webfont.svg#MolotRegular') format('svg')
   font-weight: normal
   font-style: normal
+
 
 html, body
   height: 100%
@@ -323,17 +338,9 @@ html
                 letter-spacing: 0.1px
             form#new_registration
               input[type='text']
-                @include box-shadow(2px, 2px, 0, $red115, inset)
-                background: $red100 url('/images/red_texture.png')
-                border: black solid 1px
-                color: black
-                font-size: 16px
-                height: 24px
-                padding: 3px 10px 1px
+                @include common-input
                 width: 206px
                 float: left
-                &:focus
-                  color: $yellow
 
               input[type='submit']
                 @include box-shadow(-2px, -2px, 0, $brown, inset)
@@ -500,6 +507,7 @@ html
             @include center(700px)
             .input
               margin-top: 5px
+              margin-bottom: 12px
               display: block
 
               label
@@ -509,12 +517,19 @@ html
                 color: $yellow
                 font:
                   family: 'BebasRegular', Arial, sans-serif
-                  size: 22px
+                  size: 19px
                 letter-spacing: 3px
+                
+              input
+                @include common-input
+                
+              textarea
+                @include common-input
+                height: 100px
 
               .hint
                 @include text-shadow
-                color: $brown
+                color: $yellow_mustard
                 font-size: 12px
                 clear: both
 
