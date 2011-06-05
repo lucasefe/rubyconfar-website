@@ -68,6 +68,32 @@ $default_rounded_amount: 5px
   &:focus
     color: $yellow
     border-color: $yellow
+    
+@mixin common-submit
+  @include box-shadow(-2px, -2px, 0, $brown, inset)
+  background: $yellow url('/images/yellow_texture.png') repeat center center
+  border:
+    color: black
+    style: solid
+    width: 1px
+  color: $brown
+  // font-weight: bold
+  font-size: 14px
+  font-family: 'BebasRegular', Arial, sans-serif
+  // text-transform: uppercase
+  padding: 1px 4px 2px
+  &:hover
+    color: $red100
+  &:active
+    background: $red100 url('/images/red_texture.png') repeat center center
+    color: $yellow
+    @include box-shadow(-2px, -2px, 0, $red150, inset)
+    
+    
+@mixin big-text-shadow
+  text-shadow: 1px 1px 0 $red150, 2px 2px 0 $red100, 3px 3px 0 $red100, 4px 4px 0 $red100, 5px 5px 0 $red100, 6px 6px 0 $red100, 7px 7px 0 $red100
+  -webkit-text-shadow: 1px 1px 0 $red150, 2px 2px 0 $red100, 3px 3px 0 $red100, 4px 4px 0 $red100, 5px 5px 0 $red100, 6px 6px 0 $red100, 7px 7px 0 $red100
+  filter: dropshadow(1px 1px 0 $red150, 2px 2px 0 $red100, 3px 3px 0 $red100, 4px 4px 0 $red100, 5px 5px 0 $red100, 6px 6px 0 $red100, 7px 7px 0 $red100)
 
 
 @font-face
@@ -201,17 +227,23 @@ html
           li
             display: inline
             text-align: right
-            margin-right: 5px
+            margin-right: 12px
             a
               @include text-shadow
               font:
                 size: 20px
                 family: 'BebasRegular', Arial, sans-serif
+                style: italic
               letter-spacing: 0.5px
               text-decoration: none
-              color: $red100
+              color: $yellow_mustard
               &:hover
                 color: $yellow
+              
+            &.active
+              a
+                color: $yellow
+                @include big-text-shadow
 
       #content
         @include center
@@ -251,7 +283,7 @@ html
             float: left
             width: 560px
             padding: 25px
-
+            
             h1
               color: $gray
               @include text-shadow
@@ -264,9 +296,7 @@ html
                 size: 30px
                 family: 'BebasRegular', Arial, sans-serif
               letter-spacing: 2px
-              text-shadow: 1px 1px 0 $red150, 2px 2px 0 $red100, 3px 3px 0 $red100, 4px 4px 0 $red100, 5px 5px 0 $red100, 6px 6px 0 $red100, 7px 7px 0 $red100
-              -webkit-text-shadow: 1px 1px 0 $red150, 2px 2px 0 $red100, 3px 3px 0 $red100, 4px 4px 0 $red100, 5px 5px 0 $red100, 6px 6px 0 $red100, 7px 7px 0 $red100
-              filter: dropshadow(1px 1px 0 $red150, 2px 2px 0 $red100, 3px 3px 0 $red100, 4px 4px 0 $red100, 5px 5px 0 $red100, 6px 6px 0 $red100, 7px 7px 0 $red100)
+              @include big-text-shadow
               
               
             p
@@ -504,7 +534,7 @@ html
             @include text-header
 
           form
-            @include center(700px)
+            @include center(564px)
             .input
               margin-top: 5px
               margin-bottom: 12px
@@ -525,13 +555,15 @@ html
                 
               textarea
                 @include common-input
-                height: 100px
+                height: 80px
 
               .hint
+                display: block
                 @include text-shadow
                 color: $yellow_mustard
                 font-size: 12px
                 clear: both
+                margin-top: 3px
 
               textarea, input[type='text']
                 font:
@@ -539,15 +571,13 @@ html
                   size: 16px
                 padding: 5px
 
-              input
+              input, textarea
                 width: 100%
-
-              textarea
-                width: 100%
-                height: 100px
 
             input[type='submit']
               margin-top: 10px
+              @include common-submit
+              float: right
 
         #sponsoring
           h1
