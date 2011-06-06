@@ -144,8 +144,13 @@ module RubyConf
       link_to text, "mailto:#{address}", :class => "email"
     end
 
+    def active_link?(route)
+      request.route == route
+    end
+
     def link_to(text, url=nil, options={}, &block)
       url, text = text, capture_haml(&block) if url.nil?
+      options.merge!(:class => 'active') if active_link?(url)
       capture_haml do
         haml_tag :a, text, options.merge(:href => url)
       end
