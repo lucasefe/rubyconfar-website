@@ -385,7 +385,7 @@ html
                 &:hover
                   background: $yellow url('/images/ok_hover.png') no-repeat center center
 
-            #sponsors
+            .sponsors
               @include box-shadow(2px, 2px, 0, $red115, inset)
               background: $red100 url('/images/red_texture.png')
               border: 1px solid $red150
@@ -393,18 +393,40 @@ html
               text-align: center
               width: 270px
               
+              .ribbon
+                width: 102px
+                height: 87px
+                background-position: -1px -7px
+                float: left
+                position: absolute
+                margin: -3px 0 0 -2px
+                background-repeat: no-repeat
+                
+                &#silver
+                  background-image: url('/images/ribbon_silver.png')
+                  
+                &#bronze
+                  background-image: url('/images/ribbon_bronze.png')
+                  
+                &#gold
+                  background-image: url('/images/ribbon_gold.png')
+                  
+                &#platinum
+                  background-image: url('/images/ribbon_platinum.png')
+              
               h1                
-                padding: 4px 0 3px
+                padding: 5px 0 2px
                 font:
                   size: 11px
                   family: 'BebasRegular', Arial, sans-serif
                 text-transform: uppercase
                 letter-spacing: 3px
+
                 
               ul#list
                 margin: 4px
                 background: $light_blue url('/images/light_blue_texture.jpg') repeat center top
-                padding: 12px 0
+                padding: 16px 0 6px
                 border: 1px solid $red115
                 
                 li
@@ -585,66 +607,97 @@ html
           h2
             text-align: center
             font:
-              size: 30px
+              size: 20px
               weight: normal
               family: 'BebasRegular', Arial, sans-serif
+              margin-bottom: 10px
 
           .container
             @include rounded(5px)
-            background-color: $red100
-            border: black solid 1px
-            border: solid 0.5px black
-            font-size: 18px
+            background: url('/images/red_texture.png') repeat
+            @include box-shadow(2px, 2px, 1px, $red150, inset)
             margin-bottom: 20px
             margin-top: 10px
             padding: 20px
-            padding: 5px
+            padding: 8px
             
-            table  
-              width: 98%
+            table
+              tr
+                border-bottom: 1px solid $red115
+              
+              tr:nth-child(even)
+                background: url('/images/red_texture110.png') repeat
+              
               thead
                 tr
                   font:
-                    size: 26px
+                    size: 18px
                     family: 'BebasRegular', Arial, sans-serif
                   letter-spacing: 1.5px
+                  h5
+                    font-size: 14px
+                    color: $red150
+                  
                 th
                   padding:
                     top: 5px
                     bottom: 10px
+                  
+                  &.formula
+                    // padding: 0 5px
+                    // border:
+                    //   width: 0 1px
+                    //   style: solid
+                    //   color: $red150
+                    
                 th:first-child
                   padding-left: 5px
+                
                 th:nth-child(n+2)
                   text-align: center
                   @include text-shadow
                   color: $yellow
+                  
                 .price
                   font-size: 18px
                   width: 10%
                   text-align: center
+                  letter-spacing: 0.5px
+                  span
+                    color: $red150
+                    font-size: 15px
 
               tbody
                 tr
                   td
                     padding: 5px
+                    .yes, .no
+                      margin: 0 auto
+                    
                   td:first-child
                     padding-left: 5px
-                    font-weight: bold
-                    font-size: 16px
+                    // font-weight: bold
+                    font-size: 15px
                   td:nth-child(n+2)
                     text-align: center
                 tr.separator
                   th
                     @include text-shadow
                     font:
-                      family: 'BebasRegular', Arial, sans-serif
-                      size: 18px
+                      family: Helvetica, Arial, sans-serif
+                      size: 14px
                     border-top: 1px solid black
-                    color: $yellow
-                    letter-spacing: 3px
-                    margin-top: 5px
-                    padding: 5px
+                    color: darken($yellow, 12%)
+                    letter-spacing: 1px
+                    padding: 20px 0 10px
                     text-align: center
+                    strong
+                      color: $yellow
+                      font:
+                        size: 22px
+                        family: 'BebasRegular', Arial, sans-serif
+                      letter-spacing: 2px
+                      display: block
 
 
               tfoot
@@ -691,3 +744,12 @@ html
   &:hover
     background-position: center -27px
   
+
+.yes
+  width: 26px
+  height: 23px
+  background: url('/images/yes-no.png') no-repeat left center
+  
+.no
+  @extend .yes
+  background-position: right center  
