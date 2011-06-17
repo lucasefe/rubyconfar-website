@@ -55,8 +55,11 @@ $default_rounded_amount: 5px
     size: 34px
     weight: bold   
     family: 'BebasRegular', Arial, sans-serif
-
-
+    style: italic
+  color: $yellow
+  @include big-text-shadow
+  margin-bottom: 15px
+  
 @mixin common-input
   @include box-shadow(2px, 2px, 0, $red115, inset)
   background: $red100 url('/images/red_texture.png')
@@ -441,14 +444,15 @@ html
         #speakers
           h1.title
             @include text-header
-            color: $yellow
+
           h2.headline
             @include text-header
-            font-size: 28px
-            color: $red100
+            font-size: 22px
+            color: $yellow_mustard
+            
           p.desc
             @include text-shadow
-            color: $red100
+            color: $yellow_mustard
             text-align: center
 
           ul#list_of_speakers
@@ -602,10 +606,11 @@ html
 
         #sponsoring
           h1
-            @include text-header
+            @include text-header            
 
           h2
             text-align: center
+            color: $red100
             font:
               size: 20px
               weight: normal
@@ -671,8 +676,11 @@ html
                 tr
                   td
                     padding: 5px
+                    font-size: 14px
+                    
                     .yes, .no
                       margin: 0 auto
+                          
                     
                   td:first-child
                     padding-left: 5px
@@ -721,13 +729,18 @@ html
         padding: 100px 0 0 0
 
         #footer_content       
-          margin-top: 270px
+          margin-top: 250px
           a
             color: $yellow
             @include text-shadow(-1px, -1px, 0, $red115)
             text-decoration: none
             &:hover
               text-decoration: underline
+              
+          .twitter_icon, .github_icon
+            display: inline-table
+
+
 
 
 .github_icon
