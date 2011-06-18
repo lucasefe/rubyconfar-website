@@ -12,10 +12,11 @@
           %img{:src => "/images/speakers/tenderlove.png"}
 
         %ul.links
-          %li=link_to 'website', "http://tenderlovemaking.com/"
-          %li=twitter("@tenderlove", "tenderlove")
-          %li=link_to 'rails core', "http://rubyonrails.org/core"
-          %li=link_to 'ruby committer', "http://www.ruby-lang.org/"
+          %li= twitter "@tenderlove", "tenderlove"
+          %li= link_to 'website', "http://tenderlovemaking.com/"
+          %li= link_to 'github', 'http://github.com/tenderlove'
+          %li= link_to 'rails core', "http://rubyonrails.org/core"
+          %li= link_to 'ruby committer', "http://www.ruby-lang.org/"
 
       .description
         %h1 Aaron Patterson
@@ -32,9 +33,11 @@
         .picture
           %img{:src => "/images/speakers/chacon.jpg"}
         %ul.links
-          %li= twitter("@chacon", "chacon")
-          %li=link_to 'website', "http://scottchacon.com/"
-          %li=link_to 'git evangelist', "http://git-scm.com/"
+          %li= twitter "@chacon", "chacon"
+          %li= link_to 'website', "http://scottchacon.com/"
+          %li= link_to 'github', 'http://github.com/schacon'
+          %li= link_to 'git evangelist', "http://git-scm.com/"
+
       .description
         %h1 
           Scott Chacon
@@ -56,8 +59,9 @@
         .picture
           %img{:src => "/images/speakers/luislavena.png"}
         %ul.links
-          %li=twitter("@luislavena", "luislavena")
-          %li=link_to 'website', "http://blog.mmediasys.com//"
+          %li= twitter "@luislavena", "luislavena"
+          %li= link_to 'website', "http://blog.mmediasys.com/"
+          %li= link_to 'github', 'http://github.com/luislavena'
           %li= link_to 'ruby installer', 'http://rubyinstaller.org/'
 
       .description
@@ -78,7 +82,27 @@
         %p He is also a RubyGems contributor and recently become Ruby-Core committer as one of the Ruby’s MinGW maintainers.
         %hr
 
+    %li.speaker
+      .summary
+        .picture
+          %img{:src => "/images/speakers/compay.png"}
+        %ul.links
+          %li= twitter "@compay", "compay"
+          %li= link_to 'website', "http://njclarke.com/"
+          %li= link_to 'github', 'http://github.com/norman'
+          %li= link_to 'babosa', 'https://github.com/norman/babosa'
+          %li= link_to 'friendly_id', 'https://github.com/norman/friendly_id'
 
-  
+      .description
+        %h1 
+          Norman Clarke
+        %h2
+          from
+          %span
+            Business Vision S.A.
+        %p
+          Man of letters and numbers working with Ruby, Lua and others. Anglo/hispano/lusophile. Code, linguistics, samba, and of course, beer.
 
+        %p He works as a cofounder and Principal Developer of Ruby Labs. Ruby Labs is a division within Business Vision S.A., an Argentine software development company with offices in Buenos Aires, La Plata, San Francisco and Miami. Business Vision has been successful for many years working primarily with Java and .NET, and now he's helping them move into dynamic languages: first with Ruby, but with more to come.
 
+        %p At the moment he programs primarily with Ruby for work and Lua for fun. In the past he worked quite a bit with Java and PHP. I'm a fan of programming in general and like well-made things, regardless of what technology they use. His focus is on back-end systems and web application architecture.
