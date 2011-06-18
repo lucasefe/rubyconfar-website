@@ -113,8 +113,8 @@ module RubyConf
       haml :sponsoring
     end
 
-    page "about" do
-      haml :about
+    page "event" do
+      haml :event
     end
 
     def language

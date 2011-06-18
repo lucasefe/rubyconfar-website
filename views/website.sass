@@ -131,6 +131,8 @@ html, body
 
 .clear
   clear: both
+.right
+  text-align: right
 
 html
   body
@@ -302,6 +304,12 @@ html
               
               
             p
+              margin-top: 10px
+              font-size: 18px
+              color: $gray
+              @include text-shadow
+              
+            p.bottom
               color: $yellow_mustard
               margin-top: 10px
               font-size: 20px
@@ -545,13 +553,31 @@ html
                 a
                   color: $light-blue
 
-        #about
+        #event
           h1
             @include text-header
-          p
+          h2
+            @include text-header
+            font-size: 20px
+            clear: both
             margin-top: 10px
+            letter-spacing: 1.2px
+          p
+            font-size: 16px
+            color: $gray
             text-align: center
-            color: black
+            @include text-shadow
+            line-height: 22px
+            img
+              float: right
+              margin-left: 30px
+
+            a
+              color: $yellow_mustard
+              font-weight: bold
+
+          
+            
           a
             color: black
         #proposals
