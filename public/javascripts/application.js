@@ -34,3 +34,16 @@ $(document).ready(function() {
 });
 
 // App
+
+
+$(function()  {
+  
+  $('#social .github_icon').animate({
+  	top: "0px"
+  }, 2000);
+  
+  $('#social .twitter_icon').animate({
+  	top: "42px"
+  }, 3000);
+  
+});
