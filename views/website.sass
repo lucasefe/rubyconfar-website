@@ -295,12 +295,29 @@ html
 
         #home
           #left_col
-            background: url('/images/speakers_bkg.jpg') no-repeat -8px top
-            border: 1px solid $red150
+            // background: url('/images/speakers_bkg.jpg') no-repeat -8px top
+            // border: 1px solid $red150
             float: left
             width: 560px
             padding: 25px
             
+            #slider
+              height: 300px
+              overflow: hidden
+              width: 550px
+
+              ul#content
+                li
+                  float: left
+                  height: 300px
+                  width: 550px
+                  left: 0
+                  &#one
+                    background-color: red
+                  &#two
+                    background-color: green
+                  &#three
+                    background-color: $yellow
             h1
               color: $gray
               @include text-shadow
