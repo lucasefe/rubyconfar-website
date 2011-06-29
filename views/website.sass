@@ -219,11 +219,24 @@ html
           margin: 86px 0 0 350px
           
           .github_icon
-            margin: 0 auto 14px
-            
+            top: 95px 
+            position: absolute
+            margin:
+              left: 21px            
+            // margin: 0 auto 14px
+ 
           .twitter_icon
-            margin: 0 auto 8px
+            position: absolute
+            top: 96px
+            margin:
+              left: 25px
+            // margin: 0 auto 8px
             
+          #dc_logo
+            z-index: 2
+            position: absolute
+            left: 0
+            margin-top: 81px
 
       #navigation
         @include center
@@ -288,6 +301,23 @@ html
             width: 560px
             padding: 25px
             
+            #slider
+              height: 300px
+              overflow: hidden
+              width: 550px
+
+              ul#content
+                li
+                  float: left
+                  height: 300px
+                  width: 550px
+                  left: 0
+                  &#one
+                    background-color: red
+                  &#two
+                    background-color: green
+                  &#three
+                    background-color: $yellow
             h1
               color: $gray
               @include text-shadow
@@ -554,34 +584,78 @@ html
                 a
                   color: $light-blue
 
-        #event
+        #event_wrapper          
           h1
             @include text-header
-          h2
-            @include text-header
-            font-size: 20px
-            clear: both
-            margin-top: 10px
-            letter-spacing: 1.2px
-          p
-            font-size: 16px
-            color: $gray
-            text-align: center
-            @include text-shadow
-            letter-spacing: 0.5px
-            line-height: 24px
-            img
-              float: right
-              margin-left: 30px
-
-            a
-              color: $yellow_mustard
-              font-weight: bold
-
           
+          ul#event
+            margin: 0 auto 20px
+            width: 800px
+
             
-          a
-            color: black
+            li
+              background: url('/images/speakers_bkg.jpg') no-repeat left top
+              border: 1px solid $red150
+              margin-top: 50px
+              padding: 25px
+              
+              &#the_event img
+                float: left
+                margin-right: 10px
+                margin-left: -40px
+               
+              &#why_ruby img
+                float: right
+                margin-left: 10px
+                margin-right: -25px
+                margin-top: -63px
+    
+              &#the_venue img
+                float: right
+                margin-left: 20px
+                margin-right: -40px
+                
+              &#rails
+                padding: 0
+                div
+                  background: url('/images/event_rails.png') no-repeat 4px 35px
+                  padding: 25px 25px 25px 130px
+                    
+              &#the_city
+                padding: 0           
+                  
+                div
+                  background: url('/images/event_obelisco.png') no-repeat 54px bottom
+                  padding: 25px 25px 50px 130px
+                    
+            
+              h2
+                @include text-header
+                font-size: 20px
+                clear: both
+                margin-top: 10px
+                letter-spacing: 1.2px
+                text-align: left
+              p
+                @include text-shadow
+                color: $gray
+                font-size: 13px
+                letter-spacing: 0.5px
+                line-height: 20px
+                text-align: left
+                margin-bottom: 18px
+
+                img
+                  float: right
+                  margin-left: 30px
+
+                a
+                  color: $yellow
+                  font-weight: bold      
+            
+              a
+                color: black
+                
         #proposals
           h1
             @include text-header
@@ -754,7 +828,7 @@ html
           size: 11px
           weight: normal
         letter-spacing: 0.5px
-        padding: 100px 0 0 0
+        padding: 40px 0 0 0
 
         #footer_content       
           margin-top: 250px
