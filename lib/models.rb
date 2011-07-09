@@ -22,9 +22,46 @@ class Proposal
   property :created_at,       DateTime
 
 
-  after :save, :notify_organizers
+  after :save, :send_notifications
 
   private
+
+  def send_notifications
+    notify_speaker
+    notify_organizers
+  end
+
+  def notify_speaker
+    Pony.mail :to => speaker_email,
+              :subject => "Your proposal for RubyConf Argentina 2011 has been received!",
+              :enable_starttls_auto => true,
+              :via => :smtp,
+              :via_options => {
+                :address              => 'smtp.gmail.com',
+                :port                 => '587',
+                :enable_starttls_auto => true,
+                :user_name            => RubyConf::Website::CONFIG.smtp_settings['user_name'],
+                :password             => RubyConf::Website::CONFIG.smtp_settings['password'],
+                :authentication       => :plain, # :plain, :login, :cram_md5, no auth by default
+                :domain               => "localhost.localdomain" # the HELO domain provided by the client to the server
+              },
+              :body => <<EOM
+Thank you #{speaker_name}!
+
+Your "#{title}" proposal has been received. We would also like to
+remind you that the Call for Papers will end on July 31th, so feel
+free to submit another entry if you like to and of course invite your
+friends! After that date we will inform you and the community when
+will the results be published.
+
+Hoping to see you in Buenos Aires,
+
+The RubyConf Argentina Team.
+@RubyConfAr
+http://rubyconfargentina.org/en
+EOM
+
+  end
 
   def notify_organizers
     Pony.mail :to => RubyConf::Website::CONFIG.email_recipients,
