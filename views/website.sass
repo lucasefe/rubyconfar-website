@@ -657,6 +657,36 @@ html
                 color: black
                 
         #proposals
+          .box
+            text-align: center
+            @include center(564px)
+            background: url('/images/speakers_bkg.jpg') no-repeat -8px top
+            border: 1px solid $red150
+            padding: 25px
+            
+            h1
+              color: $yellow
+              @include big-text-shadow
+              font:
+                size: 24px
+                family: 'BebasRegular', Arial, sans-serif
+              
+            h2
+              color: $yellow
+              font:
+                size: 18px
+                family: 'BebasRegular', Arial, sans-serif
+              letter-spacing: 2px
+              @include big-text-shadow
+              
+            p
+              margin-top: 10px
+              font-size: 16px
+              color: $gray
+              @include text-shadow
+              letter-spacing: 0.5px
+              line-height: 24px
+
           h1
             @include text-header
 
