@@ -34,7 +34,7 @@ module RubyConf
 
     set :root, Dir.pwd
     set :public, File.expand_path("../public", __FILE__)
-    set :haml,   :format => :html5
+    set :haml,   :format => :html5, :encoding => "utf-8"
     set :logging, :true
     enable :sessions
     register(Sinatra::Cache)
