@@ -632,11 +632,35 @@ html
                 div
                   background: url('/images/event_obelisco.png') no-repeat 54px bottom
                   padding: 25px 25px 50px 130px
-                    
-            
+                  
+              ul.links
+                li
+                  background: none
+                  border: none
+                  margin: 0
+                  padding: 2px 0
+                  a
+                    @include text-shadow
+                    color: $yellow
+                    font-weight: bold
+                  span 
+                    @include text-shadow
+                    color: $gray
+                    font-size: 13px
+                    letter-spacing: 0.5px
+                    line-height: 20px
+                      
               h2
                 @include text-header
                 font-size: 20px
+                clear: both
+                margin-top: 10px
+                letter-spacing: 1.2px
+                text-align: left
+              
+                color: $yellow
+                @include big-text-shadow
+                margin-bottom: 15px
                 clear: both
                 margin-top: 10px
                 letter-spacing: 1.2px

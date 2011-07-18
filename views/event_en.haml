@@ -1,5 +1,5 @@
-#event_wrapper
-  
+-# coding: utf-8
+#event_wrapper  
   %h1 RubyConf Argentina 2011
   %ul#event
     %li#the_event
@@ -15,11 +15,34 @@
       %h2 Why Ruby?
       %img{:src => '/images/event_why_ruby.png', :alt => 'Ruby'}
       %p Ruby is a dynamic, open source, language focused on simplicity and productivity. It possesses an elegant syntax, reads in a natural way, and is easy to write without sacrificing powerful language features. Come to learn more about the technology that is changing the face of software development!
-      
+
+      %ul.links
+        %li
+          = link_to 'Ruby Lang', "http://www.ruby-lang.org/"
+          %span Learn more about Ruby
+        %li
+          = link_to "Ruby Installer", "http://rubyinstaller.org/"
+          %span Ruby for Windows
+        %li
+          = link_to 'Try Ruby', "http://tryruby.org/"
+          %span Try Ruby Online
+
     %li#rails
       %div
         %h2 What is Ruby On Rails?
         %p Ruby on Rails is an open source web framework, optimized to make the software developers life easier and boost their productivity. Web development has become easier thanks to the philosophy of "convention over configuration", which by making choices about the basic configuration of a website, saves the developer from building everything 'from scratch'. During the conference you will have the opportunity to learn much more about the power of Riding The Rails.
+
+        %ul.links
+          %li
+            = link_to "Ruby On Rails", "http://www.rubyonrails.org"
+            %span Official Website
+          %li
+            = link_to 'Rails For Zombies', "http://railsforzombies.org/"
+            %span Learn Rails the zombie way!
+          %li
+            = link_to "Sinatra", "http://www.sinatrarb.com/"
+            %span Rails lightweight alternative.
+          
 
     %li#the_venue
       %h2 The Venue
