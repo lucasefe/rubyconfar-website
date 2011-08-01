@@ -1,48 +1,10 @@
+-# coding: utf-8
 #proposals
   %h1 Call For Papers
 
   .box
-    %h1 RubyConf Argentina is now accepting proposals for talks. 
+    %h1 RubyConf Argentina is no longer accepting proposals for talks. 
 
-    %h2 Proposals will be accepted until Sunday 7/31/2011 at midnight PDT.
-
-    %p Talks will be 30 minutes with no extra time for questions. Remember that nearly all our attendees use Ruby daily, so talks should be for an audience of intermediate or advanced Rubyists. Non-Ruby topics are acceptable if they are somehow related to Ruby, or just seriously awesome.
-
-    %p If your talk is selected you will receive a free pass to attend the conference and get some special speaker swag too. At that point we'll need a photo of you for the website/program.
+    %p In the next weeks we'll be deciding which speakers are going to be speaking at the conference. 
 
     %p Questions? email rubyconfar@gmail.com
-
-  - unless @proposal.errors.empty?
-    #errors
-      %h2 Ooops, there were some errors!
-      %ul
-        - @proposal.errors.each do |error|
-          %li.error= error
-
-  %form{:action => "/proposals", :method => "POST" }
-    .input 
-      %label{:for => "proposal[title]"} Title of your talk
-      %input{:type => "text",   :name => "proposal[title]", :value => @proposal.title }
-      %span.hint Make it snappy!      
-    
-    .input 
-      %label{:for => "proposal[description]"} Description
-      %textarea{:name => "proposal[description]"}= @proposal.description
-      %span.hint Used publicly on the schedule if the talk is accepted.
-    
-    .input 
-      %label{:for => "proposal[speaker_name]"} Name
-      %input{:type => "text",   :name => "proposal[speaker_name]", :value => @proposal.speaker_name }
-      %span.hint Please separate full names with commas.
-
-    .input 
-      %label{:for => "proposal[speaker_email]"} Email
-      %input{:type => "text",   :name => "proposal[speaker_email]", :value => @proposal.speaker_email }
-      %span.hint Please provide one email address.
-
-    .input 
-      %label{:for => "proposal[speaker_bio]"} Bio
-      %textarea{:name => "proposal[speaker_bio]"}= @proposal.speaker_bio
-      %span.hint Tell us something about you.
-
-    %input{:type => "submit", :name => "submit", :value => "Submit Proposal"}
