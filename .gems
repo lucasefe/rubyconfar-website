@@ -1,10 +1,7 @@
 data_mapper
-dm-sqlite-adapter
 dm-mysql-adapter
 haml
-haml-coderay
 rack
-rack-flash
 sass
 sinatra
 sinatra-cache

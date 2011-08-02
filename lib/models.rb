@@ -1,5 +1,14 @@
 require 'data_mapper'
+require 'yaml_record'
 require "pony"
+
+class Speaker < YamlRecord::Base
+  properties :name, :picture, :company, :twitter, 
+    :description_en, :description_es, :links
+  
+  source File.join(File.dirname(__FILE__), "../db/speakers")
+end
+
 
 class Registration
   include DataMapper::Resource

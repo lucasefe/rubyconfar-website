@@ -56,7 +56,9 @@ module RubyConf
           haml_tag(:div, session.delete(key), :class => "flash #{key}") if session.has_key?(key)
         end
       end
-
+      def simple_format(text)
+        "<p>#{text.gsub("\n", "</p><p>")}</p>"
+      end
       alias flash session
     end
 
