@@ -25,6 +25,12 @@ $default_rounded_amount: 5px
   -webkit-border-radius: $amount
 
 
+@mixin picture_frame
+  @include rounded(3px)
+  @include gradient($red100, $red120)
+  border: solid 1px $red120
+  padding: 3px
+
 @mixin text-shadow($horizontal : 1px, $vertical : 1px, $blur : 0, $color : black)
   text-shadow: $horizontal $vertical $blur $color
   -webkit-text-shadow: $horizontal $vertical $blur $color
@@ -295,63 +301,48 @@ html
 
         #home
           #left_col
-            background: url('/images/speakers_bkg.jpg') no-repeat -8px top
-            border: 1px solid $red150
             float: left
-            width: 560px
-            padding: 25px
+            width: 610px
             
-            #slider
-              height: 300px
-              overflow: hidden
-              width: 550px
+            #slogan
+              background: url('/images/speakers_bkg.jpg') no-repeat -8px top
+              border: 1px solid $red150
+              padding: 25px
 
-              ul#content
-                li
-                  float: left
-                  height: 300px
-                  width: 550px
-                  left: 0
-                  &#one
-                    background-color: red
-                  &#two
-                    background-color: green
-                  &#three
-                    background-color: $yellow
-            h1
-              color: $gray
-              @include text-shadow
-              font:
-                size: 15px
-              
-            h2
-              color: $yellow
-              font:
-                size: 30px
-                family: 'BebasRegular', Arial, sans-serif
-              letter-spacing: 2px
-              @include big-text-shadow
-              
-            p
-              margin-top: 10px
-              font-size: 16px
-              color: $gray
-              @include text-shadow
-              letter-spacing: 0.5px
-              line-height: 24px
-              
-            p.bottom
-              color: $yellow_mustard
-              margin-top: 10px
-              font-size: 20px
-              
-              small
-                margin-top: 95px
-                display: block
-                font-size: 13px
+              h1
+                color: $gray
+                @include text-shadow
+                font:
+                  size: 15px
                 
-                span.twitter_icon
-                  display: inline-table
+              h2
+                color: $yellow
+                font:
+                  size: 30px
+                  family: 'BebasRegular', Arial, sans-serif
+                letter-spacing: 2px
+                @include big-text-shadow
+                
+              p
+                margin-top: 10px
+                font-size: 16px
+                color: $gray
+                @include text-shadow
+                letter-spacing: 0.5px
+                line-height: 24px
+                
+              p.bottom
+                color: $yellow_mustard
+                margin-top: 10px
+                font-size: 20px
+                
+                small
+                  margin-top: 95px
+                  display: block
+                  font-size: 13px
+                  
+                  span.twitter_icon
+                    display: inline-table
 
 
           #right_col
@@ -522,10 +513,7 @@ html
                   padding-bottom: 10px
                   
                   img
-                    @include rounded(3px)
-                    @include gradient($red100, $red120)
-                    border: solid 1px $red120
-                    padding: 3px
+                    @include picture_frame
 
                 ul.links
                   text-align: right
@@ -930,3 +918,45 @@ html
 .no
   @extend .yes
   background-position: right center  
+
+ul#speakers_box
+
+.simply-scroll-container 
+  position: relative
+  
+.simply-scroll
+  height: 136px
+  margin-bottom: 10px
+  width: 610px
+
+  .simply-scroll-clip
+    height: 136px
+    overflow: hidden
+    position: relative
+    width: 610px
+    z-index: 2
+  
+  .simply-scroll-list   
+    left: 0
+    list-style: none
+    margin: 0
+    overflow: hidden
+    padding: 0
+    position: absolute
+    top: 0
+    z-index: 1
+    
+    li   
+      float: left
+      height: 136px
+      list-style: none
+      margin: 0
+      padding: 4px
+      width: 136px
+
+      img
+        @include picture_frame
+        display: block
+        height: 120px
+
+
