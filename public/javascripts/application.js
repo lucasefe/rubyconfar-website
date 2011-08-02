@@ -13,14 +13,14 @@ function animateSocial() {
 }
 
 $(document).ready(function() {
+  $("ul#speakers_box").simplyScroll({
+      autoMode: 'loop'
+  });
+
   $('#fist').animate({
     backgroundPosition: "(right 0)"
   }, 3500);
-  
   setTimeout(animateSocial, 500);
-  
-  $('#slider').slide_like_a_boss();
-  
 });
 
 
