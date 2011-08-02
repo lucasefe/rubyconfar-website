@@ -1,27 +1,8 @@
 %ul#speakers_box
-  %li
-    %a{:href => "/#{language}/speakers#mojombo", :title => "Tom Preston-Werner, GitHub"}
-      %img{:src => "/images/speakers/mojombo.jpg"}
-  %li
-    %a{:href => "/#{language}/speakers#tenderlove", :title => "Aaeron Patterson, ATTi"}
-      %img{:src => "/images/speakers/tenderlove.png"}
-  %li
-    %a{:href => "/#{language}/speakers#merbist", :title => "Matt Aimonetti, Living Social"}
-      %img{:src => "/images/speakers/merbist.png"}
-  %li
-    %a{:href => "/#{language}/speakers#compay", :title => "Norman Clarke, Business Vision"}
-      %img{:src => "/images/speakers/compay.png"}
-  %li
-    %a{:href => "/#{language}/speakers#chacon", :title => "Scott Chacon, GitHub"}
-      %img{:src => "/images/speakers/chacon.jpg"}
-  %li
-    %a{:href => "/#{language}/speakers#shugo", :title => "Shugo Maeda, Network Applied Communication Laboratory Ltd."}
-      %img{:src => "/images/speakers/shugo.png"}
-  %li
-    %a{:href => "/#{language}/speakers#luislavena", :title => "Luis Lavena, Area17"}
-      %img{:src => "/images/speakers/luislavena.png"}
-  %li
-    %a{:href => "/#{language}/speakers#rkh", :title => "Konstantin Haase, Finn GmbH"}
-      %img{:src => "/images/speakers/rkh.jpg"}
+  - Speaker.all.each do |speaker|
+    %li
+      %a{:href => "/#{language}/speakers##{speaker.twitter}", :title => speaker.name}
+        %img{:src => speaker.picture}
+
 
 
