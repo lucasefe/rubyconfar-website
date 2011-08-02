@@ -1,34 +1,35 @@
 -# coding: utf-8
 #home
-  
-  = partial :speakers_box, :skip_translation => true
-
   #left_col
-    %h1 El evento mas grande de la comunidad Ruby de habla hispana. 
-    %h2 Ruby, Rails, aplicaciones moviles y metodologias agiles.
 
-    %p RubyConf Argentina 2011 es un evento de dos d&iacute;as que se llevar&aacute; a cabo el 8 y 9 de Noviembre en Buenos Aires. Ser&aacute; una conferencia t&eacute;cnica dirigida a programadores interesados en el mundo del desarrollo web y tecnolog&iacute;as modernas.
+    = partial :speakers_box, :skip_translation => true
 
-    %p El programa estar&aacute; pensado para cubrir las expectativas de un amplio espectro de programadores, desde el novato en Ruby hasta expertos y profesionales en busca de intercambiar sus conocimientos. El evento abrir&aacute; un canal de comunicaci&oacute;n para que desarrolladores Argentinos y de todas partes del mundo podamos intercambiar ideas.
+    #slogan
+      %h1 El evento mas grande de la comunidad Ruby de habla hispana.
+      %h2 Ruby, Rails, aplicaciones moviles y metodologias agiles.
 
-    %p Adem&aacute;s de disfrutar de nuestra agenda de dos d&iacute;as de charlas, tendr&aacute;s la oportunidad de conocer rubyistas, desarrolladores Rails y entusiastas de todo tipo de tecnolog&iacute;as modernas.
-  
-    %p.bottom 
-      M&aacute;s informaci&oacute;n acerca del evento 
-      = link_to 'aqu&iacute;.', "/#{language}/event"
-    
-      %small
-        %a{:href => "http://www.twitter.com/RubyConfAr", :target => "_blank", :title => "Follow us on Twitter"}
-          %span.twitter_icon
-        Seguinos en 
-        = twitter 'Twitter'
-        para informarte lo antes posible!
-        
+      %p RubyConf Argentina 2011 es un evento de dos d&iacute;as que se llevar&aacute; a cabo el 8 y 9 de Noviembre en Buenos Aires. Ser&aacute; una conferencia t&eacute;cnica dirigida a programadores interesados en el mundo del desarrollo web y tecnolog&iacute;as modernas.
+
+      %p El programa estar&aacute; pensado para cubrir las expectativas de un amplio espectro de programadores, desde el novato en Ruby hasta expertos y profesionales en busca de intercambiar sus conocimientos. El evento abrir&aacute; un canal de comunicaci&oacute;n para que desarrolladores Argentinos y de todas partes del mundo podamos intercambiar ideas.
+
+      %p Adem&aacute;s de disfrutar de nuestra agenda de dos d&iacute;as de charlas, tendr&aacute;s la oportunidad de conocer rubyistas, desarrolladores Rails y entusiastas de todo tipo de tecnolog&iacute;as modernas.
+
+      %p.bottom
+        M&aacute;s informaci&oacute;n acerca del evento
+        = link_to 'aqu&iacute;.', "/#{language}/event"
+
+        %small
+          %a{:href => "http://www.twitter.com/RubyConfAr", :target => "_blank", :title => "Follow us on Twitter"}
+            %span.twitter_icon
+          Seguinos en
+          = twitter 'Twitter'
+          para informarte lo antes posible!
+
   #right_col
     #where
       %h1
         %img{:alt => "RubyConf 2011", :src => "/images/rubyconf2011.png"}
-      %h2 
+      %h2
         Nov 8
         %span.dot &bull;
         9
@@ -37,5 +38,5 @@
 
     = partial :registration_box, :skip_translation => true
     = partial :sponsors_box, :skip_translation => true
-    
+
 
