@@ -6,7 +6,7 @@
 
   %ul#list_of_speakers
     - Speaker.all.each do |speaker|
-      %a{:id => speaker.links['twitter']}
+      %a{:id => speaker.twitter}
       %li.speaker
         .summary
           .picture
