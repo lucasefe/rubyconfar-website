@@ -1,219 +1,26 @@
 -# coding: utf-8
 #speakers
-  %h1.title Speakers
+32  %h1.title Speakers
   %p.desc
     Follow us on twitter to keep yourself up to date!
 
   %ul#list_of_speakers
-    %a#tenderlove
-    %li.speaker
-      .summary
-        .picture
-          %img{:src => "/images/speakers/tenderlove.png"}
+    - Speaker.all.each do |speaker|
+      %a{:id => speaker.links['twitter']}
+      %li.speaker
+        .summary
+          .picture
+            %img{:src => speaker.picture}
+          %ul.links
+            %li= twitter "@#{speaker.twitter}", speaker.twitter
+            - speaker.links.each do |name, link|
+              %li= link_to name, link
 
-        %ul.links
-          %li= twitter "@tenderlove", "tenderlove"
-          %li= link_to 'website', "http://tenderlovemaking.com/"
-          %li= link_to 'github', 'http://github.com/tenderlove'
-          %li= link_to 'rails core', "http://rubyonrails.org/core"
-          %li= link_to 'ruby committer', "http://www.ruby-lang.org/"
-
-      .description
-        %h1 Aaron Patterson
-        %h2
-          from
-          %span ATTi
-        %p
-          When he isn’t ruining people’s lives by writing software like phuby, enterprise, and neversaydie, Aaron can be found writing slightly more useful software like nokogiri. To keep up his Gameboy Lifestyle, Aaron spends his weekdays writing high quality software for ATTi. Be sure to catch him on Karaoke night, where you can watch him sing his favorite smooth rock hits of the 70’s and early 80’s.
-
-        %hr        
-
-    %a#shugomaeda
-    %li.speaker
-      .summary
-        .picture
-          %img{:src => "/images/speakers/shugo.png"}
-
-        %ul.links
-          %li= twitter "@shugomaeda", "shugomaeda"
-          %li= link_to 'website', "http://blog.shugo.net/"
-          %li= link_to 'ruby committer', "http://www.ruby-lang.org/"
-
-      .description
-        %h1 Shugo Maeda
-        %h2
-          from
-          %span Network Applied Communication Laboratory Ltd.
-        %p
-          Shugo Maeda is director at Network Applied Communication Laboratory Ltd., a co-chairperson of Ruby Association LLC, and a daimyo programmer.
-        %p
-          He is also a Ruby committer. He was a speaker at many Ruby conferences such as Ruby World 2009 and RubyConf 2010.
-        %p
-          Shugo is currently working on Refinements for Ruby 2.0
-
-        %hr
-
-    %a#schacon
-    %li.speaker
-      .summary
-        .picture
-          %img{:src => "/images/speakers/chacon.jpg"}
-        %ul.links
-          %li= twitter "@chacon", "chacon"
-          %li= link_to 'website', "http://scottchacon.com/"
-          %li= link_to 'github', 'http://github.com/schacon'
-          %li= link_to 'git evangelist', "http://git-scm.com/"
-
-      .description
-        %h1 
-          Scott Chacon
-        %h2
-          from 
-          %span GitHub
-
-        %p
-          Scott Chacon is the VP of Git at GitHub. He is the author of the Pro Git book by Apress (progit.org), the Git Internals Peepcode PDF as well as the maintainer of the Git homepage (git-scm.com) and the Git Community Book.
-
-        %p 
-          Scott has presented all over the world. LinuxConf.au, OSCON, RuPy, Symfony Live, Ruby Kaigi, RailsConf, RubyConf, Scotland on Rails, Euruko to drop a few names. He also does corporate training on Git all over the where.
-        %p Scott is not an actor on Mad Men, and refuses to participate in Karaoke.
-        %hr
-
-    %a#luislavena
-    %li.speaker
-      .summary
-        .picture
-          %img{:src => "/images/speakers/luislavena.png"}
-        %ul.links
-          %li= twitter "@luislavena", "luislavena"
-          %li= link_to 'website', "http://blog.mmediasys.com/"
-          %li= link_to 'github', 'http://github.com/luislavena'
-          %li= link_to 'ruby installer', 'http://rubyinstaller.org/'
-
-      .description
-        %h1 
-          Luis Lavena
-        %h2
-          from 
-          %span Area17
-
-        %p During the day, Luis Lavena is technical director at AREA 17, working on projects across the globe.
-
-        %p At night, he is the lead developer of RubyInstaller for Windows, a successor of once known One-Click Installer project that aims to reduce differences for Ruby users running Windows.
-
-        %p He also created other projects that helped Ruby developers in other platforms (not just Windows) and oversees other libraries so they are cross-platform friendly, looking for compliance beyond “works on my machine”
-
-        %p As his twitter account states, he can be defined as *nix developers worst nightmare…
-
-        %p He is also a RubyGems contributor and recently become Ruby-Core committer as one of the Ruby’s MinGW maintainers.
-        %hr
-
-    %a#compay
-    %li.speaker
-      .summary
-        .picture
-          %img{:src => "/images/speakers/compay.png"}
-        %ul.links
-          %li= twitter "@compay", "compay"
-          %li= link_to 'website', "http://njclarke.com/"
-          %li= link_to 'github', 'http://github.com/norman'
-          %li= link_to 'babosa', 'https://github.com/norman/babosa'
-          %li= link_to 'friendly_id', 'https://github.com/norman/friendly_id'
-
-      .description
-        %h1 
-          Norman Clarke
-        %h2
-          from
-          %span
-            Business Vision S.A.
-        %p
-          Man of letters and numbers working with Ruby, Lua and others. Anglo/hispano/lusophile. Code, linguistics, samba, and of course, beer.
-
-        %p He works as a cofounder and Principal Developer of Ruby Labs. Ruby Labs is a division within Business Vision S.A., an Argentine software development company with offices in Buenos Aires, La Plata, San Francisco and Miami. Business Vision has been successful for many years working primarily with Java and .NET, and now he's helping them move into dynamic languages: first with Ruby, but with more to come.
-
-        %p At the moment he programs primarily with Ruby for work and Lua for fun. In the past he worked quite a bit with Java and PHP. I'm a fan of programming in general and like well-made things, regardless of what technology they use. His focus is on back-end systems and web application architecture.
-
-    %a#merbist
-    %li.speaker
-      .summary
-        .picture
-          %img{:src => "/images/speakers/merbist.png"}
-        %ul.links
-          %li= twitter "@merbist", "merbist"
-          %li= link_to 'website', "http://merbist.com/"
-          %li= link_to 'github', 'https://github.com/mattetti'
-          %li= link_to 'macruby', 'http://www.macruby.com/'
-
-      .description
-        %h1 
-          Matt Aimonetti
-        %h2
-          from
-          %span
-            Living Social
-        %p 
-          Matt Aimonetti is an R&D Engineer at LivingSocial where he gets to spike projects and imagine the future.
-
-        %p 
-          Prior to that, Matt worked on video games at Sony PlayStation after having worked for many years with startups, fortune 100 companies and traditional companies. He has had the opportunity to be involved with really captivating projects in different domain spaces from Biotech to comics, and everything in between.
-
-
-        %p
-          Matt is the author of the MacRuby book by O'Reilly http://oreil.ly/macrubybook and has been active in the Ruby community for many years. He is currently part of the MacRuby team, has developed or contributed to a lot OSS libraries and frameworks (Merb, Rails and many more), and speaks at users groups and conferences in the U.S.
-
-    %a#rkh
-    %li.speaker
-      .summary
-        .picture
-          %img{:src => "/images/speakers/rkh.jpg"}
-        %ul.links
-          %li= twitter "@konstantinhaase", "konstantinhaase"
-          %li= link_to "website", "http://rkh.im/"
-          %li= link_to "github", "https://github.com/rkh"
-          %li= link_to "sinatra", "http://www.sinatrarb.com/"
-
-      .description
-        %h1
-          Konstantin Haase
-        %h2
-          from
-          %span
-            Finn GmbH
-        %p
-          As current maintainer of Sinatra, Konstantin is an Open Source developer by heart. 
-        %p 
-          Ruby has become his language of choice since 2005. He actively participates in the Ruby community and regularly contributes to different widespread projects, like Rubinius, Rack and Redcar. 
-        %p 
-          In 2010, he successfully took part in the Ruby Summer Of Code, working on Rails internals. Konstantin is currently studying IT Systems Engineering at the Hasso Plattner Institute in Potsdam, Germany, and works part time as a software engineer at finnlabs in Berlin.
-
-      .clear
+        .description
+          %h1= speaker.name
+          %h2
+            from
+            %span= speaker.company
+          = simple_format(speaker.description_en)
+        .clear
     
-    %a#mojombo
-    %li.speaker
-      .summary
-        .picture
-          %img{:src => "/images/speakers/mojombo.jpg"}
-        %ul.links
-          %li= twitter "@mojombo", "mojombo"
-          %li= link_to "website", "http://tom.preston-werner.com/"
-          %li= link_to "github", "https://github.com/mojombo"
-          %li= link_to "github website", "http://www.github.com/"
-          
-      .description
-        %h1
-          Tom Preston-Werner
-        %h2
-          from
-          %span
-            GitHub
-        %p
-          Tom Preston-Werner is the cofounder of GitHub and inventor of Gravatar. 
-        :plain
-          <p>
-            He's also the developer behind <a href="https://github.com/mojombo/chronic">chronic</a>, <a href='https://github.com/mojombo/grit'>grit</a> and <a href='https://github.com/mojombo/jekyll'>jekyll</a> to name a few. </p>
-          <p>
-            You can read his blog at <a href='http://tom.preston-werner.com/'>http://tom.preston-werner.com/</a> or see a couple of videos about him <a href='http://www.maestrosdelweb.com/editorial/tom-preston-werner-fundador-de-github/'>here</a> and <a href='http://confreaks.net/videos/432-rubyconf2010-the-road-from-ruby-hacker-to-entrepreneur'>here</a>.
-          </p>
-      .clear
-      
