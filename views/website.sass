@@ -81,10 +81,7 @@ $default_rounded_amount: 5px
 @mixin common-submit
   @include box-shadow(-2px, -2px, 0, $brown, inset)
   background: $yellow url('/images/yellow_texture.png') repeat center center
-  border:
-    color: black
-    style: solid
-    width: 1px
+  border: 1px solid black
   color: $brown
   // font-weight: bold
   font-size: 14px
@@ -971,5 +968,8 @@ ul#speakers_box
         @include picture_frame
         display: block
         height: 120px
+        
+        &:hover
+          @include gradient($yellow, $yellow_mustard)
 
 
