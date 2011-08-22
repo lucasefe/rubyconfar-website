@@ -1,8 +1,7 @@
-data_mapper
-dm-mysql-adapter
 haml
 rack
 sass
 sinatra
 sinatra-cache
 pony
+yaml_record
