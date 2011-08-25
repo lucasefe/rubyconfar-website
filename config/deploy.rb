@@ -11,7 +11,7 @@ set :stage, :production
 set :user, "lucas"
 set :use_sudo, false
 set :runner, "deploy"
-set :deploy_to, "/var/apps/#{application}"
+set :deploy_to, "/home/rubysur/apps/#{application}"
 set :app_server, :passenger
 set :domain, "www.rubyconfargentina.org"
 
