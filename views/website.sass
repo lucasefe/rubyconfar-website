@@ -81,10 +81,7 @@ $default_rounded_amount: 5px
 @mixin common-submit
   @include box-shadow(-2px, -2px, 0, $brown, inset)
   background: $yellow url('/images/yellow_texture.png') repeat center center
-  border:
-    color: black
-    style: solid
-    width: 1px
+  border: 1px solid black
   color: $brown
   // font-weight: bold
   font-size: 14px
@@ -139,6 +136,23 @@ html, body
   clear: both
 .right
   text-align: right
+
+.register_btn
+  width: 292px
+  height: 50px
+  background-image: url('/images/register_sprite.png') 
+  background-repeat: no-repeat       
+  margin: 26px 0 8px 0
+           
+  &#es
+    background-position: left top
+    &:hover
+      background-position: left -50px
+    
+  &#en
+    background-position: right top
+    &:hover
+      background-position: right -50px
 
 html
   body
@@ -367,22 +381,7 @@ html
                 img
                   margin-top: 5px
                   
-            .register_btn
-              width: 292px
-              height: 50px
-              background-image: url('/images/register_sprite.png') 
-              background-repeat: no-repeat       
-              margin: 26px 0 8px 0
-                       
-              &#es
-                background-position: left top
-                &:hover
-                  background-position: left -50px
-                
-              &#en
-                background-position: right top
-                &:hover
-                  background-position: right -50px
+
                   
             #in-the-loop
               margin: 26px 0 8px 0
@@ -871,17 +870,21 @@ html
         
       #footer
         background: url('/images/footer3.jpg') no-repeat center bottom
-        height: 316px
         clear: both
-        text-align: center
-        font:
-          size: 11px
-          weight: normal
+        font-size: 11px
+        font-weight: normal
+        height: 316px
         letter-spacing: 0.5px
         padding: 40px 0 0 0
+        text-align: center
 
         #footer_content       
-          margin-top: 250px
+          margin-top: 150px
+          
+          .register_btn
+            margin: 0 auto
+            margin-bottom: 50px
+          
           a
             color: $yellow
             @include text-shadow(-1px, -1px, 0, $red115)
@@ -891,6 +894,13 @@ html
               
           .twitter_icon, .github_icon
             display: inline-table
+          #szstudios
+            @include rounded(8px)
+            background: url('http://www.szstudios.com.ar/favicon.ico')
+            display: inline-block
+            height: 16px
+            margin: 0 4px -2px 0
+            width: 16px
 
 
 
@@ -958,5 +968,8 @@ ul#speakers_box
         @include picture_frame
         display: block
         height: 120px
+        
+        &:hover
+          @include gradient($yellow, $yellow_mustard)
 
 
