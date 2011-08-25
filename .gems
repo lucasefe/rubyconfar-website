@@ -5,3 +5,4 @@ sinatra
 sinatra-cache
 pony
 yaml_record
+haml-coderay
