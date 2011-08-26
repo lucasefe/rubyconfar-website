@@ -6,6 +6,7 @@ require 'sass'
 require 'data_mapper'
 require "ostruct"
 require "haml-coderay"
+require 'date'
 
 ENV["RACK_ENV"] = "development" unless ENV["RACK_ENV"]
 RACK_ENV = ENV["RACK_ENV"]
@@ -47,6 +48,11 @@ module RubyConf
     end
 
     helpers do
+      
+      def full_price?
+        DateTime.now >= DateTime.parse("2011/10/1 0:0:0")
+      end
+      
       def partial(page, options={})
         haml page, options.merge!(:layout => false)
       end
