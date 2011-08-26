@@ -1,3 +1,6 @@
 %a{:href => "https://eventioz.com/events/rubyconf-argentina-2011/registrations/new", :title => "Register Now", :target => "blank" }
-  .register_btn{:id => language}
+  - if full_price?
+    .register_btn{:id => language}
+  - else
+    .register_btn_85{:id => language}
 .clear
