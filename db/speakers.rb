@@ -99,3 +99,19 @@ Speaker.create :name => "Tom Preston-Werner",
   "github" => "https://github.com/mojombo",
   "github website" =>  "http://www.github.com/"
 }
+
+Speaker.create :name => "Koichiro Eto", 
+:company => 'Social Intelligence Technology Research Laboratory, National Institute of Advanced Industrial Science and Technology (AIST)',
+:picture => "/images/speakers/eto.jpg",
+:twitter => "eto",
+:description_en => %Q(Graduated from School of Media and Governance, he also holds a PhD in Information Science and Technology from University of Tokyo. \n
+    As a researcher at <a href="http://www.sitr.jp/">AIST-SITR</a> since 1997, he created several Media Art works focusing on network communication over the Internet. \n
+    Interested in collaboration environment to support collaborative intelligence on the Web.  Member of the Information Processing Society of Japan. \n
+    He is the author of <a href="http://www.amazon.co.jp/dp/4774138975">Pattern, Wiki, XP - timeless principles of creation</a>),
+:description_en => %Q(Graduado de School of Media and Governance y doctorado en Information Science and Technology en la Universidad de Tokio. \n
+    Como investigador en <a href="http://www.sitr.jp/">AIST-SITR</a> desde 1997, ha creado numerosos trabajos de Media Art enfocados en las redes de comunicación sobre internet. \n
+    Está particularmente interesado en los ambientes de colaboración como soporte de inteligencia colaborativa en la web. Es miembro de la Information Processing Society de Japón. \n
+    Es el autor del libro <a href="http://www.amazon.co.jp/dp/4774138975">Pattern, Wiki, XP - timeless principles of creation</a>),
+:links => {
+  "website"  => "http://eto.com/",
+}
