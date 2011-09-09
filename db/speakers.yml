@@ -145,3 +145,21 @@
   :links:
     :website: http://eto.com/
   :id: 7dh08123b4g1c2ag0gc47101fd62e9
+- :name: Emilio Gutter
+  :company: 10Pines
+  :picture: /images/speakers/egutter.jpg
+  :twitter: egutter
+  :description_en: |-
+      Co-founder of 10Pines, a Latin American agile development & consultancy company based in Buenos Aires. Emilio is strongly 
+      committed with the local Agile community and he was a member of the organization committee for Agiles2008, Agiles2010 and 
+      Agiles2011. In the professional field, he has been working in software development area for more than 10 years, participating 
+      in several projects for Argentina, Brazil, United Kingdom, United States, France, Romania and Bulgaria.
+  :description_es: |-
+      Co-fundador de 10Pines, una empresa Latinoamericana, basada en Buenos Aires, dedidaca a consultoría y desarrollo utilizando 
+      metodologías ágiles. Emilio está muy comprometido con la comunidad Ágil local y ha sido miembro organizador de Agiles 2008, 2010 y 2011.
+      En el campo profesional ha trabajado en la industria de desarrollo de software por más de 10 años, participando en  
+      numerosos proyectos en Argentina, Brasil, Reino Unido, Estados Unidos, Francia, Rumania y Bulgaria.
+  :links:
+    :website: http://10pines.com/
+    :github: http://github.com/egutter
+  :id: 4a230e1125548d61c9300c4368a9ae
