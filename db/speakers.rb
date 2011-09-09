@@ -113,5 +113,22 @@ Speaker.create :name => "Koichiro Eto",
     Está particularmente interesado en los ambientes de colaboración como soporte de inteligencia colaborativa en la web. Es miembro de la Information Processing Society de Japón. \n
     Es el autor del libro <a href="http://www.amazon.co.jp/dp/4774138975">Pattern, Wiki, XP - timeless principles of creation</a>),
 :links => {
-  "website"  => "http://eto.com/",
+  "website"  => "http://eto.com/"
+}
+
+Speaker.create :name => "Emilio Gutter", 
+:company => '10Pines',
+:picture => "/images/speakers/egutter.jpg",
+:twitter => "egutter",
+:description_en => %Q(Co-founder of 10Pines, a Latin American agile development & consultancy company based in Buenos Aires. Emilio is strongly 
+      committed with the local Agile community and he was a member of the organization committee for Agiles2008, Agiles2010 and 
+      Agiles2011. In the professional field, he has been working in software development area for more than 10 years, participating 
+      in several projects for Argentina, Brazil, United Kingdom, United States, France, Romania and Bulgaria.),
+:description_en => %Q(Co-fundador de 10Pines, una empresa Latinoamericana, basada en Buenos Aires, dedidaca a consultoría y desarrollo utilizando 
+      metodologías ágiles. Emilio está muy comprometido con la comunidad Ágil local y ha sido miembro organizador de Agiles 2008, 2010 y 2011.
+      En el campo profesional ha trabajado en la industria de desarrollo de software por más de 10 años, participando en  
+      numerosos proyectos en Argentina, Brasil, Reino Unido, Estados Unidos, Francia, Rumania y Bulgaria.),
+:links => {
+  "website"  => "http://10pines.com/",
+  "github" => "http://github.com/egutter"
 }
