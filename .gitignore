@@ -4,6 +4,8 @@
 /public/website.css
 /public/es
 /public/en
+/log/*
+/tmp/*
 /public/*.html
 capybara*.html
 config/settings.yml
