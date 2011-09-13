@@ -108,10 +108,57 @@ Speaker.create :name => "Koichiro Eto",
     As a researcher at <a href="http://www.sitr.jp/">AIST-SITR</a> since 1997, he created several Media Art works focusing on network communication over the Internet. \n
     Interested in collaboration environment to support collaborative intelligence on the Web.  Member of the Information Processing Society of Japan. \n
     He is the author of <a href="http://www.amazon.co.jp/dp/4774138975">Pattern, Wiki, XP - timeless principles of creation</a>),
-:description_en => %Q(Graduado de School of Media and Governance y doctorado en Information Science and Technology en la Universidad de Tokio. \n
+:description_es => %Q(Graduado de School of Media and Governance y doctorado en Information Science and Technology en la Universidad de Tokio. \n
     Como investigador en <a href="http://www.sitr.jp/">AIST-SITR</a> desde 1997, ha creado numerosos trabajos de Media Art enfocados en las redes de comunicación sobre internet. \n
     Está particularmente interesado en los ambientes de colaboración como soporte de inteligencia colaborativa en la web. Es miembro de la Information Processing Society de Japón. \n
     Es el autor del libro <a href="http://www.amazon.co.jp/dp/4774138975">Pattern, Wiki, XP - timeless principles of creation</a>),
 :links => {
-  "website"  => "http://eto.com/",
+  "website"  => "http://eto.com/"
+}
+
+Speaker.create :name => "Pedro Belo", 
+:company => 'Heroku',
+:picture => "/images/speakers/ped.jpg",
+:twitter => "ped",
+:description_en => %Q(Another dude that took computer science with aspirations to write games, decided to adopt Ruby after realizing it's 
+    actually more fun to write business applications than games. Worked as a Ruby consultant in Brazil and in the US, 
+    until joining Heroku in 2008 - where he takes projects ranging from Node.js support to organizing Starcraft and Poker nights.),
+:description_es => %Q(Otra persona más que se tomó la informática con aspiraciones de escribir juegos, decidió adoptar Ruby después se dio
+    cuenta de que en realidad es más divertido escribir aplicaciones de negocio que juegos. Trabajó como consultor de Ruby 
+    en Brasil y Estados Unidos, hasta su incorporación Heroku en 2008 - donde trabaja en proyectos que van desde el soporte 
+    para Node.js hasta organizar noches de Poker y Starcraft.),
+:links => {
+  "github" => "http://github.com/pedro"
+}
+
+Speaker.create :name => "Stephen Anderson", 
+:company => 'Bendyworks',
+:picture => "/images/speakers/bendycode.jpg",
+:twitter => "bendycode",
+:description_en => %Q(Steve has been pursuing software quality and value since 1992. This has lead him to Ruby, Rails, Behavior Driven Development, Continuous Integration, Extreme Programming, and Software Craftsmanship. 
+    He loves teaching, mentoring and bringing new people to Rails. He is a founder at Bendyworks.
+    When not writing software, Steve spends time with his family, dogs, and playing softball, volleyball & racquetball.),
+:description_es => %Q(Steve ha trabajado en mejorar la calidad del software desde 1992. Esto lo ha llevado hasta Ruby, Rails, Behavior Driven Development, Integración Contínua, Extreme Programming, y Software Craftsmanship. 
+    Ama enseñar y compartir sus conocimientos, así como iniciar a la gente en Rails. Es uno de los fundadores de Bendyworks.
+    Cuando no está escribiendo software, Steve dedica su tiempo a su familia, a sus perros, a jugar softball, voleyball y racquetball.),
+:links => {
+  "website"  => "http://bendyworks.com",
+  "github" => "http://github.com/bendycode"
+}
+
+Speaker.create :name => "Emilio Gutter", 
+:company => '10Pines',
+:picture => "/images/speakers/egutter.jpg",
+:twitter => "egutter",
+:description_en => %Q(Co-founder of 10Pines, a Latin American agile development & consultancy company based in Buenos Aires. Emilio is strongly 
+      committed with the local Agile community and he was a member of the organization committee for Agiles2008, Agiles2010 and 
+      Agiles2011. In the professional field, he has been working in software development area for more than 10 years, participating 
+      in several projects for Argentina, Brazil, United Kingdom, United States, France, Romania and Bulgaria.),
+:description_es => %Q(Co-fundador de 10Pines, una empresa Latinoamericana, basada en Buenos Aires, dedidaca a consultoría y desarrollo utilizando 
+      metodologías ágiles. Emilio está muy comprometido con la comunidad Ágil local y ha sido miembro organizador de Agiles 2008, 2010 y 2011.
+      En el campo profesional ha trabajado en la industria de desarrollo de software por más de 10 años, participando en  
+      numerosos proyectos en Argentina, Brasil, Reino Unido, Estados Unidos, Francia, Rumania y Bulgaria.),
+:links => {
+  "website"  => "http://10pines.com/",
+  "github" => "http://github.com/egutter"
 }
