@@ -28,6 +28,13 @@
           
       #content  
         - flashes
+
+        - unless Date.today > Date.new(2011, 9, 30)
+          #alert
+            Sólo quedan #{Date.new(2011, 10, 1)-Date.today} días para registrarte con el 15% de descuento! Si aún no lo hiciste,
+            %a{:href => "https://eventioz.com/events/rubyconf-argentina-2011/registrations/new"}
+              registrate aquí ahora!
+
         = yield
       
       #footer
