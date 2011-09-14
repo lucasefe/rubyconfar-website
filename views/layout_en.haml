@@ -29,9 +29,10 @@
       #content  
         - flashes
 
-        - unless Date.today > Date.new(2011, 9, 30)
+        - @remaining = Date.new(2011, 10, 1)-Date.today
+        - unless @remaining < 0
           #alert
-            Just #{Date.new(2011, 10, 1)-Date.today} days left for Early Bird registrations! If you haven't done it yet,
+            Just #{ pluralize(@remaining, "day", "days") } left for Early Bird registrations! If you haven't done it yet,
             %a{:href => "https://eventioz.com/events/rubyconf-argentina-2011/registrations/new"}
               register here now!
 
