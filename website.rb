@@ -164,6 +164,10 @@ module RubyConf
       end
     end
 
+    def pluralize(count, singular, plural = nil)
+      "#{count || 0} " + ((count == 1 || count =~ /^1(\.0+)?$/) ? singular : (plural || singular.pluralize))
+    end
+
     def haml(template_or_code, options={}, &block)
       layout = options.has_key?(:layout) ? options.delete(:layout) : :layout
       options[:layout] = :"#{layout}_#{language}" if layout

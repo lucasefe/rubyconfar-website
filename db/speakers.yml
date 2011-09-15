@@ -145,6 +145,20 @@
   :links:
     website: http://eto.com/
   :id: 7dh08123b4g1c2ag0gc47101fd62e9
+- :name: Nicolas Sanguinetti
+  :company: Cubox
+  :picture: /images/speakers/godfoca.png
+  :twitter: godfoca
+  :description_en: |-
+      Nicolás (also known as foca) has been writing horrible code for the past 10 years, each line worse than the last. Over this period, he learnt a few things about testing horrible code, and hopefully he can say one or two things that are worth listening over this presentation. Hopefully.
+      He usually hacks on ruby and javascript open source thingies at http://github.com/foca. He lives in Montevideo, Uruguay, where he works as an engineer for Cubox.
+  :description_es: |-
+      Nicolás (también conocido como Foca), ya lleva 10 años escribiendo código horrible, cada línea peor que el anterior. Durante este período, aprendió algunas cosas sobre cómo probar código horrible, y espera poder decir una o dos cosas que valga la pena escuchar en esta presentación. Ojalá.
+      Por lo general programa algunos proyectos open source en Ruby y Javascript, que podemos encontrar en http://github.com/foca. Vive en Montevideo, Uruguay, donde trabaja como ingeniero para Cubox.
+  :links:
+    website: http://nicolassanguinetti.info/
+    github: https://github.com/foca
+  :id: c2131b2254abc34c4d056bb88a41f4
 - :name: Pedro Belo
   :company: Heroku
   :picture: /images/speakers/ped.jpg
@@ -158,6 +172,40 @@
   :links:
     github: https://github.com/pedro
   :id: 3afc61dc1dbd3d14db7b7b1e42696f
+- :name: Federico Brubacher
+  :company: Cubox
+  :picture: /images/speakers/fbru02.png
+  :twitter: fbru02
+  :description_en: |-
+      Federico Brubacher is a Rails engineer from Uruguay, a language lover and a proponent of going where no man has gone before. 
+      He has many contributions to open source and he gave a talk in last year's RubyConf Uruguay. 
+      He works at Cubox helping mostly startups achieve their objectives.
+  :description_es: |-
+      Federico Brubacher es un desarrollador Rails de Uruguay, amante de los idiomas y defensor de ir a donde ningún hombre ha ido jamás. 
+      Tiene muchas contribuciones a la comunidad open source y fue orador en RubyConf Uruguay el año pasado.
+      Trabaja en Cubox ayudando, principalmente a startups, a alcanzar sus objetivos.
+  :links:
+    website: http://www.fbrubacher.com/
+    github: https://github.com/fbrubacher
+  :id: c227df9c716d1b19b60a502c40c6e62b
+- :name: Alex Coles
+  :company: Payango GmbH
+  :picture: /images/speakers/myabc.png
+  :twitter: myabc
+  :description_en: |-
+      Alex Coles is a web developer based in Berlin, currently working for Payango GmbH, a financial startup and leading provider of prepaid credit cards in Germany. 
+      He’s active in the open-source community, and has been involved with the DataMapper project since shortly after its inception. 
+      He’s also contributed extensively to many other projects including RefineryCMS, Friendly ID and RakeCompiler. 
+      When not writing code, Alex has also been involved with the community in other ways – this year he organised eurucamp Berlin 2011, an alternative conference to the popular EuRuKo.
+  :description_es: |-
+      Alex Coles es un desarrollador web con sede en Berlín, trabaja actualmente para Payango GmbH, un emprendimiento financiero y uno de los principales proveedores de tarjetas de crédito prepagas en Alemania.
+      Es participante activo de la comunidad open source, y ha estado involucrado en el proyecto DataMapper desde poco después de su creación.
+      También ha contribuído ampliamente en muchos otros proyectos, como RefineryCMS, Friendly ID y RakeCompiler.
+      Cuando no está escribiendo código, Alex también se involucra con la comunidad de otra manera - este año organizó eurucamp Berlín 2011, una conferencia alternativa a la popular EuRuKo.
+  :links:
+    website: http://alexbcoles.com/
+    github: https://github.com/myabc
+  :id: a008162ae5cc8f58cf82b270dfe901
 - :name: Stephen Anderson
   :company: Bendyworks
   :picture: /images/speakers/bendycode.jpg
