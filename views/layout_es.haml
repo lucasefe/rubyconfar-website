@@ -32,9 +32,12 @@
         - @remaining = Date.new(2011, 10, 1)-Date.today
         - unless @remaining < 0
           #alert
-            Sólo quedan #{ pluralize(@remaining, "día", "días") } para registrarte con el 15% de descuento! Si aún no lo hiciste,
-            %a{:href => "https://eventioz.com/events/rubyconf-argentina-2011/registrations/new"}
-              registrate aquí ahora!
+            %p
+              Sólo quedan 
+              %strong #{ pluralize(@remaining, "día", "días") } 
+              para registrarte con el 15% de descuento!
+              %a{:href => "https://eventioz.com/events/rubyconf-argentina-2011/registrations/new"}
+                Si aún no lo hiciste, registrate aquí ahora!
 
         = yield
       

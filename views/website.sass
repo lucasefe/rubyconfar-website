@@ -7,6 +7,7 @@ $red100: #ab3124
 $red120: #6e2821
 $red115: #82251d
 $red150: #471915
+$blue: #215c98
 $light-blue: #afd8e4
 $gray: #c0b8b9
 
@@ -333,15 +334,24 @@ html
           text-align: center
 
         #alert
-          color: #fff
-          background: #F7A924
+          @include box-shadow(2px, 2px, 0, $brown, inset)
+          @include text-shadow(1px, 1px, 0, $yellow)
+          background: $yellow url("/images/yellow_texture.png")
+          border: 1px solid $red150
+          color: $red100
+          font-size: 19px
           font-weight: bold
-          border: 1px solid #fff
-          padding: 8px
-          margin-bottom: 10px
+          margin-bottom: 15px
+          padding: 2px 8px 0
           text-align: center
-          a
-            color: #AB3124
+          p
+            background: url("/images/bkg_alert.png") no-repeat 53px -8px
+            padding: 8px 0
+            strong
+              color: black
+            a
+              color: $blue
+              font-size: 14px
 
         #home
           #left_col
