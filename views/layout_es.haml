@@ -28,11 +28,13 @@
           
       #content  
         - flashes
-
         - @remaining = Date.new(2011, 10, 1)-Date.today
         - unless @remaining < 0
           #alert
-            Sólo quedan #{ pluralize(@remaining, "día", "días") } para registrarte con el 15% de descuento! Si aún no lo hiciste,
+          <script type="text/javascript" charset="utf-8">
+            jQuery(function(){  jQuery("#reminder").html( parseInt(( Date.parse("2011-10-1") - Date.now() ) /(1000*60*60*24) ) );	 });
+          </script>
+            Sólo quedan <div id="reminder"></div> días para registrarte con el 15% de descuento! Si aún no lo hiciste,
             %a{:href => "https://eventioz.com/events/rubyconf-argentina-2011/registrations/new"}
               registrate aquí ahora!
 
