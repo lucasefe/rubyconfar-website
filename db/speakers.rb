@@ -162,3 +162,14 @@ Speaker.create :name => "Emilio Gutter",
   "website"  => "http://10pines.com/",
   "github" => "http://github.com/egutter"
 }
+
+Speaker.create :name => "Patrick Hüsler",
+:company => 'huesler informatik',
+:picture => "/images/speakers/phuesler.jpg",
+:twitter => "phuesler",
+:description_en => %Q(Passionate geek and founder of huesler informatik, a software development and consulting company in based in Switzerland.\nWhen not working on something computer related, he enjoys drinking coffee, going out or just walking through the streets, taking pictures. Since writing computer programs does not involve a lot of physical activity, he also practice the art of Kung Fu to compensate that.),
+:description_es => %Q(Geek apasionado  y fundador de huesler informatik, una compañía de desarrollo de software y consultoría basada en Suiza.\nCuando no se encuentra trabajando en algo relacionado con computadoras, disfruta de tomar café, salir a pasear o simplemente caminar por las calles, tomando fotografías. Dado que programar no involucra mucha actividad física practica el arte del Kung Fu para compensar.),
+:links => {
+  "website" => "http://patrickhuesler.com/",
+  "github"  => "https://github.com/phuesler"
+}
