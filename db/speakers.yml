@@ -271,3 +271,25 @@
     website: http://collison.ie/
     github: https://github.com/pc
   :id: 36d90c45e4937f501e0a8665b65e03
+- :name: Sean Cribbs
+  :picture: /images/speakers/seancribbs.jpg
+  :company: Basho
+  :twitter: seancribbs
+  :description_en: Sean Cribbs is a Developer Advocate for Basho Technologies, where
+    he hacks in Ruby, Erlang and JavaScript to solve hard problems for customers and
+    the open-source community around the Riak distributed datastore. Before Basho,
+    Sean was a freelance Ruby and Rails developer, the maintainer of the popular open-source
+    Radiant CMS software, and erstwhile music theorist, composer, choral conductor
+    and pianist.  Sean is a graduate of University of Tulsa, Oklahoma, USA and currently
+    lives in central New Jersey, USA.
+  :description_es: Sean Cribbs es Developer Advocate para Basho Technologies, donde
+    trabaja programando en Ruby, Erlang and JavaScript para resolver problemas difíciles
+    para sus clientes, y la comunidad open-source de Riak. Antes de Basho, Sean fue
+    programador freelance de Ruby and Rails, responsable del popular Radiant CMS,
+    teórico de musica antigua, compositor, director coral y pianista. Sean es graduado
+    de la Universidad de Tulsa, Oklahoma, EE.UU. y actualmente vive en New Jersey,
+    EE.UU.
+  :links:
+    website: http://seancribbs.com/
+    github: https://github.com/seancribbs
+  :id: d1e1cac6cf8c0f175eba0524aad440
