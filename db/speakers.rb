@@ -173,3 +173,13 @@ Speaker.create :name => "Patrick Hüsler",
   "website" => "http://patrickhuesler.com/",
   "github"  => "https://github.com/phuesler"
 }
+Speaker.create :name => "Patrick Collison",
+:company => "Stripe",
+:picture => "/images/speakers/pc.jpg",
+:twitter => "patrickc",
+:description_en => %Q(Co-founder of Stripe, a ten-person company in Palo Alto, California, that makes easier to accept payments on the web.\nIn the past he studied Mathematics at MIT and cofounded Auctomatic, later acquired in 2008 by Live Current Media. He's also the author of Encyclopedia, which stores a copy of Wikipedia on an iPhone and iPad.),
+:description_es => %Q(Cofundador de Stripe, compañía de diez empleados en Palo Alto, California, dedicada a facilitar la aceptación de pages en la eweb.\nEn el pasado estudió matemáticas en el MIT y cofundó Auctomatic, luego adquirida por Live Current Media en 2008. Es también el autor de Encyclopedia, que almacena una copia de Wikipedia en iPhone y iPad.),
+:links => {
+  "website" => "http://collison.ie/",
+  "github"  => "https://github.com/pc"
+}

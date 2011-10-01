@@ -251,3 +251,23 @@
   :links:
     website: http://patrickhuesler.com/
     github: https://github.com/phuesler
+- :name: Patrick Collison
+  :picture: /images/speakers/pc.jpg
+  :company: Stripe
+  :twitter: patrickc
+  :description_en: ! 'Co-founder of Stripe, a ten-person company in Palo Alto, California,
+    that makes easier to accept payments on the web.
+
+    In the past he studied Mathematics at MIT and cofounded Auctomatic, later acquired
+    in 2008 by Live Current Media. He''s also the author of Encyclopedia, which stores
+    a copy of Wikipedia on an iPhone and iPad.'
+  :description_es: ! 'Cofundador de Stripe, compañía de diez empleados en Palo Alto,
+    California, dedicada a facilitar la aceptación de pages en la eweb.
+
+    En el pasado estudió matemáticas en el MIT y cofundó Auctomatic, luego adquirida
+    por Live Current Media en 2008. Es también el autor de Encyclopedia, que almacena
+    una copia de Wikipedia en iPhone y iPad.'
+  :links:
+    website: http://collison.ie/
+    github: https://github.com/pc
+  :id: 36d90c45e4937f501e0a8665b65e03
