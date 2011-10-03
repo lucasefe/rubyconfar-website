@@ -162,3 +162,35 @@ Speaker.create :name => "Emilio Gutter",
   "website"  => "http://10pines.com/",
   "github" => "http://github.com/egutter"
 }
+
+Speaker.create :name => "Patrick Hüsler",
+:company => 'huesler informatik',
+:picture => "/images/speakers/phuesler.jpg",
+:twitter => "phuesler",
+:description_en => %Q(Patrick Huesler is a web developer from Switzerland who is currently based in Berlin. He works as an engineer for wooga, a social game company, where he builds backend systems. He is an active member of Berlin's Ruby user group, a co-organizer of EuRuKo 2011, likes to hack on open source software and dreams about going surfing more often.),
+:description_es => %Q(Patrick Huesler es un desarrollador web suizo actualmente viviendo en Berlín. Trabaja como ingeniero para wooga, desarrolladores de juegos sociales, donde programa los sistemas de backend. Es un miembro activo del grupo de usuarios Ruby de Berlín, co-organizador de EuRuKo 2011, le encanta programar software open source y sueña con ir a surfear más seguido.),
+:links => {
+  "website" => "http://patrickhuesler.com/",
+  "github"  => "https://github.com/phuesler"
+}
+Speaker.create :name => "Patrick Collison",
+:company => "Stripe",
+:picture => "/images/speakers/pc.jpg",
+:twitter => "patrickc",
+:description_en => %Q(Patrick is a founder and engineer at Stripe, a developer-oriented payment processing system.\nBefore Stripe, Patrick studied mathematics at MIT. Patrick remains a programming language implementation nerd, and worked for several years on a dialect of Lisp called Croma. He sometimes wishes Ruby was more like Smalltalk.\nThe first version of Stripe was built and launched while on holiday in Buenos Aires.),
+:description_es => %Q(Patrick es fundador e ingeniero en Stripe, un sistema de procesamiento de pagos orientado a desarrolladores.\nAntes de Stripe, Patrick estudió matemáticas en el MIT. Patrick continua siendo un nerd en lo que respecta a implementaciones de lenguajes de programación, y trabajó durante muchos años en un dialécto de Lisp llamado Croma. A veces él desea que Ruby fuera un poco más como Smalltalk.\nLa primera versión de Stripe fue desarrollada y lanzada durante unas vacaciones en Buenos Aires.),
+:links => {
+  "website" => "http://collison.ie/",
+  "github"  => "https://github.com/pc"
+}
+
+Speaker.create :name => "Sean Cribbs",
+:company => "Basho",
+:picture => "/images/speakers/seancribbs.jpg",
+:twitter => "seancribbs",
+:links => {
+  "website" => "http://seancribbs.com/",
+  "github"  => "https://github.com/seancribbs"
+},
+:description_en => %Q(Sean Cribbs is a Developer Advocate for Basho Technologies, where he hacks in Ruby, Erlang and JavaScript to solve hard problems for customers and the open-source community around the Riak distributed datastore. Before Basho, Sean was a freelance Ruby and Rails developer, the maintainer of the popular open-source Radiant CMS software, and erstwhile music theorist, composer, choral conductor and pianist.  Sean is a graduate of University of Tulsa, Oklahoma, USA and currently lives in central New Jersey, USA.),
+:description_es => %Q(Sean Cribbs es Developer Advocate para Basho Technologies, donde trabaja programando en Ruby, Erlang and JavaScript para resolver problemas difíciles para sus clientes, y la comunidad open-source de Riak. Antes de Basho, Sean fue programador freelance de Ruby and Rails, responsable del popular Radiant CMS, teórico de musica antigua, compositor, director coral y pianista. Sean es graduado de la Universidad de Tulsa, Oklahoma, EE.UU. y actualmente vive en New Jersey, EE.UU.)
