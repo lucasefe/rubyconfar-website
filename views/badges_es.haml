@@ -1,0 +1,12 @@
+-# coding: utf-8
+#badges
+  %h1.title Badges
+  %p.desc
+    Compartí tu orgullo de atender, organizar u orar en el evento.
+
+  %p.desc
+    ¡Simplemente copiá y pegá el código correspondiente en el layout
+    de tu sitio y ayudanos en la difusión!
+
+  - { :attending => "Asistente", :organizing => "Organizador", :speaking => "Orador" }.each do |type, title|
+    = partial :badges_box, :skip_translation => true, :locals => { :type => type, :title => title }

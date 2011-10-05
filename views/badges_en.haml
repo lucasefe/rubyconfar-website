@@ -1,0 +1,13 @@
+-# coding: utf-8
+#badges
+  %h1.title Badges
+  %p.desc
+    Share your pride if you are attending, organizing or if you are
+    going to speak in the event.
+
+  %p.desc
+    Just copy and paste the proper code and place it in your site
+    layout file and spread the love!
+
+  - { :attending => "Attendee", :organizing => "Organizer", :speaking => "Speaker" }.each do |type, title|
+    = partial :badges_box, :skip_translation => true, :locals => { :type => type, :title => title }
