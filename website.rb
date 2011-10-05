@@ -121,6 +121,10 @@ module RubyConf
       haml :sponsoring
     end
 
+    page "badges" do
+      haml :badges
+    end
+
     page "event" do
       haml :event
     end

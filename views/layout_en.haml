@@ -22,11 +22,11 @@
         %ol
           %li= link_to("Home", "/#{language}")
           %li= link_to("Event", "/#{language}/event")
-          %li= link_to("Call for papers", "/#{language}/proposals")
           %li= link_to("Speakers", "/#{language}/speakers")
           %li= link_to("Sponsoring", "/#{language}/sponsoring")
-          
-      #content  
+          %li= link_to("Badges", "/#{language}/badges")
+
+      #content
         - flashes
 
         - @remaining = Date.new(2011, 10, 8)-Date.today
