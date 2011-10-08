@@ -14,10 +14,10 @@
     %script{ :src => "/javascripts/application.js" }
     /[if lt IE 9]
       %script{ :src => "http://html5shim.googlecode.com/svn/trunk/html5.js" }
-    
+
   %body
     #wrapper
-      = partial :header, :skip_translation => true      
+      = partial :header, :skip_translation => true
       #navigation
         %ol
           %li= link_to("Inicio", "/#{language}")
@@ -25,22 +25,11 @@
           %li= link_to("Convocatoria", "/#{language}/proposals")
           %li= link_to("Oradores", "/#{language}/speakers")
           %li= link_to("Sponsoreo", "/#{language}/sponsoring")
-          
-      #content  
+
+      #content
         - flashes
-
-        - @remaining = Date.new(2011, 10, 8)-Date.today
-        - unless @remaining < 0
-          #alert
-            %p
-              Sólo quedan 
-              %strong #{ pluralize(@remaining, "día", "días") } 
-              para registrarte con el 15% de descuento!
-              %a{:href => "https://eventioz.com/events/rubyconf-argentina-2011/registrations/new"}
-                Si aún no lo hiciste, registrate aquí ahora!
-
         = yield
-      
+
       #footer
         = partial :footer, :skip_translation => true
 

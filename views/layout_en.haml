@@ -14,7 +14,7 @@
     %script{ :src => "/javascripts/application.js" }
     /[if lt IE 9]
       %script{ :src => "http://html5shim.googlecode.com/svn/trunk/html5.js" }
-    
+
   %body
     #wrapper
       = partial :header, :skip_translation => true
@@ -25,20 +25,9 @@
           %li= link_to("Call for papers", "/#{language}/proposals")
           %li= link_to("Speakers", "/#{language}/speakers")
           %li= link_to("Sponsoring", "/#{language}/sponsoring")
-          
-      #content  
+
+      #content
         - flashes
-
-        - @remaining = Date.new(2011, 10, 8)-Date.today
-        - unless @remaining < 0
-          #alert
-            %p
-              Just 
-              %strong #{ pluralize(@remaining, "day", "days") } 
-              left for Early Bird registrations!
-              %a{:href => "https://eventioz.com/events/rubyconf-argentina-2011/registrations/new"}
-                If you haven't yet, register here now!
-
         = yield
 
       #footer
