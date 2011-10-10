@@ -216,3 +216,15 @@ Speaker.create :name => "Pablo Torterella",
     He actively participates in the Agile Methodologies Latin American Community, since the organization of the first Latin American conference (Ágiles 2008, in Buenos Aires). He spoke in Ágiles 2009 (Florianópolis, Brasil), Ágiles 2010 (Lima, Perú) y and is member of the local community (Ágiles@BsAs).
 
     Since 2007 Pablo participates as a teacher in several courses in Facultad de Ingeniería, Universidad de Buenos Aires (UBA). He is a collaborator in courses such as "Control and Management of Informatic Projects II" and "Project Development Workshop I", dictated in the last years of the Ingeniería en Informática.]
+
+Speaker.create :name => "Narihiro Nakamura",
+  :picture => "/images/speakers/authorNari.jpg",
+  :company => "Network Applied Communication Laboratory",
+  :twitter => "nari_en",
+  :links => {
+    "website" => "http://www.narihiro.info/index.en.html",
+    "github" => "https://github.com/authorNari"
+  },
+  :description_es => %Q[Narihiro Nakamura trabaja como investigador en Network Applied Communication Laboratory Ltd..\nÉl es committer de CRuby y un amante del Garbage Collector, por lo tanto trabaja en el GC de CRuby. Es el autor de Lazy Sweep GC en CRuby, y se puede utilizar desde Ruby 1.9.3!],
+  :description_en => %Q[Narihiro Nakamura is a research worker at Network Applied Communication Laboratory Ltd..\nHe is a CRuby committer. And he is a Garbage Collection lover. So, he works on GC in CRuby.
+Lazy Sweep GC is one of his works for CRuby's GC. You can use it since Ruby 1.9.3!]
