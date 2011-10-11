@@ -92,7 +92,7 @@ Speaker.create :name => "Tom Preston-Werner",
     He's also the developer behind <a href="https://github.com/mojombo/chronic">chronic</a>, <a href='https://github.com/mojombo/grit'>grit</a> and <a href='https://github.com/mojombo/jekyll'>jekyll</a> to name a few.\n
     You can read his blog at <a href='http://tom.preston-werner.com/'>http://tom.preston-werner.com/</a> or see a couple of videos about him <a href='http://www.maestrosdelweb.com/editorial/tom-preston-werner-fundador-de-github/'>here</a> and <a href='http://confreaks.net/videos/432-rubyconf2010-the-road-from-ruby-hacker-to-entrepreneur'>here</a>.),
 :description_es => %Q(Tom Preston-Werner es el cofundador de GitHub e invent&oacute; Gravatars.\n
-  Tambi&eacute;n es el desarrolaldor detr&aacute;s de  <a href="https://github.com/mojombo/chronic">chronic</a>, <a href='https://github.com/mojombo/grit'>grit</a> y <a href='https://github.com/mojombo/jekyll'>jekyll</a> para nombrar algunas. \n
+  Tambi&eacute;n es el desarrollador detr&aacute;s de  <a href="https://github.com/mojombo/chronic">chronic</a>, <a href='https://github.com/mojombo/grit'>grit</a> y <a href='https://github.com/mojombo/jekyll'>jekyll</a> para nombrar algunas. \n
   Puedes leer su blog visitando <a href='http://tom.preston-werner.com/'>http://tom.preston-werner.com/</a> o  ver un par de videos acerca de &eacute;l <a href='http://www.maestrosdelweb.com/editorial/tom-preston-werner-fundador-de-github/'>aqu&iacute;</a> y <a href='http://confreaks.net/videos/432-rubyconf2010-the-road-from-ruby-hacker-to-entrepreneur'>aqu&iacute;</a>.),
 :links => {
   "website"  => "http://tom.preston-werner.com/",
@@ -194,3 +194,37 @@ Speaker.create :name => "Sean Cribbs",
 },
 :description_en => %Q(Sean Cribbs is a Developer Advocate for Basho Technologies, where he hacks in Ruby, Erlang and JavaScript to solve hard problems for customers and the open-source community around the Riak distributed datastore. Before Basho, Sean was a freelance Ruby and Rails developer, the maintainer of the popular open-source Radiant CMS software, and erstwhile music theorist, composer, choral conductor and pianist.  Sean is a graduate of University of Tulsa, Oklahoma, USA and currently lives in central New Jersey, USA.),
 :description_es => %Q(Sean Cribbs es Developer Advocate para Basho Technologies, donde trabaja programando en Ruby, Erlang and JavaScript para resolver problemas difíciles para sus clientes, y la comunidad open-source de Riak. Antes de Basho, Sean fue programador freelance de Ruby and Rails, responsable del popular Radiant CMS, teórico de musica antigua, compositor, director coral y pianista. Sean es graduado de la Universidad de Tulsa, Oklahoma, EE.UU. y actualmente vive en New Jersey, EE.UU.)
+
+Speaker.create :name => "Pablo Torterella",
+  :picture => "/images/speakers/pablotortarella.jpg",
+  :company => "Kleer",
+  :twitter => "pablitux",
+  :links => {
+    "website" => "http://kleer.la/"
+  },
+  :description_es => %Q[Pablo Tortorella es Ingeniero en Informática de la Facultad de Ingeniería de la Universidad de Buenos Aires (FIUBA), Certified Scrum Master (CSM) y Developer (CSD).
+
+    Pablo se incorporó recientemente a Kleer, una empresa argentina presente en toda Latinoamérica, donde brinda servicios relacionados con metodologías y técnicas ágiles de desarrollo de software, empowerment de equipos y de profesionales.
+
+    Participa activamente en la Comunidad Latinoamericana de Metodologías Ágiles, desde la organización de las primeras jornadas Latinoamericanas (Ágiles 2008, en Buenos Aires). Fue disertante en Ágiles 2009 (Florianópolis, Brasil), Ágiles 2010 (Lima, Perú) y participa también de la comunidad local (Ágiles@BsAs).
+
+    Desde 2007, Pablo participa como docente en en varias materias de la Facultad de Ingeniería de la Universidad de Buenos Aires (UBA). Colabora en las cátedras "Administración y Control de Proyectos Informáticos II" y "Taller de Desarrollo de Proyectos I", correspondientes a los últimos años de la carrera Ingeniería en Informática.],
+  :description_en => %Q[Pablo Tortorella is an Ingeniero en Informática from Facultad de Ingeniería, Universidad de Buenos Aires (FIUBA), Certified Scrum Master (CSM) and Developer (CSD).
+
+    Pablo recently became a member of Kleer, an Argentinian company present in whole Latin America, where he works supporting agile technologies and methodologies, and team and professionals empowerment.
+
+    He actively participates in the Agile Methodologies Latin American Community, since the organization of the first Latin American conference (Ágiles 2008, in Buenos Aires). He spoke in Ágiles 2009 (Florianópolis, Brasil), Ágiles 2010 (Lima, Perú) y and is member of the local community (Ágiles@BsAs).
+
+    Since 2007 Pablo participates as a teacher in several courses in Facultad de Ingeniería, Universidad de Buenos Aires (UBA). He is a collaborator in courses such as "Control and Management of Informatic Projects II" and "Project Development Workshop I", dictated in the last years of the Ingeniería en Informática.]
+
+Speaker.create :name => "Narihiro Nakamura",
+  :picture => "/images/speakers/authorNari.jpg",
+  :company => "Network Applied Communication Laboratory",
+  :twitter => "nari_en",
+  :links => {
+    "website" => "http://www.narihiro.info/index.en.html",
+    "github" => "https://github.com/authorNari"
+  },
+  :description_es => %Q[Narihiro Nakamura trabaja como investigador en Network Applied Communication Laboratory Ltd..\nÉl es committer de CRuby y un amante del Garbage Collector, por lo tanto trabaja en el GC de CRuby. Es el autor de Lazy Sweep GC en CRuby, y se puede utilizar desde Ruby 1.9.3!],
+  :description_en => %Q[Narihiro Nakamura is a research worker at Network Applied Communication Laboratory Ltd..\nHe is a CRuby committer. And he is a Garbage Collection lover. So, he works on GC in CRuby.
+Lazy Sweep GC is one of his works for CRuby's GC. You can use it since Ruby 1.9.3!]
