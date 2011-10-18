@@ -58,7 +58,7 @@ class Proposal
 Thank you #{speaker_name}!
 
 Your "#{title}" proposal has been received. We would also like to
-remind you that the Call for Papers will end on July 31th, so feel
+remind you that the Call for Papers will end on July 31st, so feel
 free to submit another entry if you like to and of course invite your
 friends! After that date we will inform you and the community when
 will the results be published.
