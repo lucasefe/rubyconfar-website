@@ -345,7 +345,7 @@ html
           font-size: 19px
           font-weight: bold
           margin-bottom: 15px
-          padding: 2px 8px 0
+          padding: 10px
           text-align: center
           p
             background: url("/images/bkg_alert.png") no-repeat 53px -8px
@@ -724,6 +724,139 @@ html
               a
                 color: black
                 
+        #agenda
+          h1
+            @include text-header
+
+          div.day
+            background: url("/images/speakers_bkg.jpg") no-repeat left top
+            border: 1px solid #471915
+            margin: 50px auto
+            width: 760px
+            padding: 25px
+            p
+              color: $gray
+            h2
+              @include text-header
+              font-size: 20px
+              clear: both
+              margin-top: 10px
+              letter-spacing: 1.2px
+              text-align: left
+              color: $yellow
+            table
+              width: 100%
+              td, th
+                @include text-shadow
+                padding: 10px
+                a
+                  color: $yellow
+                  font-weight: bold      
+              th
+                @include text-header
+                color: $gray
+                font-size: 13px
+                letter-spacing: 0.5px
+                line-height: 24px
+                text-align: center
+                margin-bottom: 20px
+                border-bottom: 1px solid $gray
+              td
+                font-size: 13px
+                letter-spacing: 0.5px
+                line-height: 13px
+                margin-bottom: 18px
+                text-align-left
+                overflow: hidden
+                +text-shadow(0px,0px,0px)
+                font-weight: bold
+                color: $yellow
+                background-color: $red150
+              tr:hover
+                td
+                  background-color: $yellow_mustard
+                  color: $red150
+              tr
+                border: 1px solid $gray
+              td:first-child
+                text-align: center
+              tr.break
+                td
+                  // @include text-shadow(0px,0px,0)
+                  color: $yellow_mustard
+                  background-color: $red150
+                  // background-color: $yellow_mustard
+                  text-align: center
+              tr.drinkup, tr.breakfast, tr.lunch
+                td
+                  text-align: center
+                  color: $yellow
+                  background-color: $red100
+              tr.welcome, tr.lighting-talks, tr.closure
+                td
+                  text-align: center
+                  color: $blue
+        #rubyfunday
+          h1
+            @include text-header
+          p
+            color: $gray
+            margin-bottom: 20px
+            &.enhanced
+              background-color: $yellow
+              color: $red100
+              font-weight: bold
+              padding: 5px
+              border: 1px solid $red100
+              text-align: center
+              +box-shadow
+          div.box
+            margin: 0 auto
+            width: 760px
+            padding: 5px
+            h2
+              @include text-header
+              font-size: 20px
+              clear: both
+              margin-top: 10px
+              letter-spacing: 1.2px
+              text-align: left
+              color: $yellow
+          div.track
+            background: url("/images/speakers_bkg.jpg") no-repeat left top
+            border: 1px solid #471915
+            margin: 0 auto 50px
+            padding: 25px
+            h3
+              @include text-header
+              color: $gray
+              font-size: 18px
+              letter-spacing: 0.5px
+              line-height: 24px
+              text-align: center
+              margin-bottom: 20px
+            h4
+              font-weight: bold
+              margin-bottom: 10px
+            table
+              width: 100%
+              border: 1px solid $gray
+              td
+                font-size: 14px
+                letter-spacing: 0.5px
+                line-height: 14px
+                text-align-left
+                overflow: hidden
+                +text-shadow(0px,0px,0px)
+                color: $yellow
+                background-color: $red150
+                padding: 10px
+                a
+                  color: $yellow
+                  font-weight: bold
+              td:first-child
+                text-align: center
+                vertical-align: top
         #proposals
           .box
             text-align: center
