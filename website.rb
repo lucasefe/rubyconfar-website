@@ -109,6 +109,14 @@ module RubyConf
       end
     end
 
+    page "/rubyfunday" do
+      haml :rubyfunday
+    end
+
+    page "/agenda" do
+      haml :agenda
+    end
+
     page "registration" do
       flash[:notice] = "Please, fill the 'Keep me posted' form. "
       redirect "/"
