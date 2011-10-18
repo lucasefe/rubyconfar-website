@@ -50,6 +50,7 @@
   :talk:
     :title: Un Cuento de Tres Árboles
     :abstract:
+      Git is the version control system most of us use every day. However, there are some strangenesses to it. Raise your hand if you really understand the ‘reset’ command. When it comes down to it, this is one of the most interesting, fundamental and amazing commands that Git has, yet nearly everybody is afraid of it. This is just bad marketing. This talk will de-mystify the ‘reset’ command so that you are not only comfortable using it, but can do new and interesting things with it and in doing so will arrive at a better understanding of the entire Git system. We will explore the Three Trees of Git (HEAD, index, work tree) and all the cool and mind-bending fun you can have with them.
   :id: fe595acd252eb7fad9b23fb84d19e5
 - :name: Luis Lavena
   :picture: /images/speakers/luislavena.png
