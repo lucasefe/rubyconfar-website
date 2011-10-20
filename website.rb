@@ -63,6 +63,7 @@ module RubyConf
         end
       end
       def simple_format(text)
+        return "" if text.nil?
         "<p>#{text.gsub("\n", "</p><p>")}</p>"
       end
       alias flash session
