@@ -75,6 +75,10 @@ module RubyConf
     get '/website.css' do
       sass :website
     end
+    
+    get "/drinkups" do
+      haml :drinkups, :skip_translation => true
+    end
 
     check_language!
     get "/:lang" do

@@ -197,7 +197,6 @@ html
 
       #screen
         margin-top: 50px
-        #display
 
       #header
         text-align: center
@@ -769,7 +768,6 @@ html
                 letter-spacing: 0.5px
                 line-height: 13px
                 margin-bottom: 18px
-                text-align-left
                 overflow: hidden
                 +text-shadow(0px,0px,0px)
                 font-weight: bold
@@ -848,7 +846,6 @@ html
                 font-size: 14px
                 letter-spacing: 0.5px
                 line-height: 14px
-                text-align-left
                 overflow: hidden
                 +text-shadow(0px,0px,0px)
                 color: $yellow
@@ -939,6 +936,41 @@ html
               margin-top: 10px
               @include common-submit
               float: right
+        
+        #drinkups
+          h1
+            @include text-header   
+            margin-bottom: 20px         
+          
+          #day1, #day2
+            margin-bottom: 40px
+
+            h2
+              text-align: center
+              color: $red100
+              font:
+                size: 20px
+                weight: normal
+                family: 'BebasRegular', Arial, sans-serif
+                margin-bottom: 10px
+
+            h3
+              @include text-shadow
+              text-align: center
+              color: $red100
+              letter-spacing: 0.5px
+              font:
+                size: 26px
+                weight: bold   
+                family: 'BebasRegular', Arial, sans-serif
+              color: $yellow
+              @include big-text-shadow
+              margin-bottom: 15px
+            
+            p
+              @include text-shadow
+              color: $yellow_mustard
+              text-align: center
 
         #sponsoring
           h1
@@ -1116,8 +1148,6 @@ html
 .no
   @extend .yes
   background-position: right center  
-
-ul#speakers_box
 
 .simply-scroll-container 
   position: relative

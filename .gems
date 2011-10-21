@@ -6,3 +6,5 @@ sinatra-cache
 pony
 yaml_record
 haml-coderay
+datamapper
+dm-mysql-adapter
