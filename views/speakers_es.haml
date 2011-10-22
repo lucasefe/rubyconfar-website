@@ -22,4 +22,8 @@
             de
             %span= speaker.company
           = simple_format(speaker.description_es)
+
+          - unless speaker.talk.nil?
+            %h3= speaker.talk[:title]
+            .abstract= simple_format(speaker.talk[:abstract])
         .clear

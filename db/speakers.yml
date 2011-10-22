@@ -1,4 +1,4 @@
---- 
+---
 - :name: Aaron Patterson
   :picture: /images/speakers/tenderlove.png
   :company: ATTi
@@ -6,11 +6,14 @@
   :description_en: "When he isn\xE2\x80\x99t ruining people\xE2\x80\x99s lives by writing software like phuby, enterprise, and neversaydie, Aaron can be found writing slightly more useful software like nokogiri. To keep up his Gameboy Lifestyle, Aaron spends his weekdays writing high quality software for ATTi. Be sure to catch him on Karaoke night, where you can watch him sing his favorite smooth rock hits of the 70\xE2\x80\x99s and early 80\xE2\x80\x99s."
   :description_es: "Cuando no est\xC3\xA1 arruinando la vida de la gente escribiendo software como phuby, enterprise, y neversaydie, Aaron puede ser encontrado escribiendo software de un poco m\xC3\xA1s util, como Nokogiri. \n\
     Para mantener su estilo de vida Game Boy, Aaron pasa su d\xC3\xADas de semana escribiendo software de alta calidad para ATTi. Por la noche es posible encontrarlo haciendo Karaoke, donde se lo puede ver cantar sus \xC3\xA9xitos favoritos de soft rock de los a\xC3\xB1os 70 y principios de los 80."
-  :links: 
+  :links:
     website: http://tenderlovemaking.com/
     github: http://github.com/tenderlove
     rails core: http://rubyonrails.org/core
     ruby committer: http://www.ruby-lang.org/
+  :talk:
+    :title: Who makes the best asado?
+    :abstract:
   :id: 3d02fb471037ecef150a774b0c7e1e
 - :name: Shugo Maeda
   :picture: /images/speakers/shugo.png
@@ -22,9 +25,12 @@
   :description_es: "Shugo Maeda es director en Network Applied Communication Laboratory Ltd., es co-presidente de Ruby Association LLC, y un programador daimyo.\n\
     Es adem\xC3\xA1s Ruby committer. Ha sido orador en numerosas conferencias sobre Ruby, como Ruby World 2009 y RubyConf 2010. \n\
     Actualmente, Shugo est\xC3\xA1 trabajando en Refinements para Ruby 2.0\n  "
-  :links: 
+  :links:
     website: http://blog.shugo.net/
     ruby committer: http://www.ruby-lang.org/
+  :talk:
+    :title: Ruby's past, present, and future
+    :abstract:
   :id: 8931d4500f2ae4ef3af9c3d9d37f00
 - :name: Scott Chacon
   :picture: /images/speakers/chacon.jpg
@@ -37,10 +43,14 @@
   :description_es: "Scott Chacon es VP de Git en GitHub. Es el autor del libro Pro Git de Apress (progit.org), el PDF Git Internals Peepcode, as\xC3\xAD como el engargado del mantenimiento de la homepage de Git (git-scm.com) y el Git Community Book.\n\
     Scott ha hecho presentaciones por todo el mundo. Linuxconf.au, OSCON, RuPy, Symfony Live, Ruby Kaigi, RailsConf, RubyConf, Scotland on Rails, Euruko, para nombrar algunas. Adem\xC3\xA1s entrena a corporaciones de todo el mundo en el uso de Git.\n\
     Scott no es actor en Mad Men y se reh\xC3\xBAsa a participar del Karaoke."
-  :links: 
+  :links:
     website: http://scottchacon.com/
     github: http://github.com/schacon
     git evangelist: http://git-scm.com/
+  :talk:
+    :title: Un Cuento de Tres Árboles
+    :abstract:
+      Git is the version control system most of us use every day. However, there are some strangenesses to it. Raise your hand if you really understand the ‘reset’ command. When it comes down to it, this is one of the most interesting, fundamental and amazing commands that Git has, yet nearly everybody is afraid of it. This is just bad marketing. This talk will de-mystify the ‘reset’ command so that you are not only comfortable using it, but can do new and interesting things with it and in doing so will arrive at a better understanding of the entire Git system. We will explore the Three Trees of Git (HEAD, index, work tree) and all the cool and mind-bending fun you can have with them.
   :id: fe595acd252eb7fad9b23fb84d19e5
 - :name: Luis Lavena
   :picture: /images/speakers/luislavena.png
@@ -57,10 +67,13 @@
     Adem\xC3\xA1s, ha creado otros proyectos que ayudaron a desarrolladores Ruby en otras plataformas (no s\xC3\xB3lo Windows) y revisa otras librer\xC3\xADas para asegurarse de que sean multiplataforma, buscando compatibilidad m\xC3\xA1s all\xC3\xA1 del \"en mi m\xC3\xA1quina funciona\".\n\
     Como dice en su cuenta de twitter, puede ser definido como la peor pesadilla de los desarrolladores *nix... \n\
     Contribuye en RubyGems y recientemente se ha convertido en Ruby-Core commiter como uno de los responsables Ruby del mantenimiento de MinGW."
-  :links: 
+  :links:
     website: http://blog.mmediasys.com/
     github: http://github.com/luislavena
     ruby installer: http://rubyinstaller.org/
+  :talk:
+    :title: Tirando Ruby por la Ventana
+    :abstract:
   :id: 87a782263d33ea32f4bc4a22bf8b61
 - :name: Norman Clarke
   :picture: /images/speakers/compay.png
@@ -74,11 +87,14 @@
     Trabaja como cofundador y Principal Developer de Ruby Labs. Ruby Labs es una divisi\xC3\xB3n dentro de Business Vision S.A., una empresa argentina de desarrollo de software, con oficinas en Buenos Aires, La Plata, San Francisco y Miami.\n\
     Business Vision ha sido exitosa por muchos a\xC3\xB1os, trabajando principalmente con Java y .NET, y ahora les est\xC3\xA1 ayudando a migrar hacia lenguajes din\xC3\xA1micos: primero con Ruby, pero vienen muchos m\xC3\xA1s.\n\
     Hasta el momento, el programa principalmente con Ruby para el trabajo y con Lua por diversi\xC3\xB3n. En el pasado, ha trabajado un poco con Java y PHP. Es un fan de la programaci\xC3\xB3n en general y de las cosas bien hechas, independientemente de la tecnolog\xC3\xADa que usen. Se enfoca en los sistemas de backend y la arquitectura de las aplicaciones web."
-  :links: 
+  :links:
     website: http://njclarke.com/
     github: http://github.com/norman
     babosa: https://github.com/norman/babosa
     friendly_id: https://github.com/norman/friendly_id
+  :talk:
+    :title: '"Back to the future" with SQL and stored procedures'
+    :abstract:
   :id: 11c9c072b226b8420b2ebb8d7ab510
 - :name: Matt Aimonetti
   :picture: /images/speakers/merbist.png
@@ -89,13 +105,16 @@
     Prior to that, Matt worked on video games at Sony PlayStation after having worked for many years with startups, fortune 100 companies and traditional companies. He has had the opportunity to be involved with really captivating projects in different domain spaces from Biotech to comics, and everything in between.
     Matt is the author of the MacRuby book by O'Reilly http://oreil.ly/macrubybook and has been active in the Ruby community for many years. He is currently part of the MacRuby team, has developed or contributed to a lot OSS libraries and frameworks (Merb, Rails and many more), and speaks at users groups and conferences in the U.S.
   :description_es: |-
-    Matt Aimonetti es un R&D Engineer en LivingSocial donde tiene la oportunidad de crear proyectos basados en conceptos e ideas nuevas, imaginando el futuro. 
-    Antes de esto, Matt trabajaba en video juegos en Sony Playstation luego de haber trabajado por muchos a&ntilde;os con startups, compa&ntilde;&iacute;as Fortune 100 y compa&ntilde;&iacute;as tradicionales. Ha tenido la oportunidad de involucrarse en proyectos realmente cautivantes en diferentes areas, desde la biotecnolog&iacute;a a los comics, y todo lo que se encuentre en el medio. 
+    Matt Aimonetti es un R&D Engineer en LivingSocial donde tiene la oportunidad de crear proyectos basados en conceptos e ideas nuevas, imaginando el futuro.
+    Antes de esto, Matt trabajaba en video juegos en Sony Playstation luego de haber trabajado por muchos a&ntilde;os con startups, compa&ntilde;&iacute;as Fortune 100 y compa&ntilde;&iacute;as tradicionales. Ha tenido la oportunidad de involucrarse en proyectos realmente cautivantes en diferentes areas, desde la biotecnolog&iacute;a a los comics, y todo lo que se encuentre en el medio.
     Matt es el autor del libro de MacRuby publicado por O'Reilly http://oreil.ly/macrubybook y ha permanecido activo en la comunidad de Ruby durante muchos a&ntilde;os. Actualmente es parte de equipo de MacRuby, ha desarrollado o contribuido a muchas biblioteca y frameworks Open Source (Merb, Rails, y muchos m&aacute;s) y ha hablado ante grupos de usuarios y conferencias en Estados Unidos.
-  :links: 
+  :links:
     website: http://merbist.com/
     github: https://github.com/mattetti
     macruby: http://www.macruby.com/
+  :talk:
+    :title: Stop hurting Ruby
+    :abstract:
   :id: c7dbd49d7d8a8f9cf280e5bead6e3f
 - :name: Konstantin Haase
   :picture: /images/speakers/rkh.jpg
@@ -103,20 +122,24 @@
   :twitter: konstantinhaase
   :description_en: |-
     As current maintainer of Sinatra, Konstantin is an Open Source developer by heart.
-    Ruby has become his language of choice since 2005. He actively participates in the Ruby community and regularly contributes to different widespread projects, like Rubinius, Rack and Redcar. 
+    Ruby has become his language of choice since 2005. He actively participates in the Ruby community and regularly contributes to different widespread projects, like Rubinius, Rack and Redcar.
     In 2010, he successfully took part in the Ruby Summer Of Code, working on Rails internals. Konstantin is currently studying IT Systems Engineering at the Hasso Plattner Institute in Potsdam, Germany, and works part time as a software engineer at finnlabs in Berlin.
   :description_es: Como el actual responsable de Sinatra, Konstantin is un desarrollador Open Source de coraz&oacute;n. Ruby se convirti&oacute; en su lenguaje preferido en 2005. Participa activamente en la comunidad Ruby y contribuye regularmente a un a amplia variedad de proyectos como Rubinius, Rack y Redcar. En 2010 particip&oacute; con &eacute;xito en el Ruby Summer Of Code, trabajando en los detalles internos de Rails. Konstantin se encuentra actualmente estudiando Ingenier&iacute;a en Sistemas IT en el Hasso Plattner Institute en Potsdam, Alemania, y trabaja de manera part time como ingeniero de software en finnlabs, en Berl&iacute;n.
   :links:
     website: http://rkh.im/
     github: https://github.com/rkh
     sinatra: http://www.sinatrarb.com/
+  :talk:
+    :title: Beyond Ruby
+    :abstract:
+      Ruby is the most flexible language out there, imposing no limitations on the developers, giving all the expressiveness possible. Or so we think. But there are languages pushing dynamic features and expressiveness far beyond what is possible in Ruby. Some are old, like Lisp and Smalltalk, some are just emerging, purely experimental languages, like Ioke or Newspeak. In this talk, we will take a look at some of these languages and what they can do what Ruby can't. What does it mean, to be homoiconic? How does a language without keywords work? Can I dispatch in more than one direction? And what is partial evaluation?
   :id: 1e96da864debff27e1b389d4afa148
 - :name: Tom Preston-Werner
   :picture: /images/speakers/mojombo.jpg
   :company: GitHub
   :twitter: mojombo
   :description_en: |-
-    Tom Preston-Werner is the cofounder of GitHub and inventor of Gravatar. 
+    Tom Preston-Werner is the cofounder of GitHub and inventor of Gravatar.
         Hes also the developer behind <a href='https://github.com/mojombo/chronic'>chronic</a>, <a href='https://github.com/mojombo/grit'>grit</a> and <a href='https://github.com/mojombo/jekyll'>jekyll</a> to name a few.
         You can read his blog at <a href='http://tom.preston-werner.com/'>http://tom.preston-werner.com/</a> or see a couple of videos about him <a href='http://www.maestrosdelweb.com/editorial/tom-preston-werner-fundador-de-github/'>here</a> and <a href='http://confreaks.net/videos/432-rubyconf2010-the-road-from-ruby-hacker-to-entrepreneur'>here</a>.
   :description_es: |-
@@ -127,6 +150,10 @@
     website: http://tom.preston-werner.com/
     github: https://github.com/mojombo
     github website: http://www.github.com/
+  :talk:
+    :title: Optimizing for Happiness
+    :abstract:
+      The way traditional businesses approach the management and organization of creative, intellectual workers is wrong. By throwing away everything that blocks productivity (meetings, deadlines, managers, titles, strict vacation policies, etc) and treating your employees as the responsible adults that they are, huge amounts of potential can be unlocked and employee happiness and retention can be at unprecedented highs. At GitHub we've embraced a philosophy that gets things done and strips away policy and procedure in favor of smart decision making and personal responsibility. Come see how we make it work and how you can reap the same benefits in your own company.
   :id: 5fb09132b4f0c2af0fc47060fd61e3
 - :name: Koichiro Eto
   :company: Social Intelligence Technology Research Laboratory, National Institute of Advanced Industrial Science and Technology (AIST)
@@ -144,6 +171,10 @@
       Es el autor del libro <a href='http://www.amazon.co.jp/dp/4774138975'>Pattern, Wiki, XP - timeless principles of creation</a>)
   :links:
     website: http://eto.com/
+  :talk:
+    :title: The Timeless Way of Software Development
+    :abstract:
+      I'd like to introduce my book "Patterns, Wiki and XP", which discover the relationship between Pattern Langauge, Design Patterns, Wiki and Extreme Programming. http://d.hatena.ne.jp/eto/20090706 I'm a media artist creating media art works using Ruby from 2001.  I'd like to introduce my works including "A Hands-on Model of the Internet".
   :id: 7dh08123b4g1c2ag0gc47101fd62e9
 - :name: Nicolas Sanguinetti
   :company: Cubox
@@ -158,44 +189,58 @@
   :links:
     website: http://nicolassanguinetti.info/
     github: https://github.com/foca
+  :talk:
+    :title: "Testing: it's a horrible idea!"
+    :abstract:
+      This presentation will give a hard look at the testing-obsessed culture of ruby, some of the problems that presents, and solutions to make our application code better, and our tests faster and simpler.
   :id: c2131b2254abc34c4d056bb88a41f4
 - :name: Pedro Belo
   :company: Heroku
   :picture: /images/speakers/ped.jpg
   :twitter: ped
   :description_en: |-
-      Another dude that took computer science with aspirations to write games, decided to adopt Ruby after realizing it's actually more fun to write business applications than games. 
+      Another dude that took computer science with aspirations to write games, decided to adopt Ruby after realizing it's actually more fun to write business applications than games.
       Worked as a Ruby consultant in Brazil and in the US, until joining Heroku in 2008 - where he takes projects ranging from Node.js support to organizing Starcraft and Poker nights.
   :description_es: |-
-      Otra persona más que se tomó la informática con aspiraciones de escribir juegos, decidió adoptar Ruby después se dio cuenta de que en realidad es más divertido escribir aplicaciones de negocio que juegos. 
+      Otra persona más que se tomó la informática con aspiraciones de escribir juegos, decidió adoptar Ruby después se dio cuenta de que en realidad es más divertido escribir aplicaciones de negocio que juegos.
       Trabajó como consultor de Ruby en Brasil y Estados Unidos, hasta su incorporación Heroku en 2008 - donde trabaja en proyectos que van desde el soporte para Node.js hasta organizar noches de Poker y Starcraft.
   :links:
     github: https://github.com/pedro
+  :talk:
+    :title: On distributed systems - lessons learned at Heroku
+    :abstract:
+      "It's time to talk about distributed systems: what are they, why you should be writing one, and what to look for while doing so. We'll focus on real examples coming from Heroku, and lessons learned with practice."
   :id: 3afc61dc1dbd3d14db7b7b1e42696f
 - :name: Federico Brubacher
   :company: Cubox
   :picture: /images/speakers/fbru02.png
   :twitter: fbru02
   :description_en: |-
-      Federico Brubacher is a Rails engineer from Uruguay, a language lover and a proponent of going where no man has gone before. 
-      He has many contributions to open source and he gave a talk in last year's RubyConf Uruguay. 
+      Federico Brubacher is a Rails engineer from Uruguay, a language lover and a proponent of going where no man has gone before.
+      He has many contributions to open source and he gave a talk in last year's RubyConf Uruguay.
       He works at Cubox helping mostly startups achieve their objectives.
   :description_es: |-
-      Federico Brubacher es un desarrollador Rails de Uruguay, amante de los idiomas y defensor de ir a donde ningún hombre ha ido jamás. 
+      Federico Brubacher es un desarrollador Rails de Uruguay, amante de los idiomas y defensor de ir a donde ningún hombre ha ido jamás.
       Tiene muchas contribuciones a la comunidad open source y fue orador en RubyConf Uruguay el año pasado.
       Trabaja en Cubox ayudando, principalmente a startups, a alcanzar sus objetivos.
   :links:
     website: http://www.fbrubacher.com/
     github: https://github.com/fbrubacher
+  :talk:
+    :title: Como ser un data scientist con Ruby
+    :abstract: |-
+      "Hal Vanarian Chief economist de Google dice ""En 10 años los data scientists van a tener el trabajo mas sexy (y mejor pago) del mundo"".
+
+      En esta charla voy a explicar que quiere decir ser un data scientist.  Voy a mostrar en simple codigo ruby que es lo que alguien interesado en este campo tiene que saber.  Desde como minar los datos, como procesarlos (usando Hadoop) y luego como sacar conclusiones (algo de Machine Learning).  Haré especial enfasis en la parte de Machine Learning, y mostraré como clasificar datos usando un par de métodos (Linear regression y k-NN). Finalmente dejaré a la audiencia una noción de como usar Ruby para estos problemas y uno de los dilemas mas interesantes de la clasificación llamado Bias vs Variance."
   :id: c227df9c716d1b19b60a502c40c6e62b
 - :name: Alex Coles
   :company: Payango GmbH
   :picture: /images/speakers/myabc.png
   :twitter: myabc
   :description_en: |-
-      Alex Coles is a web developer based in Berlin, currently working for Payango GmbH, a financial startup and leading provider of prepaid credit cards in Germany. 
-      He’s active in the open-source community, and has been involved with the DataMapper project since shortly after its inception. 
-      He’s also contributed extensively to many other projects including RefineryCMS, Friendly ID and RakeCompiler. 
+      Alex Coles is a web developer based in Berlin, currently working for Payango GmbH, a financial startup and leading provider of prepaid credit cards in Germany.
+      He’s active in the open-source community, and has been involved with the DataMapper project since shortly after its inception.
+      He’s also contributed extensively to many other projects including RefineryCMS, Friendly ID and RakeCompiler.
       When not writing code, Alex has also been involved with the community in other ways – this year he organised eurucamp Berlin 2011, an alternative conference to the popular EuRuKo.
   :description_es: |-
       Alex Coles es un desarrollador web con sede en Berlín, trabaja actualmente para Payango GmbH, un emprendimiento financiero y uno de los principales proveedores de tarjetas de crédito prepagas en Alemania.
@@ -205,38 +250,58 @@
   :links:
     website: http://alexbcoles.com/
     github: https://github.com/myabc
+  :talk:
+    :title: The quiet and versatile Rubyist
+    :abstract:
+      "(or how to learn to put up with the tools you’ve got)
+
+      There are times when we can work with the technologies we love. And there are times when we have to work with WebSphere and Oracle. The virtues of being opinionated have been extolled since the inception of the Rails framework back in 2005. Sometimes though, it’s necessary to be pragmatic.
+
+      This talk will feature not only Ruby but also the technologies we hate to work with, the technologies that seemingly only exist to keep consultants and IT departments in work."
   :id: a008162ae5cc8f58cf82b270dfe901
 - :name: Stephen Anderson
   :company: Bendyworks
   :picture: /images/speakers/bendycode.jpg
   :twitter: bendycode
   :description_en: |-
-      Steve has been pursuing software quality and value since 1992. This has lead him to Ruby, Rails, Behavior Driven Development, Continuous Integration, Extreme Programming, and Software Craftsmanship. 
+      Steve has been pursuing software quality and value since 1992. This has lead him to Ruby, Rails, Behavior Driven Development, Continuous Integration, Extreme Programming, and Software Craftsmanship.
       He loves teaching, mentoring and bringing new people to Rails. He is a founder at Bendyworks.
       When not writing software, Steve spends time with his family, dogs, and playing softball, volleyball & racquetball.
   :description_es: |-
-      Steve ha trabajado en mejorar la calidad del software desde 1992. Esto lo ha llevado hasta Ruby, Rails, Behavior Driven Development, Integración Contínua, Extreme Programming, y Software Craftsmanship. 
+      Steve ha trabajado en mejorar la calidad del software desde 1992. Esto lo ha llevado hasta Ruby, Rails, Behavior Driven Development, Integración Contínua, Extreme Programming, y Software Craftsmanship.
       Ama enseñar y compartir sus conocimientos, así como iniciar a la gente en Rails. Es uno de los fundadores de Bendyworks.
       Cuando no está escribiendo software, Steve dedica su tiempo a su familia, a sus perros, a jugar softball, voleyball y racquetball.
   :links:
     website: http://bendyworks.com
     github: https://github.com/bendycode
+  :talk:
+    :title: How We Built and Grew a Rails Consulting Company
+    :abstract:
+      "or “Convincing a Rocket Scientist to Quit His Dream Job and Build a Rails Shop”
+
+      For: Entrepreneurial, or curious Rails developers considering building their own business.
+
+      The entertaining story of the decision to start, and then the ups and downs of growing Bendyworks. Through humorous stories, I’ll share my experiences growing Bendyworks and lessons learned along the way."
   :id: f5f56dbaabe07f61cc035933e53989
 - :name: Emilio Gutter
   :company: 10Pines
   :picture: /images/speakers/egutter.jpg
   :twitter: egutter
   :description_en: |-
-      Co-founder of 10Pines, a Latin American agile development & consultancy company based in Buenos Aires. 
-      Emilio is strongly committed with the local Agile community and he was a member of the organization committee for Agiles2008, Agiles2010 and Agiles2011. 
+      Co-founder of 10Pines, a Latin American agile development & consultancy company based in Buenos Aires.
+      Emilio is strongly committed with the local Agile community and he was a member of the organization committee for Agiles2008, Agiles2010 and Agiles2011.
       In the professional field, he has been working in software development area for more than 10 years, participating in several projects for Argentina, Brazil, United Kingdom, United States, France, Romania and Bulgaria.
   :description_es: |-
-      Co-fundador de 10Pines, una empresa Latinoamericana, basada en Buenos Aires, dedidaca a consultoría y desarrollo utilizando metodologías ágiles. 
-      Emilio está muy comprometido con la comunidad Ágil local y ha sido miembro organizador de Agiles 2008, 2010 y 2011. 
+      Co-fundador de 10Pines, una empresa Latinoamericana, basada en Buenos Aires, dedidaca a consultoría y desarrollo utilizando metodologías ágiles.
+      Emilio está muy comprometido con la comunidad Ágil local y ha sido miembro organizador de Agiles 2008, 2010 y 2011.
       En el campo profesional ha trabajado en la industria de desarrollo de software por más de 10 años, participando en numerosos proyectos en Argentina, Brasil, Reino Unido, Estados Unidos, Francia, Rumania y Bulgaria.
   :links:
     website: http://10pines.com/
     github: https://github.com/egutter
+  :talk:
+    :title: The Agile city-building game (Ruby Fun Day workshop)
+    :abstract:
+      Are you ready to start building your own city? Join a construction team, grab your tools and get ready to begin building a fantastic city while learning the fundamental principles of lean software development. You and your team will have to maximize your deliverable to the city inhabitants while compiting against other teams to show who's the best agile construction company!
   :id: 4a230e1125548d61c9300c4368a9ae
 - :name: Patrick Huesler
   :company: wooga
@@ -249,6 +314,10 @@
   :links:
     website: http://patrickhuesler.com/
     github: https://github.com/phuesler
+  :talk:
+    :title: Monitoring with Syslog and EventMachine
+    :abstract:
+      Go beyond server and application stack monitoring, collect application specific metrics and push the information to interested parties. With the help of syslog, EventMachine and a few lines of Ruby code, you can build a language agnostic system to gather and process custom tailored monitoring and reporting data.
 - :name: Patrick Collison
   :picture: /images/speakers/pc.jpg
   :company: Stripe
@@ -268,6 +337,14 @@
   :links:
     website: http://collison.ie/
     github: https://github.com/pc
+  :talk:
+    :title: "Goat: a real-time web framework"
+    :abstract:
+      "Rails is getting long in the tooth. Sinatra is great, but requires lots of additional infrastructural code for complex web applications.
+
+      Goat is a server-side real-time web framework that makes it easy to build rich, component-oriented interfaces that update in response to changes in the underlying data. It also provides a unified answer to how your CSS, JavaScript and browser-side code should fit together.
+
+      This talk will introduce Goat by using it to build a web application from scratch."
   :id: 36d90c45e4937f501e0a8665b65e03
 - :name: Sean Cribbs
   :picture: /images/speakers/seancribbs.jpg
@@ -290,6 +367,12 @@
   :links:
     website: http://seancribbs.com/
     github: https://github.com/seancribbs
+  :talk:
+    :title: Embrace NoSQL and Eventual Consistency with Ripple
+    :abstract: |-
+      "So, there's this &quot;NoSQL&quot; thing you may have heard of, and this related thing called &quot;eventual consistency&quot;. Supposedly, they help you scale, but no one has ever explained why! Well, wonder no more! This talk will demystify NoSQL, eventual consistency, how they might help you scale, and  -- most importantly -- why you should care.
+
+      We'll look closely at how Riak, a linearly-scalable, distributed and fault-tolerant NoSQL datastore, implements eventual consistency, and how you can harness it from Ruby via the slick Ripple client/ORM. When the talk is finished, you'll have the tools both to understand eventual consistency and to handle it like a pro inside your next Ruby application."
   :id: d1e1cac6cf8c0f175eba0524aad440
 - :name: Pablo Torterella
   :picture: /images/speakers/pablotortarella.jpg
