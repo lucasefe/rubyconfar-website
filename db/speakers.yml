@@ -113,7 +113,7 @@
     github: https://github.com/mattetti
     macruby: http://www.macruby.com/
   :talk:
-    :title: Inside Ruby: concurrency & garbage collection explained.
+    :title: 'Inside Ruby: concurrency & garbage collection explained.'
     :abstract:
   :id: c7dbd49d7d8a8f9cf280e5bead6e3f
 - :name: Konstantin Haase
