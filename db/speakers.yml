@@ -418,3 +418,13 @@
 
     He is a CRuby committer. And he is a Garbage Collection lover. So, he works on GC in CRuby.
     Lazy Sweep GC is one of his works for CRuby's GC. You can use it since Ruby 1.9.3!
+
+- :name: Ruby Argentina
+  :picture: 
+  :company: RAAC
+  :twitter: RubyConfAr
+  :description_en: ""
+  :description_es: ""
+  :links:
+    website: http://ruby.com.ar/
+  :id: 3d02fb471037ecef150a774b0c7e34

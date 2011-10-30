@@ -1,23 +1,5 @@
-require 'data_mapper'
 require 'yaml_record'
-require "pony"
-
-class Speaker < YamlRecord::Base
-  properties :name, :picture, :company, :twitter,
-    :description_en, :description_es, :links, :talk
-
-  source File.join(File.dirname(__FILE__), "../db/speakers")
-end
-
-
-class Registration
-  include DataMapper::Resource
-
-  property :id,           Serial
-  property :email,        String, :required => true, :unique => true, :format => :email_address
-  property :created_at,   DateTime
-
-end
+require 'pony'
 
 class Proposal
   include DataMapper::Resource

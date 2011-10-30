@@ -1,10 +1,8 @@
 haml
+haml-coderay
+pony
 rack
 sass
 sinatra
 sinatra-cache
-pony
 yaml_record
-haml-coderay
-datamapper
-dm-mysql-adapter

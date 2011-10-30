@@ -1,0 +1,119 @@
+--- 
+- :starts_at: 2011-11-08 09:00:00 -03:00
+  :ends_at: 2011-11-08 09:20:00 -03:00
+  :speaker_id: 3d02fb471037ecef150a774b0c7e34
+  :title_es: Bienvenida a RubyConf Argentina 2011!
+  :title_en: Welcome to RubyConf Argentina 2011!
+  :id: 52de848a89d404eb8de401b6ad9198
+- :starts_at: 2011-11-08 09:20:00 -03:00
+  :ends_at: 2011-11-08 10:00:00 -03:00
+  :speaker_id: 8931d4500f2ae4ef3af9c3d9d37f00
+  :title_es: Pasado presente y futuro de Ruby
+  :title_en: Ruby's past, present, and future
+  :id: 800a74f2bd2930458cbc5a7209a728
+- :starts_at: 2011-11-08 10:30:00 -03:00
+  :ends_at: 2011-11-08 11:10:00 -03:00
+  :speaker_id: c7dbd49d7d8a8f9cf280e5bead6e3f
+  :title_es: "Inside Ruby: concurrency & garbage collection explained."
+  :title_en: "Inside Ruby: concurrency & garbage collection explained."
+  :id: 137d055ec5540e660b4ad26ec5d2c8
+- :starts_at: 2011-11-08 11:40:00 -03:00
+  :ends_at: 2011-11-08 12:10:00 -03:00
+  :speaker_id: 7dh08123b4g1c2ag0gc47101fd62e9
+  :title_es: La manera atemporal del desarrollo de software
+  :title_en: The Timeless Way of Software Development
+  :id: 105300ef175ecbef859bee50815479
+- :starts_at: 2011-11-08 12:40:00 -03:00
+  :ends_at: 2011-11-08 13:20:00 -03:00
+  :speaker_id: 87a782263d33ea32f4bc4a22bf8b61
+  :title_es: Tirando Ruby por la ventana
+  :title_en: Throwing Ruby out the window
+  :id: 2e32481e400f7798cf67a438158b63
+- :starts_at: 2011-11-08 14:50:00 -03:00
+  :ends_at: 2011-11-08 15:20:00 -03:00
+  :speaker_id: a008162ae5cc8f58cf82b270dfe901
+  :title_es: "El rubyista silencioso y vers\xC3\xA1til"
+  :title_en: The quiet and versatile Rubyist
+  :id: 8bbe34846fa658656982d1543ba6b5
+- :starts_at: 2011-11-08 15:50:00 -03:00
+  :ends_at: 2011-11-08 16:20:00 -03:00
+  :speaker_id: 3afc61dc1dbd3d14db7b7b1e42696f
+  :title_es: Lo que todo programador debe saber sobre sistemas distribuidos - Lecciones aprendidas en Heroku
+  :title_en: What every programmer should know about distributed systems - lessons learned at Heroku
+  :id: 8ec25e20b75490f45d9b45a17dae2d
+- :starts_at: 2011-11-08 16:50:00 -03:00
+  :ends_at: 2011-11-08 17:20:00 -03:00
+  :speaker_id: c227df9c716d1b19b60a502c40c6e62b
+  :title_es: Como convertirse en un data scientist con Ruby
+  :title_en: How to become a data scientist with Ruby
+  :id: 787e25aa8491cac5693cf3ffd5bf84
+- :starts_at: 2011-11-08 17:50:00 -03:00
+  :ends_at: 2011-11-08 18:20:00 -03:00
+  :title_es: Monitoreo con Syslog y EventMachine
+  :title_en: Monitoring with Syslog and EventMachine
+  :id: 98f42540088841309384954753265c
+- :starts_at: 2011-11-08 18:50:00 -03:00
+  :ends_at: 2011-11-08 20:00:00 -03:00
+  :speaker_id: fe595acd252eb7fad9b23fb84d19e5
+  :title_es: "Un Cuento de Tres \xC3\x81rboles"
+  :title_en: A Tale of Three Trees
+  :id: 5eb62144307b34657532fddab70437
+- :starts_at: 2011-11-09 09:00:00 -03:00
+  :ends_at: 2011-11-09 09:40:00 -03:00
+  :speaker_id: 3d02fb471037ecef150a774b0c7e1e
+  :title_es: Who makes the best asado?
+  :title_en: Who makes the best asado?
+  :id: 31330c4ea7a901578e626c25e50a95
+- :starts_at: 2011-11-09 10:10:00 -03:00
+  :ends_at: 2011-11-09 10:50:00 -03:00
+  :speaker_id: 1e96da864debff27e1b389d4afa148
+  :title_es: "M\xC3\xA1s all\xC3\xA1 de Ruby"
+  :title_en: Beyond Ruby
+  :id: e2dcfcf3dd6d11078ed832a1eb2b2a
+- :starts_at: 2011-11-09 11:20:00 -03:00
+  :ends_at: 2011-11-09 11:50:00 -03:00
+  :speaker_id: 36d90c45e4937f501e0a8665b65e03
+  :title_es: "Goat: Un framework en tiempo real"
+  :title_en: "Goat: A real-time web framework"
+  :id: 1287658d14ff798ab8c9ac54fed9c4
+- :starts_at: 2011-11-09 12:20:00 -03:00
+  :ends_at: 2011-11-09 13:00:00 -03:00
+  :speaker_id: 11c9c072b226b8420b2ebb8d7ab510
+  :title_es: "\"Volver al Futuro\" con SQL y stored procedures"
+  :title_en: "\"Back to the future\" with SQL and stored procedures"
+  :id: 6ef00118aeb60cfa28df3f7dd2db55
+- :starts_at: 2011-11-09 14:30:00 -03:00
+  :ends_at: 2011-11-09 15:00:00 -03:00
+  :speaker_id: 3d02fb471037ecef150a774b0c7e34
+  :title_es: Lighting Talks
+  :title_en: Lighting Talks
+  :id: 943271198ee17553cabdba244b95cd
+- :starts_at: 2011-11-09 15:30:00 -03:00
+  :ends_at: 2011-11-09 16:00:00 -03:00
+  :speaker_id: c2131b2254abc34c4d056bb88a41f4
+  :title_es: "Testing: Es una p\xC3\xA9sima idea!"
+  :title_en: "Testing: It's a horrible idea!"
+  :id: f63d664c38c9bdbf7b373f5305383e
+- :starts_at: 2011-11-09 16:30:00 -03:00
+  :ends_at: 2011-11-09 17:00:00 -03:00
+  :speaker_id: d1e1cac6cf8c0f175eba0524aad440
+  :title_es: Adoptando NoSQL y consistencia eventual con Ripple
+  :title_en: Embrace NoSQL and Eventual Consistency with Ripple
+  :id: b8b0030ac8c154088a39d66d57a7e1
+- :starts_at: 2011-11-09 17:30:00 -03:00
+  :ends_at: 2011-11-09 18:10:00 -03:00
+  :title_es: Los mundos paralelos del GC de CRuby
+  :title_en: Parallel worlds of CRuby's GC
+  :id: 0993fb0bb1a50cdce76083698f6d7b
+- :starts_at: 2011-11-09 18:40:00 -03:00
+  :ends_at: 2011-11-09 19:20:00 -03:00
+  :speaker_id: 5fb09132b4f0c2af0fc47060fd61e3
+  :title_es: Optimizando para la felicidad
+  :title_en: Optimizing for happiness
+  :id: e1b2c56754f987e0ba6ccadc44d45b
+- :starts_at: 2011-11-09 19:20:00 -03:00
+  :ends_at: 2011-11-09 20:00:00 -03:00
+  :speaker_id: 3d02fb471037ecef150a774b0c7e34
+  :title_es: Cierre de RubyConf Argentina 2011
+  :title_en: RubyConf Argentina 2011 Closure
+  :id: 4f4c92dd02588424ea8e27c99b8498

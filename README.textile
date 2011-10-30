@@ -5,14 +5,16 @@ h2. Run website locally:
 Install gems manually:
 
 <pre>
-data_mapper
-dm-sqlite-adapter
-dm-mysql-adapter
+# data_mapper
+# dm-sqlite-adapter
+# dm-mysql-adapter
 haml
 rack
 rack-flash
 sass
 sinatra
+sinatra-cache
+yaml_record
 </pre>
 
 Or with rvm like this:
@@ -21,10 +23,8 @@ Or with rvm like this:
 rvm gemset import .gems
 </pre>
 
-h2. Running tests:
+h2. Notes
 
 <pre>
-cp config/settings.sample.yml config/settings.yml
-gem install cutest capybara
-rake
+irb -r website.rb
 </pre>

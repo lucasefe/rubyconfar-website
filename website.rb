@@ -1,17 +1,19 @@
 # encoding: utf-8
 require "sinatra/base"
 require 'sinatra/cache'
-require "haml"
-require 'sass'
-require 'data_mapper'
-require "ostruct"
-require "haml-coderay"
 require 'date'
+require 'haml'
+require 'sass'
+require 'ostruct'
+require 'haml-coderay'
+
 
 ENV["RACK_ENV"] = "development" unless ENV["RACK_ENV"]
 RACK_ENV = ENV["RACK_ENV"]
 
-require File.expand_path(File.join(File.dirname(__FILE__), "lib/models.rb"))
+%w(speaker talk).each do |model|
+  require File.expand_path(File.join(File.dirname(__FILE__), "lib/#{model}.rb"))
+end
 
 module RubyConf
   class Website < Sinatra::Application
@@ -41,11 +43,11 @@ module RubyConf
     register(Sinatra::Cache)
     set :cache_enabled, true
     
-    configure do
-      DataMapper::Logger.new($stdout, :debug) if RACK_ENV == "development"
-      DataMapper.setup(:default, CONFIG.database)
-      DataMapper.auto_upgrade!
-    end
+    # configure do
+    #   DataMapper::Logger.new($stdout, :debug) if RACK_ENV == "development"
+    #   DataMapper.setup(:default, CONFIG.database)
+    #   DataMapper.auto_upgrade!
+    # end
 
     helpers do
       
