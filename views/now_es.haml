@@ -1,0 +1,31 @@
+#talks
+  - if @now
+    .talk
+      %h1 Ahora mismo
+      %h2
+        = @now.title_en
+      %h3
+        por
+        = @now.speaker.name
+        
+      %p
+        %strong Comienza a las:
+        = @now.starts_at.strftime("%H:%M")
+      %p
+        %strong Finaliza a las:
+        = @now.ends_at.strftime("%H:%M")
+
+  - if @next
+    .talk.upcoming
+      %h1 Siguiente
+      %h2
+        = @next.title_en
+      %h3
+        by
+        = @next.speaker.name
+      %p
+        %strong Comienza a las:
+        = @next.starts_at.strftime("%H:%M")
+      %p
+        %strong Finaliza a las:
+        = @next.ends_at.strftime("%H:%M")

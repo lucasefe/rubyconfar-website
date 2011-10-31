@@ -140,6 +140,11 @@ module RubyConf
       haml :event
     end
 
+    page "event/now" do
+      @now, @next = Talk.find_current_and_upcoming
+      haml :now
+    end
+
     def language
       @lang ||= params[:lang] || language_from_http || "en"
     end

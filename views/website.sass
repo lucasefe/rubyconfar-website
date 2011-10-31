@@ -522,7 +522,6 @@ html
                     margin-bottom: 0px
                   &#kleer
                     margin: 5px 0
-                  &#altoros
                   &#code_54
                     margin-bottom: 4px
             
@@ -800,10 +799,8 @@ html
                 text-align: center
               tr.break
                 td
-                  // @include text-shadow(0px,0px,0)
                   color: $yellow_mustard
                   background-color: $red150
-                  // background-color: $yellow_mustard
                   text-align: center
               tr.drinkup, tr.breakfast, tr.lunch
                 td
@@ -988,7 +985,44 @@ html
               @include text-shadow
               color: $yellow_mustard
               text-align: center
+        #talks
+          .talk
+            text-align: center
+            @include center(650px)
+            background: url('/images/speakers_bkg.jpg') no-repeat -8px top
+            border: 1px solid $red150
+            padding: 25px
+            margin-bottom: 20px
 
+            h1
+              color: $yellow
+              @include big-text-shadow
+              margin-bottom: 10px
+              font:
+                size: 24px
+                family: 'BebasRegular', Arial, sans-serif
+              
+            h2
+              color: $yellow
+              margin-bottom: 10px
+              font:
+                size: 18px
+                family: 'BebasRegular', Arial, sans-serif
+              letter-spacing: 2px
+              @include big-text-shadow
+            h3
+              color: $yellow
+              margin-bottom: 10px
+              font:
+                size: 18px
+                family: 'MolotRegular', Arial, sans-serif
+              letter-spacing: 2px
+              @include big-text-shadow
+            &.upcoming
+              h1
+                font-size: 20px
+              h2
+                font-size: 15px
         #sponsoring
           h1
             @include text-header            
