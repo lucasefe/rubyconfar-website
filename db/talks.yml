@@ -71,17 +71,17 @@
   :title_en: Beyond Ruby
   :id: e2dcfcf3dd6d11078ed832a1eb2b2a
 - :starts_at: 2011-11-09 11:20:00 -03:00
-  :ends_at: 2011-11-09 11:50:00 -03:00
-  :speaker_id: 36d90c45e4937f501e0a8665b65e03
-  :title_es: "Goat: Un framework en tiempo real"
-  :title_en: "Goat: A real-time web framework"
-  :id: 1287658d14ff798ab8c9ac54fed9c4
-- :starts_at: 2011-11-09 12:20:00 -03:00
-  :ends_at: 2011-11-09 13:00:00 -03:00
+  :ends_at: 2011-11-09 12:00:00 -03:00
   :speaker_id: 11c9c072b226b8420b2ebb8d7ab510
   :title_es: "\"Volver al Futuro\" con SQL y stored procedures"
   :title_en: "\"Back to the future\" with SQL and stored procedures"
   :id: 6ef00118aeb60cfa28df3f7dd2db55
+- :starts_at: 2011-11-09 12:20:00 -03:00
+  :ends_at: 2011-11-09 13:00:00 -03:00
+  :speaker_id:
+  :title_es: "Gem Session"
+  :title_en: "Gem Session"
+  :id: 1287658d14ff798ab8c9ac54fed9c4
 - :starts_at: 2011-11-09 14:30:00 -03:00
   :ends_at: 2011-11-09 15:00:00 -03:00
   :speaker_id: 3d02fb471037ecef150a774b0c7e34
