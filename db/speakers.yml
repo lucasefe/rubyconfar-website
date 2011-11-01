@@ -3,9 +3,9 @@
   :picture: /images/speakers/tenderlove.png
   :company: ATTi
   :twitter: tenderlove
-  :description_en: "When he isn\xE2\x80\x99t ruining people\xE2\x80\x99s lives by writing software like phuby, enterprise, and neversaydie, Aaron can be found writing slightly more useful software like nokogiri. To keep up his Gameboy Lifestyle, Aaron spends his weekdays writing high quality software for ATTi. Be sure to catch him on Karaoke night, where you can watch him sing his favorite smooth rock hits of the 70\xE2\x80\x99s and early 80\xE2\x80\x99s."
-  :description_es: "Cuando no est\xC3\xA1 arruinando la vida de la gente escribiendo software como phuby, enterprise, y neversaydie, Aaron puede ser encontrado escribiendo software de un poco m\xC3\xA1s util, como Nokogiri. \n\
-    Para mantener su estilo de vida Game Boy, Aaron pasa su d\xC3\xADas de semana escribiendo software de alta calidad para ATTi. Por la noche es posible encontrarlo haciendo Karaoke, donde se lo puede ver cantar sus \xC3\xA9xitos favoritos de soft rock de los a\xC3\xB1os 70 y principios de los 80."
+  :description_en: "When he isn\xE2\x80\x99t ruining people\xE2\x80\x99s lives by writing software like phuby, enterprise, and neversaydie, Aaron can be found writing slightly more useful software like nokogiri. To keep up his Gameboy Lifestyle, Aaron spends his weekdays writing high quality software for AT&Ti. Be sure to catch him on Karaoke night, where you can watch him sing his favorite smooth rock hits of the 70\xE2\x80\x99s and early 80\xE2\x80\x99s."
+  :description_es: "Cuando no est\xC3\xA1 arruinándole la vida a la gente escribiendo software como phuby, enterprise, y neversaydie, a Aaron se lo puede encontrar escribiendo software un poco m\xC3\xA1s útil, como Nokogiri. \n\
+    Para mantener su estilo de vida Game Boy, Aaron pasa su d\xC3\xADas de semana escribiendo software de alta calidad para AT&Ti. Por la noche es posible encontrarlo haciendo Karaoke, donde se lo puede ver cantar sus \xC3\xA9xitos favoritos de soft rock de los a\xC3\xB1os 70 y principios de los 80."
   :links:
     website: http://tenderlovemaking.com/
     github: http://github.com/tenderlove
@@ -62,8 +62,7 @@
     As his twitter account states, he can be defined as *nix developers worst nightmare...\n\
     He is also a RubyGems contributor and recently become Ruby-Core committer as one of the Ruby\xE2\x80\x99s MinGW maintainers."
   :description_es: "Durante el d\xC3\xADa, Luis Laventa es director t\xC3\xA9cnico de AREA 17, trabajando en proyectos en todo el mundo.\n\
-    Por las noches, es el principal desarrollador de RubyInstaller para Windows, sucesor del proyecto conocido como One-Click Installer, y que busca reducir las diferencias para los usuarios de Ruby sob\n\
-    re Windows.\n\
+    Por las noches, es el principal desarrollador de RubyInstaller para Windows, sucesor del proyecto conocido como One-Click Installer, y que busca reducir las diferencias para los usuarios de Ruby sobre Windows.\n\
     Adem\xC3\xA1s, ha creado otros proyectos que ayudaron a desarrolladores Ruby en otras plataformas (no s\xC3\xB3lo Windows) y revisa otras librer\xC3\xADas para asegurarse de que sean multiplataforma, buscando compatibilidad m\xC3\xA1s all\xC3\xA1 del \"en mi m\xC3\xA1quina funciona\".\n\
     Como dice en su cuenta de twitter, puede ser definido como la peor pesadilla de los desarrolladores *nix... \n\
     Contribuye en RubyGems y recientemente se ha convertido en Ruby-Core commiter como uno de los responsables Ruby del mantenimiento de MinGW."
@@ -86,7 +85,7 @@
   :description_es: "Hombre de letras y n\xC3\xBAmeros trabajando con Ruby, Lua y otros. Anglo/hispano/lus\xC3\xB3filo. C\xC3\xB3digo, ling\xC3\xBC\xC3\xADstica, samba y, por supuesto, cerveza.\n\
     Trabaja como cofundador y Principal Developer de Ruby Labs. Ruby Labs es una divisi\xC3\xB3n dentro de Business Vision S.A., una empresa argentina de desarrollo de software, con oficinas en Buenos Aires, La Plata, San Francisco y Miami.\n\
     Business Vision ha sido exitosa por muchos a\xC3\xB1os, trabajando principalmente con Java y .NET, y ahora les est\xC3\xA1 ayudando a migrar hacia lenguajes din\xC3\xA1micos: primero con Ruby, pero vienen muchos m\xC3\xA1s.\n\
-    Hasta el momento, el programa principalmente con Ruby para el trabajo y con Lua por diversi\xC3\xB3n. En el pasado, ha trabajado un poco con Java y PHP. Es un fan de la programaci\xC3\xB3n en general y de las cosas bien hechas, independientemente de la tecnolog\xC3\xADa que usen. Se enfoca en los sistemas de backend y la arquitectura de las aplicaciones web."
+    Hasta el momento, \xC3\xA9l programa principalmente con Ruby para el trabajo y con Lua por diversi\xC3\xB3n. En el pasado, ha trabajado un poco con Java y PHP. Es un fan de la programaci\xC3\xB3n en general y de las cosas bien hechas, independientemente de la tecnolog\xC3\xADa que usen. Se enfoca en los sistemas de backend y la arquitectura de las aplicaciones web."
   :links:
     website: http://njclarke.com/
     github: http://github.com/norman
@@ -107,7 +106,7 @@
   :description_es: |-
     Matt Aimonetti es un R&D Engineer en LivingSocial donde tiene la oportunidad de crear proyectos basados en conceptos e ideas nuevas, imaginando el futuro.
     Antes de esto, Matt trabajaba en video juegos en Sony Playstation luego de haber trabajado por muchos a&ntilde;os con startups, compa&ntilde;&iacute;as Fortune 100 y compa&ntilde;&iacute;as tradicionales. Ha tenido la oportunidad de involucrarse en proyectos realmente cautivantes en diferentes areas, desde la biotecnolog&iacute;a a los comics, y todo lo que se encuentre en el medio.
-    Matt es el autor del libro de MacRuby publicado por O'Reilly http://oreil.ly/macrubybook y ha permanecido activo en la comunidad de Ruby durante muchos a&ntilde;os. Actualmente es parte de equipo de MacRuby, ha desarrollado o contribuido a muchas biblioteca y frameworks Open Source (Merb, Rails, y muchos m&aacute;s) y ha hablado ante grupos de usuarios y conferencias en Estados Unidos.
+    Matt es el autor del libro de MacRuby publicado por O'Reilly http://oreil.ly/macrubybook y ha permanecido activo en la comunidad de Ruby durante muchos a&ntilde;os. Actualmente es parte del equipo de MacRuby, ha desarrollado o contribuido a muchas biblioteca y frameworks Open Source (Merb, Rails, y muchos m&aacute;s) y ha hablado ante grupos de usuarios y conferencias en Estados Unidos.
   :links:
     website: http://merbist.com/
     github: https://github.com/mattetti
@@ -144,7 +143,7 @@
         You can read his blog at <a href='http://tom.preston-werner.com/'>http://tom.preston-werner.com/</a> or see a couple of videos about him <a href='http://www.maestrosdelweb.com/editorial/tom-preston-werner-fundador-de-github/'>here</a> and <a href='http://confreaks.net/videos/432-rubyconf2010-the-road-from-ruby-hacker-to-entrepreneur'>here</a>.
   :description_es: |-
     Tom Preston-Werner es el cofundador de GitHub e invent&oacute; Gravatars.
-      Tambi&eacute;n es el desarrollador detr&aacute;s de  <a href='https://github.com/mojombo/chronic'>chronic</a>, <a href='https://github.com/mojombo/grit'>grit</a> y <a href='https://github.com/mojombo/jekyll'>jekyll</a> para nombrar algunas.
+      Tambi&eacute;n es el desarrollador detr&aacute;s de  <a href='https://github.com/mojombo/chronic'>chronic</a>, <a href='https://github.com/mojombo/grit'>grit</a> y <a href='https://github.com/mojombo/jekyll'>jekyll</a> por nombrar algunas gemas.
       Puedes leer su blog visitando <a href='http://tom.preston-werner.com/'>http://tom.preston-werner.com/</a> o  ver un par de videos acerca de &eacute;l <a href='http://www.maestrosdelweb.com/editorial/tom-preston-werner-fundador-de-github/'>aqu&iacute;</a> y <a href='http://confreaks.net/videos/432-rubyconf2010-the-road-from-ruby-hacker-to-entrepreneur'>aqu&iacute;</a>.
   :links:
     website: http://tom.preston-werner.com/
@@ -184,7 +183,7 @@
       Nicolás (also known as foca) has been writing horrible code for the past 10 years, each line worse than the last. Over this period, he learnt a few things about testing horrible code, and hopefully he can say one or two things that are worth listening over this presentation. Hopefully.
       He usually hacks on ruby and javascript open source thingies at http://github.com/foca. He lives in Montevideo, Uruguay, where he works as an engineer for Cubox.
   :description_es: |-
-      Nicolás (también conocido como Foca), ya lleva 10 años escribiendo código horrible, cada línea peor que el anterior. Durante este período, aprendió algunas cosas sobre cómo probar código horrible, y espera poder decir una o dos cosas que valga la pena escuchar en esta presentación. Ojalá.
+      Nicolás (también conocido como Foca), ya lleva 10 años escribiendo código horrible. Cada línea peor que la anterior. Durante este período, aprendió algunas cosas sobre cómo probar código horrible, y espera poder decir una o dos cosas que valga la pena escuchar en esta presentación. Ojalá.
       Por lo general programa algunos proyectos open source en Ruby y Javascript, que podemos encontrar en http://github.com/foca. Vive en Montevideo, Uruguay, donde trabaja como ingeniero para Cubox.
   :links:
     website: http://nicolassanguinetti.info/
@@ -202,8 +201,8 @@
       Another dude that took computer science with aspirations to write games, decided to adopt Ruby after realizing it's actually more fun to write business applications than games.
       Worked as a Ruby consultant in Brazil and in the US, until joining Heroku in 2008 - where he takes projects ranging from Node.js support to organizing Starcraft and Poker nights.
   :description_es: |-
-      Otra persona más que se tomó la informática con aspiraciones de escribir juegos, decidió adoptar Ruby después se dio cuenta de que en realidad es más divertido escribir aplicaciones de negocio que juegos.
-      Trabajó como consultor de Ruby en Brasil y Estados Unidos, hasta su incorporación Heroku en 2008 - donde trabaja en proyectos que van desde el soporte para Node.js hasta organizar noches de Poker y Starcraft.
+      Otra persona más que se tomó la informática con aspiraciones de escribir juegos. Decidió adoptar Ruby y después se dio cuenta de que en realidad es más divertido escribir aplicaciones de negocio que juegos.
+      Trabajó como consultor de Ruby en Brasil y Estados Unidos, hasta su incorporación a Heroku en 2008. Donde trabaja en proyectos que van desde el soporte para Node.js hasta organizar noches de Poker y Starcraft.
   :links:
     github: https://github.com/pedro
   :talk:
@@ -231,7 +230,7 @@
     :abstract: |-
       "Hal Vanarian Chief economist de Google dice ""En 10 años los data scientists van a tener el trabajo mas sexy (y mejor pago) del mundo"".
 
-      En esta charla voy a explicar que quiere decir ser un data scientist.  Voy a mostrar en simple codigo ruby que es lo que alguien interesado en este campo tiene que saber.  Desde como minar los datos, como procesarlos (usando Hadoop) y luego como sacar conclusiones (algo de Machine Learning).  Haré especial enfasis en la parte de Machine Learning, y mostraré como clasificar datos usando un par de métodos (Linear regression y k-NN). Finalmente dejaré a la audiencia una noción de como usar Ruby para estos problemas y uno de los dilemas mas interesantes de la clasificación llamado Bias vs Variance."
+      En esta charla voy a explicar que quiere decir ser un data scientist.  Voy a mostrar en simple codigo ruby que es lo que alguien interesado en este campo tiene que saber.  Desde como minar los datos, como procesarlos (usando Hadoop) y luego como sacar conclusiones (algo de Machine Learning).  Haré especial énfasis en la parte de Machine Learning, y mostraré como clasificar datos usando un par de métodos (Linear regression y k-NN). Finalmente dejaré a la audiencia una noción de como usar Ruby para estos problemas y uno de los dilemas mas interesantes de la clasificación llamado Bias vs Variance."
   :id: c227df9c716d1b19b60a502c40c6e62b
 - :name: Alex Coles
   :company: Payango GmbH
@@ -331,7 +330,7 @@
   :description_es: |-
     Patrick es fundador e ingeniero en Stripe, un sistema de procesamiento de pagos orientado a desarrolladores.
 
-    Antes de Stripe, Patrick estudió matemáticas en el MIT. Patrick continua siendo un nerd en lo que respecta a implementaciones de lenguajes de programación, y trabajó durante muchos años en un dialécto de Lisp llamado Croma. A veces él desea que Ruby fuera un poco más como Smalltalk.
+    Antes de Stripe, Patrick estudió matemáticas en el MIT. Patrick continua siendo un nerd en lo que respecta a implementaciones de lenguajes de programación, y trabajó durante muchos años en un dialécto de Lisp llamado Croma. A veces desea que Ruby sea un poco más como Smalltalk.
 
     La primera versión de Stripe fue desarrollada y lanzada durante unas vacaciones en Buenos Aires.
   :links:
@@ -412,7 +411,7 @@
   :description_es:
     Narihiro Nakamura trabaja como investigador en Network Applied Communication Laboratory Ltd..
 
-    Él es committer de CRuby y un amante del Garbage Collector, por lo tanto trabaja en el GC de CRuby. Es el autor de Lazy Sweep GC en CRuby, y se puede utilizar desde Ruby 1.9.3!
+    Es committer de CRuby y amante del Garbage Collector. Por eso, trabaja en el GC de CRuby. Es el autor de Lazy Sweep GC en CRuby. Se lo podrá utilizar a partir de Ruby 1.9.3!
   :description_en:
     Narihiro Nakamura is a research worker at Network Applied Communication Laboratory Ltd..
 
