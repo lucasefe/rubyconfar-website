@@ -15,19 +15,18 @@
     :title: Who makes the best asado?
     :abstract:
   :id: 3d02fb471037ecef150a774b0c7e1e
-- :name: Shugo Maeda
-  :picture: /images/speakers/shugo.png
+- :name: Yutaka Hara 
+  :picture: /images/speakers/yhara.png
   :company: Network Applied Communication Laboratory Ltd.
-  :twitter: shugomaeda
-  :description_en: "Shugo Maeda es director en Network Applied Communication Laboratory Ltd., es co-presidente de Ruby Association LLC, y un programador daimyo.\n\
-    Es adem\xC3\xA1s Ruby committer. Ha sido orador en numerosas conferencias sobre Ruby, como Ruby World 2009 y RubyConf 2010.\n\
-    Actualmente, Shugo est\xC3\xA1 trabajando en Refinements para Ruby 2.0"
-  :description_es: "Shugo Maeda es director en Network Applied Communication Laboratory Ltd., es co-presidente de Ruby Association LLC, y un programador daimyo.\n\
-    Es adem\xC3\xA1s Ruby committer. Ha sido orador en numerosas conferencias sobre Ruby, como Ruby World 2009 y RubyConf 2010. \n\
-    Actualmente, Shugo est\xC3\xA1 trabajando en Refinements para Ruby 2.0\n  "
+  :twitter: yhara_en
+  :description_en: "Yutaka Hara is a research worker at Network Applied Communication Laboratory Ltd.
+    He writes Japanese articles about Ruby, including the book \"Making Esoteric Languages in Ruby\".
+    He recently started a project \"ruby-dev translation\" (http://ruby-dev.info/)."
+  :description_es: "Yutaka Hara es un investigador en Network Applied Communication Laboratory Ltd.
+    Escribe artículos en japonés acerca de Ruby, incluyendo el libro \"Making Esoteric Languages in Ruby\".
+    Recientemente inició el proyecto \"ruby-dev transalation\" (http://ruby-dev.info/)."
   :links:
-    website: http://blog.shugo.net/
-    ruby committer: http://www.ruby-lang.org/
+    website: http://route477.net
   :talk:
     :title: Ruby's past, present, and future
     :abstract:
