@@ -2,7 +2,7 @@ require 'yaml_record'
 
 class Talk < YamlRecord::Base
   properties :title_es, :title_en, 
-    :starts_at, :ends_at, :speaker_id
+    :starts_at, :ends_at, :speaker_id, :coffee
 
   source File.join(File.dirname(__FILE__), "../db/talks")
 
@@ -29,6 +29,7 @@ class Talk < YamlRecord::Base
 
     def right_now
       Time.now
+      Time.parse("2011-11-09 12:56")
     end
   end
 end
