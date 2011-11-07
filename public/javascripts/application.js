@@ -12,6 +12,65 @@ function animateSocial() {
   
 }
 
+function autolink(text) {
+  return text.replace(/(https?:\/\/[-\w\.]+:?\/[\w\/_\-\.]*(\?\S+)?)/, "<a href='$1'>$1</a>");
+}
+
+function massageTweet(text) {
+  text = text.replace(/^.* @\w+: /, "");
+
+  return autolink(text);
+}
+
+function buzz() {
+  var $buzz = $("#buzz");
+
+  if ($buzz.length == 0) return;
+
+  var $ul = $buzz.find("ul");
+  var count = 0;
+  var limit = parseInt($buzz.attr("data-limit"));
+  var page = $buzz.attr("data-page") || 1;
+  var users = {};
+
+  $.getJSON("http://search.twitter.com/search?q=rubyconfar+-RT&lang=en&rpp=30&format=json&page=" + page + "&callback=?", function(response) {
+    $.each(response.results, function() {
+
+      // Don't show the same user multiple time
+      if (users[this.from_user]) { return true; }
+
+      // Stop when reaching the hardcoded limit.
+      if (count++ == limit) { return false; }
+
+      // Remember this user
+      users[this.from_user] = true;
+
+      $ul.append(
+        "<li>" +
+        "<a href='http://twitter.com/" + this.from_user + "/statuses/" + this.id_str + "' title='" + this.from_user + "'>" +
+        "<img src='" + this.profile_image_url + "' alt='" + this.from_user + "' />" +
+        "</a> " +
+        massageTweet(this.text) +
+        "</li>"
+      );
+    });
+  });
+
+  $buzz.find("> a.paging").click(function() {
+    var $buzz = $(this).parent();
+    $buzz.attr("data-page", parseInt($buzz.attr("data-page")) + 1);
+    buzz();
+    return false;
+  });
+}
+
+function jsonFlickrApi(data){
+  $.each(data.photos.photo, function(i,item){
+    var src = "http://farm"+item.farm+".static.flickr.com/"+item.server+"/"+item.id+"_"+item.secret+"_m.jpg"
+    $("<img/>").attr("src", src).appendTo("#pictures");
+  });
+} 
+
 $(document).ready(function() {
   $("ul#speakers_box").simplyScroll({
       autoMode: 'loop'
@@ -21,6 +80,8 @@ $(document).ready(function() {
     backgroundPosition: "(right 0)"
   }, 3500);
   setTimeout(animateSocial, 500);
+
+  buzz();
 });
 
 

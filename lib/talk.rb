@@ -29,7 +29,6 @@ class Talk < YamlRecord::Base
 
     def right_now
       Time.now
-      Time.parse("2011-11-09 12:56")
     end
   end
 end
