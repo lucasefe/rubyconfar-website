@@ -84,8 +84,8 @@ module RubyConf
     end
 
     check_language!
-    get "/:lang" do
-      haml :home
+    get "/:lang" do |lang|
+      redirect "/#{lang}/event/now"
     end
 
     post "/register" do
