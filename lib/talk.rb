@@ -13,6 +13,16 @@ class Talk < YamlRecord::Base
   def in_progress?(now = self.class.right_now)
     self.starts_at <= now && self.ends_at > now
   end
+  
+  alias :original_starts_at :starts_at 
+  def starts_at
+    self.original_starts_at - self.class.offset
+  end
+
+  alias :original_ends_at :ends_at 
+  def ends_at
+    self.original_ends_at - self.class.offset
+  end
 
   class << self
     def all_talks
