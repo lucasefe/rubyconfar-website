@@ -950,12 +950,12 @@ html
               margin-top: 10px
               @include common-submit
               float: right
-        
+
         #drinkups
           h1
             @include text-header   
             margin-bottom: 20px         
-          
+
           #day1, #day2
             margin-bottom: 40px
 
@@ -980,49 +980,94 @@ html
               color: $yellow
               @include big-text-shadow
               margin-bottom: 15px
-            
+
             p
               @include text-shadow
               color: $yellow_mustard
               text-align: center
-        #talks
-          .talk
+              clear: both 
+        #now
+          #buzz
+            float: left
+            width: 190px
+            ul
+              margin-left: 10px
+              li
+                color: $yellow_mustard
+                margin: 0 0 8px 0
+                min-height: 26px
+                padding-left: 34px
+                position: relative
+                font-size: 12px
+                a:first-child
+                  -o-box-shadow: #bbbbbb 0px 0px 3px 0
+                  -webkit-box-shadow: #bbbbbb 0px 0px 3px 0
+                  box-shadow: #bbbbbb 0px 0px 3px 0
+                  display: block
+                  height: 26px
+                  left: 0
+                  position: absolute
+                  top: 3px
+                  width: 26px
+                  img
+                    -moz-box-shadow: #bbbbbb 0px 0px 3px 0
+                    height: 26px
+                    width: 26px
+          #pictures
+            float: left
+            width: 270px
+            height: 1300px
+            overflow: auto
+            margin-left: 20px
             text-align: center
-            @include center(650px)
-            background: url('/images/speakers_bkg.jpg') no-repeat -8px top
-            border: 1px solid $red150
-            padding: 25px
-            margin-bottom: 20px
+            img
+              @include picture_frame
+          #talks
+            float: left
+            width: 450px
 
-            h1
-              color: $yellow
-              @include big-text-shadow
-              margin-bottom: 10px
-              font:
-                size: 24px
-                family: 'BebasRegular', Arial, sans-serif
-              
-            h2
-              color: $yellow
-              margin-bottom: 10px
-              font:
-                size: 18px
-                family: 'BebasRegular', Arial, sans-serif
-              letter-spacing: 2px
-              @include big-text-shadow
-            h3
-              color: $yellow
-              margin-bottom: 10px
-              font:
-                size: 18px
-                family: 'MolotRegular', Arial, sans-serif
-              letter-spacing: 2px
-              @include big-text-shadow
-            &.upcoming
+            .talk
+              text-align: center
+              @include center(400px)
+              background: url('/images/speakers_bkg.jpg') no-repeat -8px top
+              border: 1px solid $red150
+              padding: 25px
+              margin-bottom: 20px
+              float: left
+
               h1
-                font-size: 20px
+                color: $yellow
+                @include big-text-shadow
+                margin-bottom: 10px
+                font:
+                  size: 24px
+                  family: 'BebasRegular', Arial, sans-serif
+
               h2
-                font-size: 15px
+                color: $yellow
+                margin-bottom: 10px
+                font:
+                  size: 18px
+                  family: 'BebasRegular', Arial, sans-serif
+                letter-spacing: 2px
+                @include big-text-shadow
+              h3
+                color: $yellow
+                margin-bottom: 10px
+                font:
+                  size: 18px
+                  family: 'MolotRegular', Arial, sans-serif
+                letter-spacing: 2px
+                @include big-text-shadow
+              p
+                color: $yellow_mustard
+                @include text-shadow
+              &.upcoming
+                h1
+                  font-size: 20px
+                h2
+                  font-size: 15px
+
         #sponsoring
           h1
             @include text-header            
