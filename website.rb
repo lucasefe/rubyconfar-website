@@ -1,6 +1,6 @@
 # encoding: utf-8
 require "sinatra/base"
-require 'sinatra/cache'
+# require 'sinatra/cache'
 require 'date'
 require 'haml'
 require 'sass'
@@ -40,8 +40,8 @@ module RubyConf
     set :haml,   :format => :html5
     set :logging, :true
     enable :sessions
-    register(Sinatra::Cache)
-    set :cache_enabled, true
+    # register(Sinatra::Cache)
+    # set :cache_enabled, true
     
     # configure do
     #   DataMapper::Logger.new($stdout, :debug) if RACK_ENV == "development"
