@@ -28,7 +28,11 @@ class Talk < YamlRecord::Base
     end
 
     def right_now
-      Time.now
+      Time.now - offset
+    end
+
+    def offset
+      (60*60*3)
     end
   end
 end
