@@ -317,33 +317,24 @@
     :title: Monitoring with Syslog and EventMachine
     :abstract:
       Go beyond server and application stack monitoring, collect application specific metrics and push the information to interested parties. With the help of syslog, EventMachine and a few lines of Ruby code, you can build a language agnostic system to gather and process custom tailored monitoring and reporting data.
-- :name: Patrick Collison
-  :picture: /images/speakers/pc.jpg
-  :company: Stripe
-  :twitter: patrickc
+- :name: Blake Mizerany
+  :picture: /images/speakers/mizerany.png
+  :company: Heroku
+  :twitter: bmizerany
   :description_en: |-
-    Patrick is a founder and engineer at Stripe, a developer-oriented payment processing system.
+    I created Sinatra (www.sinatrarb.com). I saw Elvis at a gas station the other day. I speak Ruby, Go, Erlang, JavaScript, C, C++, and more. My preferred form of transportation is Git. Heroku (heroku.com) is where I hang my hat.
 
-    Before Stripe, Patrick studied mathematics at MIT. Patrick remains a programming language implementation nerd, and worked for several years on a dialect of Lisp called Croma. He sometimes wishes Ruby was more like Smalltalk.
-
-    The first version of Stripe was built and launched while on holiday in Buenos Aires.
+    My Mom thinks I’m totally awesome. You didn’t see me.
   :description_es: |-
-    Patrick es fundador e ingeniero en Stripe, un sistema de procesamiento de pagos orientado a desarrolladores.
-
-    Antes de Stripe, Patrick estudió matemáticas en el MIT. Patrick continua siendo un nerd en lo que respecta a implementaciones de lenguajes de programación, y trabajó durante muchos años en un dialécto de Lisp llamado Croma. A veces él desea que Ruby fuera un poco más como Smalltalk.
-
-    La primera versión de Stripe fue desarrollada y lanzada durante unas vacaciones en Buenos Aires.
+    Creador de Sinatra (www.sinatrarb.com). Se describe a si mismo en pocas frases:
+    Dice que vió a Elvis recientemente en una estacón de servicio. Habla Ruby, Go, Erlang, JavaScript, C, C++, y más. Su medio favorito de transporte es Git. Y que en Heroku es donde trabaja actualmente.
+    Afirma también que su madre piensa que es genial.
   :links:
-    website: http://collison.ie/
-    github: https://github.com/pc
+    website: http://blakemizerany.com 
+    github: https://github.com/bmizerany
   :talk:
-    :title: "Goat: a real-time web framework"
+    :title: "To Be announced"
     :abstract:
-      "Rails is getting long in the tooth. Sinatra is great, but requires lots of additional infrastructural code for complex web applications.
-
-      Goat is a server-side real-time web framework that makes it easy to build rich, component-oriented interfaces that update in response to changes in the underlying data. It also provides a unified answer to how your CSS, JavaScript and browser-side code should fit together.
-
-      This talk will introduce Goat by using it to build a web application from scratch."
   :id: 36d90c45e4937f501e0a8665b65e03
 - :name: Sean Cribbs
   :picture: /images/speakers/seancribbs.jpg
