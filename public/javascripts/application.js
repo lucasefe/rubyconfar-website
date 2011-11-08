@@ -64,9 +64,17 @@ function buzz() {
   });
 }
 
+function shuffle(o){ //v1.0
+  for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+  return o;
+};
+
+
+
+
 function jsonFlickrApi(data){
-  console.log(arguments);
-  $.each(data.photos.photo, function(i,item){
+  var photos = shuffle(data.photos.photo);
+  $.each(photos, function(i,item){
     var src = "http://farm"+item.farm+".static.flickr.com/"+item.server+"/"+item.id+"_"+item.secret+"_m.jpg"
     $("<img/>").attr("src", src).appendTo("#pictures");
   });
