@@ -33,7 +33,7 @@ function buzz() {
   var page = $buzz.attr("data-page") || 1;
   var users = {};
 
-  $.getJSON("http://search.twitter.com/search?q=rubyconfar+-RT&lang=en&rpp=30&format=json&page=" + page + "&callback=?", function(response) {
+  $.getJSON("http://search.twitter.com/search?q=rubyconfar+-RT&lang=en&rpp=20&format=json&page=" + page + "&callback=?", function(response) {
     $.each(response.results, function() {
 
       // Don't show the same user multiple time
@@ -65,6 +65,7 @@ function buzz() {
 }
 
 function jsonFlickrApi(data){
+  console.log(arguments);
   $.each(data.photos.photo, function(i,item){
     var src = "http://farm"+item.farm+".static.flickr.com/"+item.server+"/"+item.id+"_"+item.secret+"_m.jpg"
     $("<img/>").attr("src", src).appendTo("#pictures");
