@@ -82,9 +82,9 @@ module RubyConf
     get "/drinkups" do
       haml :drinkups, :skip_translation => true
     end
-    get "/encuesta" do
-      haml :encuesta, :skip_translation => true
-    end
+    # get "/encuesta" do
+    #   haml :encuesta, :skip_translation => true
+    # end
 
     check_language!
     get "/:lang" do |lang|
