@@ -1,0 +1,60 @@
+
+
+Patrick 10'
+
+9:40  - Konstantin (40')
+
+10:20 - Norman (40')
+
+11:00 - Break
+
+11:30 - Nicolás (30')
+
+12:00 - Aaron (40')
+
+12:40 - Lighting Talks (30') 
+
+13:10 - Lunch (75')
+
+14:25 - Sorteos (15') (Altoros y O'reilly)
+
+14:40 - Blake (30')
+
+15:10 - Sean Cribbs (30')
+
+15:40 - Break (30')
+
+16:10 - Scott (40')
+
+16:50 - Nari (40')
+
+17:30 - Break (30')
+
+18:00 - Tom Preston-Werner (40')
+
+18:40 - Cierre! (no más de 10')
+
+(a correr que nos sacan a patadas del Konex) 
+
+
+
+Speaker Shugo Maeda => Martín
+Speaker Matt Aimonetti => Tom
+Speaker Koichiro Eto => Chad
+Speaker Luis Lavena => Emmanuel
+Speaker Alex Coles => Lucas
+Speaker Pedro Belo => Leandro
+Speaker Federico Brubacher => Sebastian
+Speaker Patrick Huesler => Ernesto
+Speaker Scott Chacon => Michel
+Speaker Aaron Patterson => Nicolás
+Speaker Konstantin Haase => Matias
+Speaker Patrick Collison => Nicolás
+Speaker Norman Clarke => Matias
+Speaker Nicolas Sanguinetti => Tom
+Speaker Sean Cribbs => Lucas
+Speaker Patrick Huesler => Sebastian
+Speaker Tom Preston-Werner => Michel
+
+
+

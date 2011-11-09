@@ -1,35 +1,38 @@
 #now
-  #talks
-    - if @now
-      .talk
-        %h1 Right Now
-        %h2
-          = @now.title_en
-        %h3
-          by
-          = @now.speaker.name
-
-        %p
-          %strong Starts At:
-          = @now.starts_at.strftime("%H:%M")
-        %p
-          %strong Ends At:
-          = @now.ends_at.strftime("%H:%M")
-
-    - if @next
-      .talk.upcoming
-        %h1 Upcoming Talk
-        %h2
-          = @next.title_en
-        %h3
-          by
-          = @next.speaker.name
-        %p
-          %strong Starts At:
-          = @next.starts_at.strftime("%H:%M")
-        %p
-          %strong Ends At:
-          = @next.ends_at.strftime("%H:%M")
+  #talks 
+    %h1
+      %a{:href => '/encuesta'} Participar de la encuesta 
+  / #talks
+  /   - if @now
+  /     .talk
+  /       %h1 Right Now
+  /       %h2
+  /         = @now.title_en
+  /       %h3
+  /         by
+  /         = @now.speaker.name
+  / 
+  /       %p
+  /         %strong Starts At:
+  /         = @now.starts_at.strftime("%H:%M")
+  /       %p
+  /         %strong Ends At:
+  /         = @now.ends_at.strftime("%H:%M")
+  / 
+  /   - if @next
+  /     .talk.upcoming
+  /       %h1 Upcoming Talk
+  /       %h2
+  /         = @next.title_en
+  /       %h3
+  /         by
+  /         = @next.speaker.name
+  /       %p
+  /         %strong Starts At:
+  /         = @next.starts_at.strftime("%H:%M")
+  /       %p
+  /         %strong Ends At:
+  /         = @next.ends_at.strftime("%H:%M")
 
   #pictures
     %p
