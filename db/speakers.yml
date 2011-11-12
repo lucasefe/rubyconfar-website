@@ -29,6 +29,7 @@
     website: http://route477.net
   :talk:
     :title: Ruby's past, present, and future
+    :slides: http://speakerdeck.com/u/yhara/p/rubys-past-present-and-future-rubyconf-ar
     :abstract:
   :id: 8931d4500f2ae4ef3af9c3d9d37f00
 - :name: Scott Chacon
@@ -48,6 +49,7 @@
     git evangelist: http://git-scm.com/
   :talk:
     :title: Un Cuento de Tres Árboles
+    :slides: http://speakerdeck.com/u/schacon/p/un-cuento-de-tres-arboles
     :abstract:
       Git is the version control system most of us use every day. However, there are some strangenesses to it. Raise your hand if you really understand the ‘reset’ command. When it comes down to it, this is one of the most interesting, fundamental and amazing commands that Git has, yet nearly everybody is afraid of it. This is just bad marketing. This talk will de-mystify the ‘reset’ command so that you are not only comfortable using it, but can do new and interesting things with it and in doing so will arrive at a better understanding of the entire Git system. We will explore the Three Trees of Git (HEAD, index, work tree) and all the cool and mind-bending fun you can have with them.
   :id: fe595acd252eb7fad9b23fb84d19e5
@@ -93,6 +95,7 @@
     friendly_id: https://github.com/norman/friendly_id
   :talk:
     :title: '"Back to the future" with SQL and stored procedures'
+    :slides: http://www.slideshare.net/normanclarke/de-vuelta-al-pasado-con-sql-y-stored-procedures
     :abstract:
   :id: 11c9c072b226b8420b2ebb8d7ab510
 - :name: Matt Aimonetti
@@ -113,6 +116,7 @@
     macruby: http://www.macruby.com/
   :talk:
     :title: 'Inside Ruby: concurrency & garbage collection explained.'
+    :slides: http://rubyconfar.merbist.com/#1
     :abstract:
   :id: c7dbd49d7d8a8f9cf280e5bead6e3f
 - :name: Konstantin Haase
@@ -151,6 +155,7 @@
     github website: http://www.github.com/
   :talk:
     :title: Optimizing for Happiness
+    :slides: http://speakerdeck.com/u/mojombo/p/optimizing-for-happiness
     :abstract:
       The way traditional businesses approach the management and organization of creative, intellectual workers is wrong. By throwing away everything that blocks productivity (meetings, deadlines, managers, titles, strict vacation policies, etc) and treating your employees as the responsible adults that they are, huge amounts of potential can be unlocked and employee happiness and retention can be at unprecedented highs. At GitHub we've embraced a philosophy that gets things done and strips away policy and procedure in favor of smart decision making and personal responsibility. Come see how we make it work and how you can reap the same benefits in your own company.
   :id: 5fb09132b4f0c2af0fc47060fd61e3
@@ -359,6 +364,7 @@
     github: https://github.com/seancribbs
   :talk:
     :title: Embrace NoSQL and Eventual Consistency with Ripple
+    :slides: http://www.slideshare.net/seancribbs/embrace-nosql-and-eventual-consistency-with-ripple
     :abstract: |-
       "So, there's this &quot;NoSQL&quot; thing you may have heard of, and this related thing called &quot;eventual consistency&quot;. Supposedly, they help you scale, but no one has ever explained why! Well, wonder no more! This talk will demystify NoSQL, eventual consistency, how they might help you scale, and  -- most importantly -- why you should care.
 
@@ -396,6 +402,7 @@
     github: https://github.com/authorNari
   :talk: 
     :title: "Parallel worlds of CRuby's GC"
+    :slides: http://speakerdeck.com/u/nari/p/parallel-worlds-of-crubys-gc
     :abstract: |-
       "CRuby adopts Mark Sweep GC Algorithm now. In my presentation, I talk about Parallel Mark Algorithm for CRuby's GC that improves Mark. Parallel mark divides a mark phase into a plurality of threads and it parallely execute. Recentlly, 8 core computers are not rare. In such an enviroment, GC will be speed up, if it distribute tasks to each core. I'll talk the parallel mark algorithm and implemention, result of benchmark. "
     
