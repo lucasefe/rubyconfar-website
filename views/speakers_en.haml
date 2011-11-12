@@ -24,7 +24,10 @@
           = simple_format(speaker.description_en)
 
           - unless speaker.talk.nil?
-            %h3= speaker.talk[:title]
+            %h3
+              = speaker.talk[:title]
+              - unless speaker.talk[:slides].nil?
+                %a.slides{ :href => speaker.talk[:slides] } (slides)
             .abstract= simple_format(speaker.talk[:abstract])
 
         .clear
