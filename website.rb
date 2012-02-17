@@ -85,7 +85,7 @@ module RubyConf
 
     check_language!
     get "/:lang" do |lang|
-      redirect "/#{lang}/event/now"
+      #redirect "/#{lang}/event/now"
     end
 
     post "/register" do
