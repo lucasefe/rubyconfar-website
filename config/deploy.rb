@@ -7,7 +7,7 @@ set :git_enable_submodules, 1
 set :repository, "git://github.com/lucasefe/rubyconfar-website.git"
 set :branch, "production"
 set :ssh_options, { :forward_agent => true }
-set :stage, :production
+set :stage, :master
 set :user, "rubysur"
 set :use_sudo, false
 set :runner, "deploy"
