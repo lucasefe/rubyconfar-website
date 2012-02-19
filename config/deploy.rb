@@ -5,9 +5,9 @@ set :application, "www.rubyconfargentina.org"
 set :scm, :git
 set :git_enable_submodules, 1
 set :repository, "git://github.com/lucasefe/rubyconfar-website.git"
-set :branch, "production"
+set :branch, "master"
 set :ssh_options, { :forward_agent => true }
-set :stage, :master
+set :stage, :production
 set :user, "rubysur"
 set :use_sudo, false
 set :runner, "deploy"
