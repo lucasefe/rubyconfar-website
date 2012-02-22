@@ -36,7 +36,7 @@ module RubyConf
     end
 
     set :root, Dir.pwd
-    set :public, File.expand_path("../public", __FILE__)
+    set :public_folder, File.expand_path("../public", __FILE__)
     set :haml,   :format => :html5
     set :logging, :true
     enable :sessions
@@ -173,7 +173,7 @@ module RubyConf
     end
 
     def active_link?(route)
-      request.route == route
+      request.path == route
     end
 
     def link_to(text, url=nil, options={}, &block)

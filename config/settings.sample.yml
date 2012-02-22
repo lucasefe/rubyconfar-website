@@ -22,4 +22,4 @@ test:
     database: db/test.db
 
 production:
-  development
+  <<: *defaults
